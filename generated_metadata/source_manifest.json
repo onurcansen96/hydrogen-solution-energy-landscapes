@@ -323,8 +323,8 @@
       "media_type": "text/markdown",
       "included_in_package": true,
       "location_status": "relative_to_canonical_source_root",
-      "byte_size": 8173,
-      "sha256": "cdfaa4414c18ef778ed08b95d18e709718a07714cccdb5994ab5d89141e83c30",
+      "byte_size": 8500,
+      "sha256": "beda2e38d83545be933b44dff52298f5884f2e50bcb797cc5f8aa79cf8849f45",
       "author_export_sha256": "d0492e06dea0e05c0997acd735ce2835a6f8887f7106468adf911020ca8c284d",
       "author_export_byte_size": 22647
     },
@@ -368,8 +368,8 @@
       "role": "Scientific data guide",
       "included_in_package": true,
       "location_status": "relative_to_canonical_source_root",
-      "byte_size": 24214,
-      "sha256": "e219e947737e7f2dda3687653c69188770e7c5b2180bdc8c2bc1a27973e061d4"
+      "byte_size": 24173,
+      "sha256": "4b1528cedd37d3871c34e9ad3a851363c3661f958504fa68472473bf9ecd8b42"
     },
     {
       "artifact_id": "publication_charge_density_manifest.json",
@@ -378,8 +378,8 @@
       "role": "Released CHGCAR asset inventory",
       "included_in_package": true,
       "location_status": "relative_to_canonical_source_root",
-      "byte_size": 29309,
-      "sha256": "22b0663b157c2eb79292bab91371dd3fc120ea2d54bd06072b753f0324bf5015"
+      "byte_size": 39121,
+      "sha256": "dbae0db7e5caf60688970e10f3281022df8cc0d7f5c626536accbd0aad10eca1"
     },
     {
       "artifact_id": "publication_CITATION.cff",
@@ -389,7 +389,7 @@
       "included_in_package": true,
       "location_status": "relative_to_canonical_source_root",
       "byte_size": 763,
-      "sha256": "cf0d6a5a7e228bde6121d2dd0e07bd09b4f75910a40230e8a3f0133ff52f7972"
+      "sha256": "62afbd5b1fcc9ec5120247fbfc42faaf4ebc26d685046f196e3edd757985fd5e"
     },
     {
       "artifact_id": "publication_LICENSE-DATA",
@@ -430,6 +430,16 @@
       "location_status": "relative_to_canonical_source_root",
       "byte_size": 36606,
       "sha256": "2a0ac1117289a4f6758c30cfcaf4213d5d2044a4427e5b1d85964fbdc5149c86"
+    },
+    {
+      "artifact_id": "publication_s5_addition_audit",
+      "path": "provenance/s5_addition_audit.json",
+      "filename": "s5_addition_audit.json",
+      "role": "S5 charge-density addition audit",
+      "included_in_package": true,
+      "location_status": "relative_to_canonical_source_root",
+      "byte_size": 9822,
+      "sha256": "2c75671ee64e084049b650e647d085bba86dccf1dd211ec08e20223f6e56be16"
     }
   ],
   "not_in_canonical_package": {
@@ -441,16 +451,17 @@
     "catalog_path": "charge_density_manifest.json",
     "path_base": "canonical_source_root",
     "storage": "separate downloadable release assets; not scalar-converter inputs",
-    "catalog_sha256": "22b0663b157c2eb79292bab91371dd3fc120ea2d54bd06072b753f0324bf5015"
+    "catalog_sha256": "dbae0db7e5caf60688970e10f3281022df8cc0d7f5c626536accbd0aad10eca1"
   },
   "publication_packaging": {
     "date": "2026-09-28",
-    "dataset_release_version": "1.0.0",
+    "dataset_release_version": "1.1.0",
     "original_source_manifest": "provenance/author_source_manifest.json",
     "original_validation_report": "provenance/author_validation_report.json",
     "release_audit": "provenance/release_audit.json",
     "note": "Scientific records retain the supplied generation timestamp/version. Documentation, CD-resource wording and support-file checksums were updated for public release. See provenance/README.md.",
     "data_license": "CC-BY-4.0",
-    "code_license": "MIT"
+    "code_license": "MIT",
+    "additional_resource_audit": "provenance/s5_addition_audit.json"
   }
 }

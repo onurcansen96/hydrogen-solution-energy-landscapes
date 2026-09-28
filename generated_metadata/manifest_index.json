@@ -2091,8 +2091,8 @@
     },
     {
       "path": "source_manifest.json",
-      "byte_size": 20573,
-      "sha256": "8a7ac9f69868b103b3e943f3226536cb178d10fd54f08b09b48098097fb93378"
+      "byte_size": 21071,
+      "sha256": "5ae15c3218205cbb448bbdd700c82f194682f3dbd3797b4e545d99196b87e183"
     },
     {
       "path": "validation_report.json",
@@ -2102,12 +2102,13 @@
   ],
   "publication_packaging": {
     "date": "2026-09-28",
-    "dataset_release_version": "1.0.0",
+    "dataset_release_version": "1.1.0",
     "original_source_manifest": "provenance/author_source_manifest.json",
     "original_validation_report": "provenance/author_validation_report.json",
     "release_audit": "provenance/release_audit.json",
     "note": "Scientific records retain the supplied generation timestamp/version. Documentation, CD-resource wording and support-file checksums were updated for public release. See provenance/README.md.",
     "data_license": "CC-BY-4.0",
-    "code_license": "MIT"
+    "code_license": "MIT",
+    "additional_resource_audit": "provenance/s5_addition_audit.json"
   }
 }

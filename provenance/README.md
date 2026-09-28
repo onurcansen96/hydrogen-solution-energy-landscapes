@@ -14,6 +14,14 @@ packaging must not be confused with running new DFT calculations.
   author's inputs and scientific JSON, plus the isolated converter smoke test.
   These are integrity/consistency checks, not independent validation of DFT
   accuracy or of all manuscript figures.
+- `s5_addition_audit.json` records the five S5 files added in v1.1.0, their
+  original/published names, header checks, byte sizes and SHA-256 hashes.
+  The initial `release_audit.json` remains the historical v1.0.0 audit.
+
+Version 1.1.0 adds charge-density resources only; all scientific site records
+and raw scalar inputs remain unchanged. The original four archives retain
+their exact v1.0.0 bytes and attribution text. All five archives are available
+from v1.1.0; the older release is not overwritten.
 
 The raw 25 dumps and descriptor table, all 50 per-structure JSON files,
 combined conceptual dataset, and computational settings are preserved

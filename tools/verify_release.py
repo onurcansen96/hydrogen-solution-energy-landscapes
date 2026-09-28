@@ -73,8 +73,14 @@ def main():
     if family_counts != {"SC": 31, "S3": 113, "S5": 425, "S27": 471, "S5m": 608}:
         raise ValueError(f"Family count mismatch: {family_counts}")
     catalog = load(ROOT / "charge_density_manifest.json")
-    if len(catalog["files"]) != 20:
-        raise ValueError("Expected 20 charge-density resources")
+    expected_coverage = {"SC": 5, "S3": 5, "S5": 5, "S27": 5, "S5m": 5}
+    if len(catalog["files"]) != 25 or catalog["coverage"] != expected_coverage:
+        raise ValueError("Expected 25 charge-density resources across all five families")
+    expected_names = {f"CHGCAR_{family}_{chemistry}"
+                      for family in expected_coverage
+                      for chemistry in ("PureFe", "FeCr", "FeCu", "FeTi", "FeVac")}
+    if {item["filename"] for item in catalog["files"]} != expected_names:
+        raise ValueError("Unexpected charge-density filenames or duplicate coverage")
     resource_ref = source.get("charge_density_resources")
     if resource_ref and digest(ROOT / resource_ref["catalog_path"]) != resource_ref["catalog_sha256"]:
         raise ValueError("Charge-density catalog checksum mismatch")
@@ -85,7 +91,7 @@ def main():
                       "host_count": 25, "site_count": len(keys),
                       "one_H_reconstructions_checked": len(keys),
                       "family_site_counts": family_counts,
-                      "CHGCAR_files_verified": 20 if args.chgcar_dir else 0,
+                      "CHGCAR_files_verified": len(catalog["files"]) if args.chgcar_dir else 0,
                       "CHGCAR_note": "Pass --chgcar-dir to verify downloaded raw grids"}, indent=2))
 
 

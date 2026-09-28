@@ -14,7 +14,7 @@ be added later. This repository is a data release, not a published-paper claim.
 1. Download this repository with **Code > Download ZIP**, or clone it.
 2. Read the existing JSON in `generated_metadata/`; no conversion is required.
 3. For volumetric data, also download the CHGCAR archives from the
-   [v1.0.0 release](https://github.com/onurcansen96/hydrogen-solution-energy-landscapes/releases/tag/v1.0.0).
+   [v1.1.0 release](https://github.com/onurcansen96/hydrogen-solution-energy-landscapes/releases/tag/v1.1.0).
    Git clone and GitHub's source-code ZIP do **not** include these archives.
 4. Use [DATA_GUIDE.md](DATA_GUIDE.md) for definitions, units, crystallography,
    calculation protocols, source authority, and scientific limitations.
@@ -30,10 +30,10 @@ relaxes; non-frozen (`NF`) means all ions relax, at fixed cell in both cases.
 |---|---|---|---:|---:|
 | `SC` | `SCR` | Rotated single crystal | 31 | 5 |
 | `S3` | Sigma 3 | Symmetric-tilt GB | 113 | 5 |
-| `S5` | Sigma 5 | Symmetric-tilt GB | 425 | **0** |
+| `S5` | Sigma 5 | Symmetric-tilt GB | 425 | 5 |
 | `S27` | Sigma 27 | Symmetric-tilt GB | 471 | 5 |
 | `S5m` | Sigma 5m | Mixed/near-CSL GB | 608 | 5 |
-| Total | | 25 structure/chemistry combinations | **1,648** | **20** |
+| Total | | 25 structure/chemistry combinations | **1,648** | **25** |
 
 Every family has `PureFe`, `FeCr`, `FeCu`, `FeTi`, and `FeVac` site maps.
 `SC_*` is the paper's **120-atom rotated SCR** reference, not its separate
@@ -100,18 +100,24 @@ charge-density descriptor in e/angstrom^3. Consult the guide before analysis.
 
 ## Charge-Density Downloads
 
-The release has four ZIP archives: `CHGCAR_SC.zip`, `CHGCAR_S3.zip`,
-`CHGCAR_S27.zip`, and `CHGCAR_S5m.zip`. Each contains the five chemistry files
-under their original `CHGCAR_<family>_<chemistry>` names, plus licensing and
+The release has five ZIP archives: `CHGCAR_SC.zip`, `CHGCAR_S3.zip`,
+`CHGCAR_S5.zip`, `CHGCAR_S27.zip`, and `CHGCAR_S5m.zip`. Each contains the five
+chemistry files under consistent `CHGCAR_<family>_<chemistry>` names, plus licensing and
 attribution information. `SC` in these filenames means SCR in the paper.
 
-There are **no `CHGCAR_S5_*` files** in the supplied data. The inventory maps
+Version 1.1.0 adds the five S5 files, renamed from `S5_<chemistry>_CHGCAR`
+to `CHGCAR_S5_<chemistry>` without changing their contents. The four original
+archives are reused byte-for-byte from v1.0.0, including their original
+attribution/version text; v1.0.0 remains available unchanged. See
+[the S5 addition audit](provenance/s5_addition_audit.json) for the filename mapping.
+
+The inventory maps
 filenames to host identifiers and records header species/cells/grid dimensions;
 it does not assert that every stored `CD` scalar has been independently
 reproduced from these grids. The scalar converter does not read CHGCAR.
 Charge integration and paper slice-plot scripts are not supplied.
 
-After extracting the four archives into a directory, check the raw grids with:
+After extracting the five archives into a directory, check the raw grids with:
 
 ```bash
 python tools/verify_release.py --chgcar-dir /path/to/extracted/files

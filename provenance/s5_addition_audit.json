@@ -1,0 +1,310 @@
+{
+  "release_version": "1.1.0",
+  "date": "2026-09-28",
+  "status": "passed",
+  "addition": "five author-supplied S5 CHGCAR files; filename-only normalization",
+  "source_files_modified": false,
+  "files": [
+    {
+      "filename": "CHGCAR_S5_FeCr",
+      "original_filename": "S5_FeCr_CHGCAR",
+      "rename_policy": "published archive-member name only; source bytes unchanged",
+      "raw_family": "S5",
+      "paper_family": "S5",
+      "chemistry": "FeCr",
+      "related_source_structure_id": "S5_FeCr_allH",
+      "association_basis": "author-provided filename; species/count checked; CD not rederived",
+      "byte_size": 55310021,
+      "sha256": "ee3506dd78b0fe58a64afbd31db6ec8b534c4ea46a272b501d26bbe1018c5cca",
+      "archive": "CHGCAR_S5.zip",
+      "archive_member": "CHGCAR_S5_FeCr",
+      "archive_download_url": "https://github.com/onurcansen96/hydrogen-solution-energy-landscapes/releases/download/v1.1.0/CHGCAR_S5.zip",
+      "header": {
+        "title": "unknown system",
+        "scale_factor": 1.0,
+        "unscaled_lattice_vectors": [
+          [
+            27.719818,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            5.666,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            8.958733
+          ]
+        ],
+        "species": [
+          "Fe",
+          "Cr"
+        ],
+        "species_counts": [
+          118,
+          2
+        ],
+        "atom_count": 120,
+        "coordinate_mode": "Direct",
+        "first_grid_dimensions": [
+          280,
+          56,
+          96
+        ],
+        "inspection_scope": "header only; charge values/integrals not rederived"
+      },
+      "host_header_comparison": {
+        "species_and_atom_count": "passed",
+        "maximum_cell_component_difference_angstrom": 4.000000011217253e-07,
+        "cell_matches_within_1e_minus6_angstrom": true,
+        "atomic_positions_compared": false
+      }
+    },
+    {
+      "filename": "CHGCAR_S5_FeCu",
+      "original_filename": "S5_FeCu_CHGCAR",
+      "rename_policy": "published archive-member name only; source bytes unchanged",
+      "raw_family": "S5",
+      "paper_family": "S5",
+      "chemistry": "FeCu",
+      "related_source_structure_id": "S5_FeCu_allH",
+      "association_basis": "author-provided filename; species/count checked; CD not rederived",
+      "byte_size": 55310021,
+      "sha256": "4c3656f3d263c6dbdcd777f9fd46ce963218833abcdd1e688a2b2d27ef58d047",
+      "archive": "CHGCAR_S5.zip",
+      "archive_member": "CHGCAR_S5_FeCu",
+      "archive_download_url": "https://github.com/onurcansen96/hydrogen-solution-energy-landscapes/releases/download/v1.1.0/CHGCAR_S5.zip",
+      "header": {
+        "title": "unknown system",
+        "scale_factor": 1.0,
+        "unscaled_lattice_vectors": [
+          [
+            27.864044,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            5.666,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            8.958733
+          ]
+        ],
+        "species": [
+          "Fe",
+          "Cu"
+        ],
+        "species_counts": [
+          118,
+          2
+        ],
+        "atom_count": 120,
+        "coordinate_mode": "Direct",
+        "first_grid_dimensions": [
+          280,
+          56,
+          96
+        ],
+        "inspection_scope": "header only; charge values/integrals not rederived"
+      },
+      "host_header_comparison": {
+        "species_and_atom_count": "passed",
+        "maximum_cell_component_difference_angstrom": 3.900000002943216e-07,
+        "cell_matches_within_1e_minus6_angstrom": true,
+        "atomic_positions_compared": false
+      }
+    },
+    {
+      "filename": "CHGCAR_S5_FeTi",
+      "original_filename": "S5_FeTi_CHGCAR",
+      "rename_policy": "published archive-member name only; source bytes unchanged",
+      "raw_family": "S5",
+      "paper_family": "S5",
+      "chemistry": "FeTi",
+      "related_source_structure_id": "S5_FeTi_allH",
+      "association_basis": "author-provided filename; species/count checked; CD not rederived",
+      "byte_size": 55310021,
+      "sha256": "11992523d8c8303bcbd4bde93cb666a568a9c6e57c394c536b596e83713625ff",
+      "archive": "CHGCAR_S5.zip",
+      "archive_member": "CHGCAR_S5_FeTi",
+      "archive_download_url": "https://github.com/onurcansen96/hydrogen-solution-energy-landscapes/releases/download/v1.1.0/CHGCAR_S5.zip",
+      "header": {
+        "title": "unknown system",
+        "scale_factor": 1.0,
+        "unscaled_lattice_vectors": [
+          [
+            27.797598,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            5.666,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            8.958733
+          ]
+        ],
+        "species": [
+          "Fe",
+          "Ti"
+        ],
+        "species_counts": [
+          118,
+          2
+        ],
+        "atom_count": 120,
+        "coordinate_mode": "Direct",
+        "first_grid_dimensions": [
+          280,
+          56,
+          96
+        ],
+        "inspection_scope": "header only; charge values/integrals not rederived"
+      },
+      "host_header_comparison": {
+        "species_and_atom_count": "passed",
+        "maximum_cell_component_difference_angstrom": 4.000000011217253e-07,
+        "cell_matches_within_1e_minus6_angstrom": true,
+        "atomic_positions_compared": false
+      }
+    },
+    {
+      "filename": "CHGCAR_S5_FeVac",
+      "original_filename": "S5_FeVac_CHGCAR",
+      "rename_policy": "published archive-member name only; source bytes unchanged",
+      "raw_family": "S5",
+      "paper_family": "S5",
+      "chemistry": "FeVac",
+      "related_source_structure_id": "S5_FeVac_allH",
+      "association_basis": "author-provided filename; species/count checked; CD not rederived",
+      "byte_size": 55301384,
+      "sha256": "d82fdeb723b6fe425ad1132e36f4913c09c19f4b4e377708bab10c4706705a66",
+      "archive": "CHGCAR_S5.zip",
+      "archive_member": "CHGCAR_S5_FeVac",
+      "archive_download_url": "https://github.com/onurcansen96/hydrogen-solution-energy-landscapes/releases/download/v1.1.0/CHGCAR_S5.zip",
+      "header": {
+        "title": "unknown system",
+        "scale_factor": 1.0,
+        "unscaled_lattice_vectors": [
+          [
+            27.293278,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            5.666,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            8.958733
+          ]
+        ],
+        "species": [
+          "Fe"
+        ],
+        "species_counts": [
+          118
+        ],
+        "atom_count": 118,
+        "coordinate_mode": "Direct",
+        "first_grid_dimensions": [
+          280,
+          56,
+          96
+        ],
+        "inspection_scope": "header only; charge values/integrals not rederived"
+      },
+      "host_header_comparison": {
+        "species_and_atom_count": "passed",
+        "maximum_cell_component_difference_angstrom": 4.000000011217253e-07,
+        "cell_matches_within_1e_minus6_angstrom": true,
+        "atomic_positions_compared": false
+      }
+    },
+    {
+      "filename": "CHGCAR_S5_PureFe",
+      "original_filename": "S5_PureFe_CHGCAR",
+      "rename_policy": "published archive-member name only; source bytes unchanged",
+      "raw_family": "S5",
+      "paper_family": "S5",
+      "chemistry": "PureFe",
+      "related_source_structure_id": "S5_PureFe_allH",
+      "association_basis": "author-provided filename; species/count checked; CD not rederived",
+      "byte_size": 55310010,
+      "sha256": "6255f29385c69af40c4e9c3032cf2fe5dc4a85cd74a2ff3ad9602db85440caba",
+      "archive": "CHGCAR_S5.zip",
+      "archive_member": "CHGCAR_S5_PureFe",
+      "archive_download_url": "https://github.com/onurcansen96/hydrogen-solution-energy-landscapes/releases/download/v1.1.0/CHGCAR_S5.zip",
+      "header": {
+        "title": "unknown system",
+        "scale_factor": 1.0,
+        "unscaled_lattice_vectors": [
+          [
+            27.734497,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            5.666,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            8.958733
+          ]
+        ],
+        "species": [
+          "Fe"
+        ],
+        "species_counts": [
+          120
+        ],
+        "atom_count": 120,
+        "coordinate_mode": "Direct",
+        "first_grid_dimensions": [
+          280,
+          56,
+          96
+        ],
+        "inspection_scope": "header only; charge values/integrals not rederived"
+      },
+      "host_header_comparison": {
+        "species_and_atom_count": "passed",
+        "maximum_cell_component_difference_angstrom": 4.000000011217253e-07,
+        "cell_matches_within_1e_minus6_angstrom": true,
+        "atomic_positions_compared": false
+      }
+    }
+  ],
+  "archive": {
+    "filename": "CHGCAR_S5.zip",
+    "byte_size": 111086205,
+    "sha256": "c2bcdbfaf028c41c817e662d410ee6a1e1c5af75ca71310816e100d5a9ce83ef",
+    "download_url": "https://github.com/onurcansen96/hydrogen-solution-energy-landscapes/releases/download/v1.1.0/CHGCAR_S5.zip",
+    "CHGCAR_count": 5,
+    "round_trip_sha256_verified": true,
+    "archive_origin_version": "1.1.0"
+  },
+  "archive_round_trip_sha256": "passed",
+  "existing_archives_reused_unchanged": 4,
+  "unchanged_scientific_files_checked": 80,
+  "scientific_source_and_site_metadata_unchanged": true,
+  "CD_values_recomputed": false,
+  "cell_header_mismatch_count": 0
+}

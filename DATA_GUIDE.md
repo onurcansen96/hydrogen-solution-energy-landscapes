@@ -62,9 +62,9 @@ The scientific input layer consists of:
 - `Solution_Energy_Descriptors.txt`, a comma-delimited descriptor table despite
   its `.txt` extension.
 
-The scalar generator uses the two input categories above. In addition, 20
-`CHGCAR_*` files are distributed in four downloadable release archives for
-SC/SCR, S3, S27, and S5m. No S5 charge-density files were supplied. Their
+The scalar generator uses the two input categories above. In addition, 25
+`CHGCAR_*` files are distributed in five downloadable release archives for
+SC/SCR, S3, S5, S27, and S5m. Version 1.1.0 adds the five S5 files. Their
 inventory and checksums are in `charge_density_manifest.json`. They are
 additional raw resources, not inputs to the scalar converter: reported `CD`
 values are imported from the descriptor table rather than recomputed.
@@ -243,10 +243,10 @@ CD = total electronic charge integrated over the candidate-H Voronoi region
 
 Its unit is `e/Å³` (`e/angstrom^3` in ASCII-only contexts). Although stored on
 an H candidate row, it is a pre-insertion host descriptor, not an output of the
-H-containing relaxation. It is a reported precomputed scalar. Twenty
+H-containing relaxation. It is a reported precomputed scalar. Twenty-five
 volumetric charge-density files are available as release assets, but the
 integration workflow is not included and correspondence to every stored `CD`
-value has not been independently verified. S5 volumetric grids are absent.
+value has not been independently verified.
 
 ### Bader values (`BC`, `BC_NF`)
 
@@ -587,8 +587,8 @@ each candidate with its reported scalar results. It does not contain all:
 - raw total energies for every frozen/non-frozen branch;
 - force histories;
 - vibrational Hessians;
-- S5 volumetric charge-density grids or the integration scripts needed to
-  independently reproduce every stored `CD` value.
+- the integration scripts needed to independently reproduce every stored
+  `CD` value from the supplied grids.
 
 Exact numerical reproduction may additionally depend on details not recorded
 in the available sources, including:
