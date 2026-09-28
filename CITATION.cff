@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: >-
+  Please cite this dataset and specify the release version used.
+  The associated paper is unpublished; its citation and DOI will be added later.
+type: dataset
+title: Hydrogen solution-energy landscapes in ferritic Fe environments
+authors:
+  - family-names: Şen
+    given-names: Onur Can
+  - family-names: Ghaderi
+    given-names: Farnoosh
+  - family-names: Benito
+    given-names: Santiago
+  - family-names: Weber
+    given-names: Sebastian
+  - family-names: Janisch
+    given-names: Rebecca
+version: 1.0.0
+date-released: '2026-09-28'
+url: https://github.com/onurcansen96/hydrogen-solution-energy-landscapes
+license: CC-BY-4.0
+keywords:
+  - hydrogen
+  - grain boundaries
+  - density functional theory
+  - iron
+  - solution energy

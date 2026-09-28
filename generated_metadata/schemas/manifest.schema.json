@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ocdo:hydrogen-solution-landscape:manifest:1",
+  "title": "Hydrogen solution-energy metadata manifest",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "structure_count",
+    "site_count",
+    "structures"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "structure_count": {
+      "const": 25
+    },
+    "site_count": {
+      "const": 1648
+    },
+    "structures": {
+      "type": "array",
+      "minItems": 25,
+      "maxItems": 25,
+      "items": {
+        "type": "object",
+        "required": [
+          "paper_structure_id",
+          "raw_family",
+          "angle_metadata"
+        ],
+        "properties": {
+          "angle_metadata": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  }
+}

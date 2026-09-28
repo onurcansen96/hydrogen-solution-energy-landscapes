@@ -1,0 +1,895 @@
+{
+  "schema_version": "1.1.0",
+  "generated_at_utc": "2026-07-16T12:05:37Z",
+  "status": "passed_with_warnings",
+  "summary": {
+    "errors": 0,
+    "warnings": 4,
+    "structure_count": 25,
+    "site_count": 1648,
+    "unique_source_key_count": 1648,
+    "descriptor_row_count": 1648,
+    "selected_crosscheck_row_count": 1648
+  },
+  "checks": {
+    "all_25_canonical_dumps_parsed": true,
+    "all_1648_site_keys_unique": true,
+    "all_descriptor_rows_joined": true,
+    "maximum_dump_descriptor_coordinate_difference_angstrom": 4.987999999706005e-07,
+    "coordinate_tolerance_angstrom": 1e-06,
+    "unexpected_property_mismatch_count": 0,
+    "known_SC_FeCr_ZPE_NF_conflict_count": 6,
+    "derived_descriptor_crosscheck_max_abs_difference": {
+      "volume_cuberoot": 0.0,
+      "area_over_volume": 0.0,
+      "elongation_lambda1_over_lambda3": 0.0,
+      "anisotropy_lambda2_over_lambda3": 0.0,
+      "rout_over_rin": 0.0,
+      "sphericity": 0.0
+    },
+    "derived_descriptor_crosscheck_tolerance": 1e-09,
+    "frozen_zpec_formula_mismatch_count": 0,
+    "descriptor_internal_non_frozen_zpec_formula_mismatch_count": 0,
+    "primary_dump_non_frozen_zpec_formula_mismatch_count": 6,
+    "manifest_summary_count_mismatch_count": 0,
+    "crystallographic_angles": {
+      "status": "passed",
+      "host_structure_count": 25,
+      "site_collection_count": 25,
+      "manifest_structure_count": 25,
+      "family_count": 5,
+      "native_gb_misorientation_count": 20,
+      "scr_orientation_rotation_count": 5,
+      "s5m_mixed_component_set_count": 5,
+      "site_record_duplication_count": 0,
+      "mismatch_count": 0,
+      "families": {
+        "SCR": {
+          "angle_scope": "family-level rotated-single-crystal orientation",
+          "angle_type": "single_crystal_orientation_rotation",
+          "orientation_rotation": {
+            "angle_magnitude": {
+              "value": 18.43494882292201,
+              "unit": "degree"
+            },
+            "signed_angle": {
+              "value": -18.43494882292201,
+              "unit": "degree"
+            },
+            "axis": [
+              0,
+              0,
+              1
+            ],
+            "reference_direction": [
+              -1,
+              0,
+              0
+            ],
+            "target_direction": [
+              -3,
+              1,
+              0
+            ],
+            "right_hand_rule_axis": [
+              0,
+              0,
+              1
+            ],
+            "status": "derived_from_orientation_vectors",
+            "derivation": "angle magnitude = atan(1/3); signed angle is clockwise from [-1,0,0] to [-3,1,0] about +[0,0,1]",
+            "not_a_grain_boundary_misorientation": true
+          }
+        },
+        "S3": {
+          "angle_scope": "family-level grain-boundary crystallography; identical for every chemistry and H site in the family",
+          "angle_type": "grain_boundary_misorientation",
+          "misorientation": {
+            "value": 70.52877936550931,
+            "unit": "degree",
+            "rotation_axis": [
+              1,
+              -1,
+              0
+            ],
+            "boundary_plane": [
+              1,
+              1,
+              -2
+            ],
+            "status": "derived_ideal_CSL_axis_angle",
+            "derivation": "2*atan(sqrt(2)/2)",
+            "angle_convention": "lower-angle representative in [0,90] degrees for the listed ideal cubic CSL plane/axis construction; symmetry-equivalent complementary conventions may exist",
+            "definition": "Ideal cubic CSL axis-angle for the listed Sigma representation; the manuscript specifies the plane/axis but does not print this number."
+          }
+        },
+        "S5": {
+          "angle_scope": "family-level grain-boundary crystallography; identical for every chemistry and H site in the family",
+          "angle_type": "grain_boundary_misorientation",
+          "misorientation": {
+            "value": 36.86989764584402,
+            "unit": "degree",
+            "rotation_axis": [
+              0,
+              0,
+              1
+            ],
+            "boundary_plane": [
+              -3,
+              1,
+              0
+            ],
+            "status": "derived_ideal_CSL_axis_angle",
+            "derivation": "2*atan(1/3)",
+            "angle_convention": "lower-angle representative in [0,90] degrees for the listed ideal cubic CSL plane/axis construction; symmetry-equivalent complementary conventions may exist",
+            "definition": "Ideal cubic CSL axis-angle for the listed Sigma representation; the manuscript specifies the plane/axis but does not print this number."
+          }
+        },
+        "S27": {
+          "angle_scope": "family-level grain-boundary crystallography; identical for every chemistry and H site in the family",
+          "angle_type": "grain_boundary_misorientation",
+          "misorientation": {
+            "value": 31.586338096527925,
+            "unit": "degree",
+            "rotation_axis": [
+              1,
+              1,
+              0
+            ],
+            "boundary_plane": [
+              5,
+              -5,
+              2
+            ],
+            "status": "derived_ideal_CSL_axis_angle",
+            "derivation": "2*atan(sqrt(2)/5)",
+            "angle_convention": "lower-angle representative in [0,90] degrees for the listed ideal cubic CSL plane/axis construction; symmetry-equivalent complementary conventions may exist",
+            "definition": "Ideal cubic CSL axis-angle for the listed Sigma representation; the manuscript specifies the plane/axis but does not print this number."
+          }
+        },
+        "S5m": {
+          "angle_scope": "family-level grain-boundary crystallography; identical for every chemistry and H site in the family",
+          "angle_type": "grain_boundary_misorientation",
+          "misorientation": {
+            "value": 36.86989764584402,
+            "unit": "degree",
+            "rotation_axis": [
+              1,
+              0,
+              0
+            ],
+            "boundary_plane": [
+              1,
+              1,
+              -2
+            ],
+            "status": "derived_ideal_CSL_axis_angle",
+            "derivation": "2*atan(1/3)",
+            "angle_convention": "lower-angle representative in [0,90] degrees for the listed ideal cubic CSL plane/axis construction; symmetry-equivalent complementary conventions may exist",
+            "definition": "Ideal cubic CSL axis-angle for the listed Sigma representation; the manuscript specifies the plane/axis but does not print this number."
+          },
+          "mixed_character_components": {
+            "tilt": {
+              "value": 33.6,
+              "unit": "degree",
+              "status": "reported_in_manuscript"
+            },
+            "twist": {
+              "value": 0.27,
+              "unit": "degree",
+              "status": "reported_in_manuscript"
+            },
+            "interpretation": "Reported mixed-boundary character components; values and degree units are preserved exactly as printed, without reinterpretation. Do not add them together or substitute their sum for the CSL axis-angle."
+          }
+        }
+      }
+    },
+    "conceptual_dictionary": {
+      "status": "passed",
+      "source_repository": "https://github.com/OCDO/conceptual_dictionary",
+      "source_commit": "4a41fda37a46e25dad2f70e273a67a517147409e",
+      "validation": "ConceptualDict.validate(strict=True)",
+      "document_count": 26,
+      "documents": [
+        "dataset.conceptual.json",
+        "S27_FeCr_allH/S27_FeCr_allH.conceptual.json",
+        "S27_FeCu_allH/S27_FeCu_allH.conceptual.json",
+        "S27_FeTi_allH/S27_FeTi_allH.conceptual.json",
+        "S27_FeVac_allH/S27_FeVac_allH.conceptual.json",
+        "S27_PureFe_allH/S27_PureFe_allH.conceptual.json",
+        "S3_FeCr_allH/S3_FeCr_allH.conceptual.json",
+        "S3_FeCu_allH/S3_FeCu_allH.conceptual.json",
+        "S3_FeTi_allH/S3_FeTi_allH.conceptual.json",
+        "S3_FeVac_allH/S3_FeVac_allH.conceptual.json",
+        "S3_PureFe_allH/S3_PureFe_allH.conceptual.json",
+        "S5_FeCr_allH/S5_FeCr_allH.conceptual.json",
+        "S5_FeCu_allH/S5_FeCu_allH.conceptual.json",
+        "S5_FeTi_allH/S5_FeTi_allH.conceptual.json",
+        "S5_FeVac_allH/S5_FeVac_allH.conceptual.json",
+        "S5_PureFe_allH/S5_PureFe_allH.conceptual.json",
+        "S5m_FeCr_allH/S5m_FeCr_allH.conceptual.json",
+        "S5m_FeCu_allH/S5m_FeCu_allH.conceptual.json",
+        "S5m_FeTi_allH/S5m_FeTi_allH.conceptual.json",
+        "S5m_FeVac_allH/S5m_FeVac_allH.conceptual.json",
+        "S5m_PureFe_allH/S5m_PureFe_allH.conceptual.json",
+        "SCR_FeCr_allH/SCR_FeCr_allH.conceptual.json",
+        "SCR_FeCu_allH/SCR_FeCu_allH.conceptual.json",
+        "SCR_FeTi_allH/SCR_FeTi_allH.conceptual.json",
+        "SCR_FeVac_allH/SCR_FeVac_allH.conceptual.json",
+        "SCR_PureFe_allH/SCR_PureFe_allH.conceptual.json"
+      ]
+    }
+  },
+  "missing_values": {
+    "frozen_bader": {
+      "count": 6,
+      "keys": [
+        {
+          "structure": "S27_FeCr_allH",
+          "atom_id": 226
+        },
+        {
+          "structure": "S27_FeTi_allH",
+          "atom_id": 238
+        },
+        {
+          "structure": "S27_FeTi_allH",
+          "atom_id": 279
+        },
+        {
+          "structure": "S27_FeVac_allH",
+          "atom_id": 252
+        },
+        {
+          "structure": "S27_FeVac_allH",
+          "atom_id": 292
+        },
+        {
+          "structure": "S27_FeVac_allH",
+          "atom_id": 297
+        }
+      ]
+    },
+    "non_frozen_zpe_and_zpec": {
+      "count": 2,
+      "keys": [
+        {
+          "structure": "S27_FeTi_allH",
+          "atom_id": 257
+        },
+        {
+          "structure": "S5_FeTi_allH",
+          "atom_id": 261
+        }
+      ]
+    },
+    "non_frozen_bader_restored_from_zero_placeholder": {
+      "count": 52,
+      "keys": [
+        {
+          "structure": "S27_FeCr_allH",
+          "atom_id": 227
+        },
+        {
+          "structure": "S27_FeCr_allH",
+          "atom_id": 229
+        },
+        {
+          "structure": "S27_FeCr_allH",
+          "atom_id": 232
+        },
+        {
+          "structure": "S27_FeCr_allH",
+          "atom_id": 237
+        },
+        {
+          "structure": "S27_FeCr_allH",
+          "atom_id": 239
+        },
+        {
+          "structure": "S27_FeCr_allH",
+          "atom_id": 250
+        },
+        {
+          "structure": "S27_FeCr_allH",
+          "atom_id": 260
+        },
+        {
+          "structure": "S27_FeCu_allH",
+          "atom_id": 226
+        },
+        {
+          "structure": "S27_FeCu_allH",
+          "atom_id": 232
+        },
+        {
+          "structure": "S27_FeCu_allH",
+          "atom_id": 234
+        },
+        {
+          "structure": "S27_FeCu_allH",
+          "atom_id": 237
+        },
+        {
+          "structure": "S27_FeCu_allH",
+          "atom_id": 238
+        },
+        {
+          "structure": "S27_FeCu_allH",
+          "atom_id": 255
+        },
+        {
+          "structure": "S27_FeCu_allH",
+          "atom_id": 267
+        },
+        {
+          "structure": "S27_FeCu_allH",
+          "atom_id": 270
+        },
+        {
+          "structure": "S27_FeCu_allH",
+          "atom_id": 276
+        },
+        {
+          "structure": "S27_FeCu_allH",
+          "atom_id": 281
+        },
+        {
+          "structure": "S27_FeCu_allH",
+          "atom_id": 289
+        },
+        {
+          "structure": "S27_FeTi_allH",
+          "atom_id": 218
+        },
+        {
+          "structure": "S27_FeTi_allH",
+          "atom_id": 221
+        },
+        {
+          "structure": "S27_FeTi_allH",
+          "atom_id": 223
+        },
+        {
+          "structure": "S27_FeTi_allH",
+          "atom_id": 227
+        },
+        {
+          "structure": "S27_FeTi_allH",
+          "atom_id": 230
+        },
+        {
+          "structure": "S27_FeTi_allH",
+          "atom_id": 232
+        },
+        {
+          "structure": "S27_FeTi_allH",
+          "atom_id": 236
+        },
+        {
+          "structure": "S27_FeTi_allH",
+          "atom_id": 240
+        },
+        {
+          "structure": "S27_FeTi_allH",
+          "atom_id": 248
+        },
+        {
+          "structure": "S27_FeTi_allH",
+          "atom_id": 257
+        },
+        {
+          "structure": "S27_FeTi_allH",
+          "atom_id": 278
+        },
+        {
+          "structure": "S27_FeTi_allH",
+          "atom_id": 279
+        },
+        {
+          "structure": "S27_FeTi_allH",
+          "atom_id": 281
+        },
+        {
+          "structure": "S27_FeTi_allH",
+          "atom_id": 282
+        },
+        {
+          "structure": "S27_FeVac_allH",
+          "atom_id": 217
+        },
+        {
+          "structure": "S27_FeVac_allH",
+          "atom_id": 229
+        },
+        {
+          "structure": "S27_FeVac_allH",
+          "atom_id": 236
+        },
+        {
+          "structure": "S27_FeVac_allH",
+          "atom_id": 247
+        },
+        {
+          "structure": "S27_FeVac_allH",
+          "atom_id": 248
+        },
+        {
+          "structure": "S27_FeVac_allH",
+          "atom_id": 250
+        },
+        {
+          "structure": "S27_FeVac_allH",
+          "atom_id": 253
+        },
+        {
+          "structure": "S27_FeVac_allH",
+          "atom_id": 254
+        },
+        {
+          "structure": "S27_FeVac_allH",
+          "atom_id": 264
+        },
+        {
+          "structure": "S27_FeVac_allH",
+          "atom_id": 272
+        },
+        {
+          "structure": "S27_FeVac_allH",
+          "atom_id": 280
+        },
+        {
+          "structure": "S27_FeVac_allH",
+          "atom_id": 302
+        },
+        {
+          "structure": "S27_PureFe_allH",
+          "atom_id": 235
+        },
+        {
+          "structure": "S27_PureFe_allH",
+          "atom_id": 240
+        },
+        {
+          "structure": "S27_PureFe_allH",
+          "atom_id": 242
+        },
+        {
+          "structure": "S27_PureFe_allH",
+          "atom_id": 260
+        },
+        {
+          "structure": "S27_PureFe_allH",
+          "atom_id": 276
+        },
+        {
+          "structure": "S27_PureFe_allH",
+          "atom_id": 280
+        },
+        {
+          "structure": "S27_PureFe_allH",
+          "atom_id": 286
+        },
+        {
+          "structure": "S27_PureFe_allH",
+          "atom_id": 300
+        }
+      ]
+    }
+  },
+  "errors": [],
+  "warnings": [
+    {
+      "code": "known_SC_FeCr_non_frozen_ZPE_conflict",
+      "entries": [
+        {
+          "structure": "SC_FeCr_allH",
+          "atom_id": 120,
+          "dump_column": "ZPE_NF",
+          "descriptor_column": "Atom_ZPE_NF",
+          "dump_value": 0.23395081,
+          "descriptor_value": 0.0,
+          "difference": 0.23395081
+        },
+        {
+          "structure": "SC_FeCr_allH",
+          "atom_id": 121,
+          "dump_column": "ZPE_NF",
+          "descriptor_column": "Atom_ZPE_NF",
+          "dump_value": 0.24121952,
+          "descriptor_value": 0.0,
+          "difference": 0.24121952
+        },
+        {
+          "structure": "SC_FeCr_allH",
+          "atom_id": 122,
+          "dump_column": "ZPE_NF",
+          "descriptor_column": "Atom_ZPE_NF",
+          "dump_value": 0.24078094,
+          "descriptor_value": 0.0,
+          "difference": 0.24078094
+        },
+        {
+          "structure": "SC_FeCr_allH",
+          "atom_id": 123,
+          "dump_column": "ZPE_NF",
+          "descriptor_column": "Atom_ZPE_NF",
+          "dump_value": 0.23952382,
+          "descriptor_value": 0.0,
+          "difference": 0.23952382
+        },
+        {
+          "structure": "SC_FeCr_allH",
+          "atom_id": 124,
+          "dump_column": "ZPE_NF",
+          "descriptor_column": "Atom_ZPE_NF",
+          "dump_value": 0.24103442,
+          "descriptor_value": 0.0,
+          "difference": 0.24103442
+        },
+        {
+          "structure": "SC_FeCr_allH",
+          "atom_id": 125,
+          "dump_column": "ZPE_NF",
+          "descriptor_column": "Atom_ZPE_NF",
+          "dump_value": 0.23734577,
+          "descriptor_value": 0.0,
+          "difference": 0.23734577
+        }
+      ]
+    },
+    {
+      "code": "reported_NF_ZPEC_inconsistent_with_primary_dump_ZPE",
+      "entries": [
+        {
+          "key": {
+            "structure": "SC_FeCr_allH",
+            "atom_id": 120
+          },
+          "frozen_zpec_difference": -4.999999998478444e-07,
+          "non_frozen_zpec_difference_using_primary_dump_zpe": 0.23395131000000002,
+          "non_frozen_zpec_difference_using_descriptor_zpe": 4.999999999588667e-07,
+          "quality_flag_codes": [
+            "dump_descriptor_non_frozen_zpe_conflict"
+          ]
+        },
+        {
+          "key": {
+            "structure": "SC_FeCr_allH",
+            "atom_id": 121
+          },
+          "frozen_zpec_difference": 4.999999999588667e-07,
+          "non_frozen_zpec_difference_using_primary_dump_zpe": 0.24122001999999995,
+          "non_frozen_zpec_difference_using_descriptor_zpe": 4.999999999866223e-07,
+          "quality_flag_codes": [
+            "dump_descriptor_non_frozen_zpe_conflict"
+          ]
+        },
+        {
+          "key": {
+            "structure": "SC_FeCr_allH",
+            "atom_id": 122
+          },
+          "frozen_zpec_difference": 4.999999999588667e-07,
+          "non_frozen_zpec_difference_using_primary_dump_zpe": 0.24078044,
+          "non_frozen_zpec_difference_using_descriptor_zpe": -4.999999999900917e-07,
+          "quality_flag_codes": [
+            "dump_descriptor_non_frozen_zpe_conflict"
+          ]
+        },
+        {
+          "key": {
+            "structure": "SC_FeCr_allH",
+            "atom_id": 123
+          },
+          "frozen_zpec_difference": 4.999999999588667e-07,
+          "non_frozen_zpec_difference_using_primary_dump_zpe": 0.23952431999999999,
+          "non_frozen_zpec_difference_using_descriptor_zpe": 4.999999999866223e-07,
+          "quality_flag_codes": [
+            "dump_descriptor_non_frozen_zpe_conflict"
+          ]
+        },
+        {
+          "key": {
+            "structure": "SC_FeCr_allH",
+            "atom_id": 124
+          },
+          "frozen_zpec_difference": -4.999999999588667e-07,
+          "non_frozen_zpec_difference_using_primary_dump_zpe": 0.24103491999999999,
+          "non_frozen_zpec_difference_using_descriptor_zpe": 5.000000000005e-07,
+          "quality_flag_codes": [
+            "dump_descriptor_non_frozen_zpe_conflict"
+          ]
+        },
+        {
+          "key": {
+            "structure": "SC_FeCr_allH",
+            "atom_id": 125
+          },
+          "frozen_zpec_difference": -4.999999998478444e-07,
+          "non_frozen_zpec_difference_using_primary_dump_zpe": 0.23734627000000003,
+          "non_frozen_zpec_difference_using_descriptor_zpe": 4.999999999935612e-07,
+          "quality_flag_codes": [
+            "dump_descriptor_non_frozen_zpe_conflict"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "unwrapped_host_coordinates_outside_nominal_bounds",
+      "entries": {
+        "S27_FeCr_allH": [
+          1,
+          2,
+          11,
+          12,
+          14,
+          15,
+          19,
+          30,
+          34,
+          35,
+          44,
+          45,
+          46,
+          51,
+          108,
+          110,
+          113,
+          115,
+          121,
+          122,
+          126,
+          130,
+          133,
+          136,
+          137,
+          140,
+          141,
+          151,
+          154,
+          160,
+          168,
+          183
+        ],
+        "S5_FeCr_allH": [
+          8,
+          20,
+          28,
+          40,
+          71,
+          74,
+          75,
+          76,
+          78,
+          183
+        ],
+        "S5_FeTi_allH": [
+          3,
+          7,
+          15,
+          20,
+          29,
+          35,
+          40,
+          46,
+          47,
+          56,
+          97,
+          102
+        ],
+        "S5_FeVac_allH": [
+          47,
+          57
+        ],
+        "S5_PureFe_allH": [
+          8,
+          20,
+          28,
+          40,
+          75,
+          76
+        ],
+        "S5m_FeCr_allH": [
+          71
+        ],
+        "S5m_FeCu_allH": [
+          118
+        ],
+        "S5m_FeTi_allH": [
+          64,
+          101,
+          163
+        ],
+        "S5m_FeVac_allH": [
+          97
+        ],
+        "S5m_PureFe_allH": [
+          3,
+          10,
+          25,
+          66,
+          68,
+          91,
+          94,
+          105,
+          118,
+          150,
+          166
+        ],
+        "SC_FeCr_allH": [
+          2,
+          15,
+          17,
+          18,
+          22,
+          35,
+          37,
+          42,
+          50,
+          51,
+          55,
+          57,
+          61,
+          82,
+          84,
+          86,
+          89
+        ],
+        "SC_FeCu_allH": [
+          2,
+          15,
+          17,
+          18,
+          22,
+          35,
+          37,
+          42,
+          50,
+          51,
+          55,
+          57,
+          61,
+          82,
+          84,
+          86,
+          89
+        ],
+        "SC_FeTi_allH": [
+          2,
+          15,
+          17,
+          22,
+          35,
+          37,
+          42,
+          50,
+          51,
+          55,
+          57,
+          61,
+          84,
+          94,
+          114
+        ],
+        "SC_FeVac_allH": [
+          5,
+          7,
+          12,
+          15,
+          16,
+          35,
+          43,
+          45,
+          53,
+          54,
+          59,
+          81,
+          82,
+          84,
+          86,
+          91,
+          94,
+          95,
+          114
+        ]
+      }
+    },
+    {
+      "code": "nonzero_custom_property_on_non_H_row_ignored",
+      "entries": [
+        {
+          "structure": "S27_FeCr_allH",
+          "atom_id": 2,
+          "values": {
+            "BC": 1.396732
+          }
+        },
+        {
+          "structure": "S27_FeCu_allH",
+          "atom_id": 2,
+          "values": {
+            "BC": 1.388793
+          }
+        },
+        {
+          "structure": "S27_FeTi_allH",
+          "atom_id": 2,
+          "values": {
+            "BC": 1.407096
+          }
+        },
+        {
+          "structure": "S27_FeVac_allH",
+          "atom_id": 2,
+          "values": {
+            "BC": 1.38415
+          }
+        },
+        {
+          "structure": "S27_PureFe_allH",
+          "atom_id": 2,
+          "values": {
+            "BC": 1.389981
+          }
+        },
+        {
+          "structure": "S3_FeCr_allH",
+          "atom_id": 2,
+          "values": {
+            "BC": 1.396732
+          }
+        },
+        {
+          "structure": "S3_FeCu_allH",
+          "atom_id": 2,
+          "values": {
+            "BC": 1.388793
+          }
+        },
+        {
+          "structure": "S3_FeTi_allH",
+          "atom_id": 2,
+          "values": {
+            "BC": 1.407096
+          }
+        },
+        {
+          "structure": "S3_PureFe_allH",
+          "atom_id": 2,
+          "values": {
+            "BC": 1.389981
+          }
+        },
+        {
+          "structure": "S5_FeCu_allH",
+          "atom_id": 2,
+          "values": {
+            "BC": 1.388793
+          }
+        },
+        {
+          "structure": "S5_FeTi_allH",
+          "atom_id": 2,
+          "values": {
+            "BC": 1.407096
+          }
+        },
+        {
+          "structure": "S5_FeVac_allH",
+          "atom_id": 2,
+          "values": {
+            "BC": 1.38415
+          }
+        },
+        {
+          "structure": "S5_PureFe_allH",
+          "atom_id": 2,
+          "values": {
+            "BC": 1.389981
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4441 @@
+{
+  "schema_name": "ocdo_hydrogen_solution_landscape_site_collection",
+  "schema_version": "1.1.0",
+  "extension_namespace": "urn:ocdo:hydrogen-solution-landscape:1",
+  "structure_id": "SCR_FeTi_allH",
+  "source_structure_id": "SC_FeTi_allH",
+  "host_sample_id": "host_SCR_FeTi",
+  "site_count": 6,
+  "angle_metadata": {
+    "angle_scope": "family-level rotated-single-crystal orientation",
+    "angle_type": "single_crystal_orientation_rotation",
+    "orientation_rotation": {
+      "angle_magnitude": {
+        "value": 18.43494882292201,
+        "unit": "degree"
+      },
+      "signed_angle": {
+        "value": -18.43494882292201,
+        "unit": "degree"
+      },
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "reference_direction": [
+        -1,
+        0,
+        0
+      ],
+      "target_direction": [
+        -3,
+        1,
+        0
+      ],
+      "right_hand_rule_axis": [
+        0,
+        0,
+        1
+      ],
+      "status": "derived_from_orientation_vectors",
+      "derivation": "angle magnitude = atan(1/3); signed angle is clockwise from [-1,0,0] to [-3,1,0] about +[0,0,1]",
+      "not_a_grain_boundary_misorientation": true
+    }
+  },
+  "record_semantics": "Each record is one alternative one-H calculation; records are not simultaneous occupancies.",
+  "reconstruction_rule": "Retain all source atoms with type != 2 and add only the selected type-2 H row.",
+  "source_artifacts": {
+    "dump": "dump_SC_FeTi_allH",
+    "descriptor_table": "descriptor_table",
+    "selected_descriptor_crosscheck": "selected_descriptor_crosscheck"
+  },
+  "sites": [
+    {
+      "site_id": "site_SCR_FeTi_H_120",
+      "host_sample_id": "host_SCR_FeTi",
+      "initial_sample_id": "initial_SCR_FeTi_H_120",
+      "source_key": {
+        "structure": "SC_FeTi_allH",
+        "atom_id": 120,
+        "descriptor_index": 18,
+        "site_sequence": 1
+      },
+      "candidate_atom": {
+        "species": "H",
+        "source_type": 2,
+        "source_atom_id": 120,
+        "position": {
+          "value": [
+            11.7322,
+            0.0,
+            3.58349
+          ],
+          "unit": "angstrom",
+          "coordinate_frame": "source_dump_cartesian",
+          "wrapped": false,
+          "authoritative_source": "dump_SC_FeTi_allH"
+        }
+      },
+      "construction": {
+        "operation": {
+          "method": "AddAtom",
+          "input_sample": "host_SCR_FeTi",
+          "output_sample": "initial_SCR_FeTi_H_120"
+        },
+        "host_selection": "retain every source atom with type != 2",
+        "added_atom_selection": "retain only source type-2 atom with id 120",
+        "physical_atom_count": 121,
+        "cell_source": "dump_SC_FeTi_allH",
+        "periodic_boundary_conditions": [
+          true,
+          true,
+          true
+        ]
+      },
+      "calculations": {
+        "frozen": {
+          "workflow_id": "workflow_host_SCR_FeTi_frozen",
+          "constraints": {
+            "cell": "fixed",
+            "movable_atoms": "selected H only",
+            "fixed_atoms": "all non-H atoms"
+          },
+          "properties": {
+            "solution_energy": {
+              "value": 1.576214,
+              "unit": "eV",
+              "status": "reported",
+              "definition": "E_host+H,frozen - E_host - 0.5*E_H2",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_SE"
+              }
+            },
+            "zpe_contribution": {
+              "value": 0.407246,
+              "unit": "eV",
+              "status": "reported",
+              "definition": "Three-mode local H zero-point energy in the frozen calculation geometry.",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_ZPE"
+              }
+            },
+            "solution_energy_zpe_corrected": {
+              "value": 1.849978,
+              "unit": "eV",
+              "status": "reported_derived",
+              "definition": "Reported frozen solution energy corrected by the site-H and H2 zero-point-energy terms.",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_SE_ZPEC"
+              },
+              "derivation": {
+                "expression": "SE + ZPE_site - 0.5*ZPE_H2",
+                "half_zpe_h2_eV": 0.1334825,
+                "recomputed_value": 1.8499775,
+                "difference_from_reported": -4.999999998478444e-07
+              }
+            },
+            "bader_charge_transfer_as_reported": {
+              "value": 1.537473,
+              "unit": "e",
+              "status": "reported",
+              "definition": "Reported H Bader charge-transfer value, preserved without sign or reference-state conversion.",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_BC"
+              }
+            }
+          }
+        },
+        "non_frozen": {
+          "workflow_id": "workflow_host_SCR_FeTi_non_frozen",
+          "constraints": {
+            "cell": "fixed",
+            "movable_atoms": "all atoms",
+            "fixed_atoms": "none"
+          },
+          "properties": {
+            "solution_energy": {
+              "value": 0.809514,
+              "unit": "eV",
+              "status": "reported",
+              "definition": "E_host+H,non-frozen - E_host - 0.5*E_H2",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_SE_NF"
+              }
+            },
+            "zpe_contribution": {
+              "value": 0.281429,
+              "unit": "eV",
+              "status": "reported",
+              "definition": "Three-mode local H zero-point energy evaluated about the non-frozen relaxed geometry.",
+              "source": {
+                "artifact_id": "dump_SC_FeTi_allH",
+                "column": "ZPE_NF"
+              },
+              "source_comparison": {
+                "dump_value": 0.281429,
+                "descriptor_table_value": 0.281429,
+                "agreement": true
+              }
+            },
+            "solution_energy_zpe_corrected": {
+              "value": 0.957461,
+              "unit": "eV",
+              "status": "reported_derived",
+              "definition": "Reported non-frozen solution energy corrected by the site-H and H2 zero-point-energy terms.",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_SE_NF_ZPEC"
+              },
+              "derivation": {
+                "expression": "SE_NF + ZPE_NF - 0.5*ZPE_H2",
+                "half_zpe_h2_eV": 0.1334825,
+                "recomputed_from_primary_dump_zpe": 0.9574605,
+                "difference_using_primary_dump_zpe": -4.999999999588667e-07,
+                "recomputed_from_descriptor_table_zpe": 0.9574605,
+                "difference_using_descriptor_table_zpe": -4.999999999588667e-07
+              }
+            },
+            "bader_charge_transfer_as_reported": {
+              "value": 1.487153,
+              "unit": "e",
+              "status": "reported",
+              "definition": "Reported H Bader charge-transfer value, preserved without sign or reference-state conversion.",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_BC_NF"
+              },
+              "raw_stored_value": null,
+              "normalization_reason": null
+            }
+          }
+        }
+      },
+      "pre_insertion_descriptors": {
+        "charge_density": {
+          "value": 422.544648,
+          "unit": null,
+          "status": "reported",
+          "definition": "Total charge integrated over the candidate-H Voronoi region in the H-free host, divided by that region's Voronoi volume.",
+          "source": {
+            "artifact_id": "descriptor_table",
+            "column": "Atom_CD"
+          },
+          "unit_symbol": "e/Å³",
+          "composite_unit": {
+            "numerator": "e",
+            "denominator": "angstrom^3"
+          }
+        },
+        "geometry": {
+          "minimum_nearest_neighbor_distance": {
+            "value": 1.4165,
+            "unit": "angstrom",
+            "status": "reported",
+            "definition": "Shortest distance from the candidate H position to a host atom.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Min_NN_Distance"
+            }
+          },
+          "closest_neighbor_element": {
+            "value": "Fe",
+            "unit": null,
+            "status": "reported",
+            "definition": "Element identity of the closest host atom.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Closest_NN_Element"
+            }
+          },
+          "voronoi_volume": {
+            "value": 5.933854,
+            "unit": "angstrom^3",
+            "status": "reported",
+            "definition": "Volume of the candidate-H Voronoi region in the H-free host.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Voronoi_Volume"
+            }
+          },
+          "number_of_faces": {
+            "value": 12,
+            "unit": "1",
+            "status": "reported",
+            "definition": "Reported number of Voronoi-polyhedron faces.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Num_Faces"
+            }
+          },
+          "surface_area": {
+            "value": 19.96706446474438,
+            "unit": "angstrom^2",
+            "status": "recomputed",
+            "definition": "Sum of triangular convex-hull face areas.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Faces+Vertices"
+            }
+          },
+          "volume_cuberoot": {
+            "value": 1.8104183886745664,
+            "unit": "angstrom",
+            "status": "recomputed",
+            "definition": "Cube root of the Voronoi volume.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Voronoi_Volume"
+            }
+          },
+          "area_over_volume": {
+            "value": 3.364940300982191,
+            "unit": "angstrom^-1",
+            "status": "recomputed",
+            "definition": "Convex-hull surface area divided by Voronoi volume.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Faces+Vertices+Voronoi_Volume"
+            }
+          },
+          "sphericity": {
+            "value": 0.7938305505870924,
+            "unit": "1",
+            "status": "recomputed",
+            "definition": "pi^(1/3)*(6V)^(2/3)/A.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Faces+Vertices+Voronoi_Volume"
+            }
+          },
+          "elongation_lambda1_over_lambda3": {
+            "value": 2.6728677808353765,
+            "unit": "1",
+            "status": "recomputed",
+            "definition": "Ratio of largest to smallest PCA eigenvalue of the void vertices.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Vertices"
+            }
+          },
+          "anisotropy_lambda2_over_lambda3": {
+            "value": 1.7957215210239592,
+            "unit": "1",
+            "status": "recomputed",
+            "definition": "Ratio of middle to smallest PCA eigenvalue of the void vertices.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Vertices"
+            }
+          },
+          "rout_over_rin": {
+            "value": 1.083914636646043,
+            "unit": "1",
+            "status": "recomputed",
+            "definition": "Maximum divided by minimum vertex radius relative to the vertex centroid.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Vertices"
+            }
+          },
+          "cross_check": {
+            "artifact_id": "selected_descriptor_crosscheck",
+            "role": "numerical validation only; never authoritative",
+            "matched_by": {
+              "Structure": "SC_FeTi_allH",
+              "Index": 18
+            }
+          }
+        }
+      },
+      "voronoi_topology": {
+        "coordinate_unit": "angstrom",
+        "vertices": [
+          [
+            10.366032016756247,
+            0.7082804900232965,
+            4.0232407469370495
+          ],
+          [
+            10.37509996239432,
+            -0.7082802599378789,
+            4.033231911599089
+          ],
+          [
+            13.09040161961664,
+            0.7082197460359692,
+            3.1195089026462774
+          ],
+          [
+            10.358377948044794,
+            0.6833023935780917,
+            4.03933004321106
+          ],
+          [
+            12.200574937250279,
+            0.6211416298692718,
+            4.970438506762393
+          ],
+          [
+            11.268698187095364,
+            -0.6504688700177698,
+            2.2122591889268426
+          ],
+          [
+            12.160422309290595,
+            -0.7082372440743152,
+            4.936224589006773
+          ],
+          [
+            11.263881825221105,
+            0.6211154806693452,
+            2.196522186718724
+          ],
+          [
+            12.195758463080537,
+            -0.6504960497390468,
+            4.9547011149916695
+          ],
+          [
+            13.09841403667659,
+            0.70821950978437,
+            3.1436875956962393
+          ],
+          [
+            11.31932416977416,
+            0.7082624188230583,
+            2.223654706827481
+          ],
+          [
+            11.23584882835123,
+            0.7082642789274399,
+            2.251860561638172
+          ],
+          [
+            10.374082561083084,
+            0.7082802526474896,
+            4.047534494479325
+          ],
+          [
+            12.145164235908988,
+            0.7082375799030434,
+            4.943323533619877
+          ],
+          [
+            12.2129959703454,
+            -0.7082360726127674,
+            4.918435992374058
+          ],
+          [
+            11.304066078797824,
+            -0.7082627546522011,
+            2.2307536466911193
+          ],
+          [
+            11.251443859757947,
+            -0.7082639271957323,
+            2.248558673041866
+          ],
+          [
+            13.089310159127457,
+            -0.708219740532673,
+            3.133772770080034
+          ],
+          [
+            12.228589692936549,
+            0.7082357209102501,
+            4.915134534228112
+          ],
+          [
+            13.106031458375615,
+            0.6833604360211522,
+            3.127674880923345
+          ]
+        ],
+        "edges": [
+          [
+            1,
+            16
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            14,
+            16
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            10
+          ],
+          [
+            5,
+            16
+          ],
+          [
+            4,
+            18
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            8,
+            12
+          ],
+          [
+            8,
+            18
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            5,
+            19
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            0,
+            11
+          ],
+          [
+            7,
+            10
+          ],
+          [
+            6,
+            8
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            15,
+            17
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            5,
+            15
+          ],
+          [
+            8,
+            14
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            9,
+            19
+          ],
+          [
+            8,
+            17
+          ],
+          [
+            0,
+            16
+          ],
+          [
+            0,
+            10
+          ],
+          [
+            0,
+            13
+          ],
+          [
+            2,
+            10
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            2,
+            19
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            6,
+            16
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            4,
+            13
+          ],
+          [
+            14,
+            17
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            17,
+            19
+          ],
+          [
+            5,
+            17
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            0,
+            12
+          ],
+          [
+            2,
+            9
+          ],
+          [
+            8,
+            13
+          ],
+          [
+            8,
+            19
+          ],
+          [
+            9,
+            18
+          ],
+          [
+            13,
+            18
+          ],
+          [
+            0,
+            18
+          ],
+          [
+            7,
+            11
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "faces": [
+          [
+            18,
+            13,
+            4
+          ],
+          [
+            11,
+            10,
+            7
+          ],
+          [
+            9,
+            2,
+            19
+          ],
+          [
+            8,
+            14,
+            6
+          ],
+          [
+            5,
+            16,
+            15
+          ],
+          [
+            0,
+            12,
+            3
+          ],
+          [
+            16,
+            6,
+            1
+          ],
+          [
+            16,
+            15,
+            17
+          ],
+          [
+            16,
+            14,
+            17
+          ],
+          [
+            16,
+            14,
+            6
+          ],
+          [
+            8,
+            6,
+            1
+          ],
+          [
+            8,
+            1,
+            3
+          ],
+          [
+            8,
+            13,
+            4
+          ],
+          [
+            8,
+            12,
+            3
+          ],
+          [
+            8,
+            12,
+            13
+          ],
+          [
+            8,
+            17,
+            19
+          ],
+          [
+            8,
+            9,
+            19
+          ],
+          [
+            8,
+            18,
+            4
+          ],
+          [
+            8,
+            14,
+            17
+          ],
+          [
+            8,
+            9,
+            18
+          ],
+          [
+            5,
+            2,
+            19
+          ],
+          [
+            5,
+            17,
+            19
+          ],
+          [
+            5,
+            10,
+            7
+          ],
+          [
+            5,
+            15,
+            17
+          ],
+          [
+            5,
+            2,
+            10
+          ],
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            0,
+            5,
+            7
+          ],
+          [
+            0,
+            11,
+            7
+          ],
+          [
+            0,
+            16,
+            1
+          ],
+          [
+            0,
+            5,
+            16
+          ],
+          [
+            0,
+            2,
+            10
+          ],
+          [
+            0,
+            18,
+            13
+          ],
+          [
+            0,
+            11,
+            10
+          ],
+          [
+            0,
+            12,
+            13
+          ],
+          [
+            0,
+            9,
+            18
+          ],
+          [
+            0,
+            9,
+            2
+          ]
+        ],
+        "derivation_details": {
+          "vertex_centroid": [
+            11.732225915994235,
+            0.13622275092151964,
+            3.5834924290199757
+          ],
+          "pca_eigenvalues_descending": [
+            1.2946893216222404,
+            0.8698153700481003,
+            0.4843821048333334
+          ],
+          "rout": 1.6604944418683243,
+          "rin": 1.5319420789504163
+        }
+      },
+      "quality_flags": [],
+      "provenance": {
+        "dump_artifact_id": "dump_SC_FeTi_allH",
+        "descriptor_artifact_id": "descriptor_table",
+        "coordinate_authority": "dump",
+        "reported_corrected_energy_authority": "descriptor_table",
+        "raw_non_frozen_zpe_authority": "dump"
+      }
+    },
+    {
+      "site_id": "site_SCR_FeTi_H_121",
+      "host_sample_id": "host_SCR_FeTi",
+      "initial_sample_id": "initial_SCR_FeTi_H_121",
+      "source_key": {
+        "structure": "SC_FeTi_allH",
+        "atom_id": 121,
+        "descriptor_index": 19,
+        "site_sequence": 2
+      },
+      "candidate_atom": {
+        "species": "H",
+        "source_type": 2,
+        "source_atom_id": 121,
+        "position": {
+          "value": [
+            13.0836,
+            2.83291,
+            3.13494
+          ],
+          "unit": "angstrom",
+          "coordinate_frame": "source_dump_cartesian",
+          "wrapped": false,
+          "authoritative_source": "dump_SC_FeTi_allH"
+        }
+      },
+      "construction": {
+        "operation": {
+          "method": "AddAtom",
+          "input_sample": "host_SCR_FeTi",
+          "output_sample": "initial_SCR_FeTi_H_121"
+        },
+        "host_selection": "retain every source atom with type != 2",
+        "added_atom_selection": "retain only source type-2 atom with id 121",
+        "physical_atom_count": 121,
+        "cell_source": "dump_SC_FeTi_allH",
+        "periodic_boundary_conditions": [
+          true,
+          true,
+          true
+        ]
+      },
+      "calculations": {
+        "frozen": {
+          "workflow_id": "workflow_host_SCR_FeTi_frozen",
+          "constraints": {
+            "cell": "fixed",
+            "movable_atoms": "selected H only",
+            "fixed_atoms": "all non-H atoms"
+          },
+          "properties": {
+            "solution_energy": {
+              "value": 0.42411,
+              "unit": "eV",
+              "status": "reported",
+              "definition": "E_host+H,frozen - E_host - 0.5*E_H2",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_SE"
+              }
+            },
+            "zpe_contribution": {
+              "value": 0.284788,
+              "unit": "eV",
+              "status": "reported",
+              "definition": "Three-mode local H zero-point energy in the frozen calculation geometry.",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_ZPE"
+              }
+            },
+            "solution_energy_zpe_corrected": {
+              "value": 0.575416,
+              "unit": "eV",
+              "status": "reported_derived",
+              "definition": "Reported frozen solution energy corrected by the site-H and H2 zero-point-energy terms.",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_SE_ZPEC"
+              },
+              "derivation": {
+                "expression": "SE + ZPE_site - 0.5*ZPE_H2",
+                "half_zpe_h2_eV": 0.1334825,
+                "recomputed_value": 0.5754155000000001,
+                "difference_from_reported": -4.999999999588667e-07
+              }
+            },
+            "bader_charge_transfer_as_reported": {
+              "value": 1.456219,
+              "unit": "e",
+              "status": "reported",
+              "definition": "Reported H Bader charge-transfer value, preserved without sign or reference-state conversion.",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_BC"
+              }
+            }
+          }
+        },
+        "non_frozen": {
+          "workflow_id": "workflow_host_SCR_FeTi_non_frozen",
+          "constraints": {
+            "cell": "fixed",
+            "movable_atoms": "all atoms",
+            "fixed_atoms": "none"
+          },
+          "properties": {
+            "solution_energy": {
+              "value": 0.080614,
+              "unit": "eV",
+              "status": "reported",
+              "definition": "E_host+H,non-frozen - E_host - 0.5*E_H2",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_SE_NF"
+              }
+            },
+            "zpe_contribution": {
+              "value": 0.228904,
+              "unit": "eV",
+              "status": "reported",
+              "definition": "Three-mode local H zero-point energy evaluated about the non-frozen relaxed geometry.",
+              "source": {
+                "artifact_id": "dump_SC_FeTi_allH",
+                "column": "ZPE_NF"
+              },
+              "source_comparison": {
+                "dump_value": 0.228904,
+                "descriptor_table_value": 0.228904,
+                "agreement": true
+              }
+            },
+            "solution_energy_zpe_corrected": {
+              "value": 0.176036,
+              "unit": "eV",
+              "status": "reported_derived",
+              "definition": "Reported non-frozen solution energy corrected by the site-H and H2 zero-point-energy terms.",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_SE_NF_ZPEC"
+              },
+              "derivation": {
+                "expression": "SE_NF + ZPE_NF - 0.5*ZPE_H2",
+                "half_zpe_h2_eV": 0.1334825,
+                "recomputed_from_primary_dump_zpe": 0.1760355,
+                "difference_using_primary_dump_zpe": -4.999999999866223e-07,
+                "recomputed_from_descriptor_table_zpe": 0.1760355,
+                "difference_using_descriptor_table_zpe": -4.999999999866223e-07
+              }
+            },
+            "bader_charge_transfer_as_reported": {
+              "value": 1.412319,
+              "unit": "e",
+              "status": "reported",
+              "definition": "Reported H Bader charge-transfer value, preserved without sign or reference-state conversion.",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_BC_NF"
+              },
+              "raw_stored_value": null,
+              "normalization_reason": null
+            }
+          }
+        }
+      },
+      "pre_insertion_descriptors": {
+        "charge_density": {
+          "value": 427.382418,
+          "unit": null,
+          "status": "reported",
+          "definition": "Total charge integrated over the candidate-H Voronoi region in the H-free host, divided by that region's Voronoi volume.",
+          "source": {
+            "artifact_id": "descriptor_table",
+            "column": "Atom_CD"
+          },
+          "unit_symbol": "e/Å³",
+          "composite_unit": {
+            "numerator": "e",
+            "denominator": "angstrom^3"
+          }
+        },
+        "geometry": {
+          "minimum_nearest_neighbor_distance": {
+            "value": 1.438483,
+            "unit": "angstrom",
+            "status": "reported",
+            "definition": "Shortest distance from the candidate H position to a host atom.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Min_NN_Distance"
+            }
+          },
+          "closest_neighbor_element": {
+            "value": "Fe",
+            "unit": null,
+            "status": "reported",
+            "definition": "Element identity of the closest host atom.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Closest_NN_Element"
+            }
+          },
+          "voronoi_volume": {
+            "value": 5.850796,
+            "unit": "angstrom^3",
+            "status": "reported",
+            "definition": "Volume of the candidate-H Voronoi region in the H-free host.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Voronoi_Volume"
+            }
+          },
+          "number_of_faces": {
+            "value": 11,
+            "unit": "1",
+            "status": "reported",
+            "definition": "Reported number of Voronoi-polyhedron faces.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Num_Faces"
+            }
+          },
+          "surface_area": {
+            "value": 19.739235467146052,
+            "unit": "angstrom^2",
+            "status": "recomputed",
+            "definition": "Sum of triangular convex-hull face areas.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Faces+Vertices"
+            }
+          },
+          "volume_cuberoot": {
+            "value": 1.8019316711403213,
+            "unit": "angstrom",
+            "status": "recomputed",
+            "definition": "Cube root of the Voronoi volume.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Voronoi_Volume"
+            }
+          },
+          "area_over_volume": {
+            "value": 3.3737692216830073,
+            "unit": "angstrom^-1",
+            "status": "recomputed",
+            "definition": "Convex-hull surface area divided by Voronoi volume.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Faces+Vertices+Voronoi_Volume"
+            }
+          },
+          "sphericity": {
+            "value": 0.7954821410352291,
+            "unit": "1",
+            "status": "recomputed",
+            "definition": "pi^(1/3)*(6V)^(2/3)/A.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Faces+Vertices+Voronoi_Volume"
+            }
+          },
+          "elongation_lambda1_over_lambda3": {
+            "value": 3.0209165979254484,
+            "unit": "1",
+            "status": "recomputed",
+            "definition": "Ratio of largest to smallest PCA eigenvalue of the void vertices.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Vertices"
+            }
+          },
+          "anisotropy_lambda2_over_lambda3": {
+            "value": 1.5809029387001199,
+            "unit": "1",
+            "status": "recomputed",
+            "definition": "Ratio of middle to smallest PCA eigenvalue of the void vertices.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Vertices"
+            }
+          },
+          "rout_over_rin": {
+            "value": 1.2209022365157096,
+            "unit": "1",
+            "status": "recomputed",
+            "definition": "Maximum divided by minimum vertex radius relative to the vertex centroid.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Vertices"
+            }
+          },
+          "cross_check": {
+            "artifact_id": "selected_descriptor_crosscheck",
+            "role": "numerical validation only; never authoritative",
+            "matched_by": {
+              "Structure": "SC_FeTi_allH",
+              "Index": 19
+            }
+          }
+        }
+      },
+      "voronoi_topology": {
+        "coordinate_unit": "angstrom",
+        "vertices": [
+          [
+            11.5051271290387,
+            2.8329999999999997,
+            2.875965452556998
+          ],
+          [
+            14.209516824900273,
+            2.83276770153224,
+            2.0281412814787956
+          ],
+          [
+            12.855982198140044,
+            4.2495,
+            2.4722267531536506
+          ],
+          [
+            14.642393569151189,
+            2.833182839678243,
+            3.3352243482588575
+          ],
+          [
+            11.978854752509898,
+            2.8335820125286992,
+            4.301338909215737
+          ],
+          [
+            13.30911253392059,
+            1.4164999999999996,
+            3.8379527261286324
+          ],
+          [
+            13.303518360671616,
+            4.266927904489393,
+            3.765490953052148
+          ],
+          [
+            12.880118601502023,
+            1.4164999999999996,
+            2.425156540492722
+          ],
+          [
+            12.88367145936735,
+            4.26718293762384,
+            2.499801847875268
+          ],
+          [
+            12.889335878885282,
+            4.2495,
+            2.4617704388381223
+          ],
+          [
+            13.297953462347321,
+            4.2495,
+            3.8037650732739277
+          ],
+          [
+            13.330322768255497,
+            4.2495,
+            3.792024064674113
+          ],
+          [
+            11.977943393932621,
+            2.8329999999999997,
+            4.300431308299007
+          ],
+          [
+            11.97885907310837,
+            2.8324182689499064,
+            4.301353048384925
+          ],
+          [
+            12.87413932438654,
+            1.3973111438333632,
+            2.4669043745088928
+          ],
+          [
+            12.843934926543453,
+            1.4164999999999996,
+            2.4365000525131078
+          ],
+          [
+            13.31487145617343,
+            1.3979987935162042,
+            3.7968809411301727
+          ],
+          [
+            13.343424696402312,
+            1.4164999999999994,
+            3.825507003754512
+          ]
+        ],
+        "edges": [
+          [
+            3,
+            4
+          ],
+          [
+            12,
+            16
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            3,
+            16
+          ],
+          [
+            5,
+            13
+          ],
+          [
+            14,
+            16
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            5,
+            16
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            8,
+            12
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            9
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            7,
+            16
+          ],
+          [
+            6,
+            8
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            4,
+            11
+          ],
+          [
+            4,
+            17
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            8,
+            11
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            0,
+            16
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            13,
+            16
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            6,
+            10
+          ],
+          [
+            7,
+            15
+          ],
+          [
+            3,
+            11
+          ],
+          [
+            4,
+            10
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            4,
+            13
+          ],
+          [
+            3,
+            17
+          ],
+          [
+            5,
+            17
+          ],
+          [
+            8,
+            10
+          ],
+          [
+            0,
+            12
+          ],
+          [
+            2,
+            9
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            0,
+            15
+          ],
+          [
+            1,
+            16
+          ],
+          [
+            2,
+            15
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            7,
+            14
+          ]
+        ],
+        "faces": [
+          [
+            11,
+            10,
+            6
+          ],
+          [
+            4,
+            12,
+            13
+          ],
+          [
+            7,
+            15,
+            14
+          ],
+          [
+            16,
+            5,
+            17
+          ],
+          [
+            8,
+            2,
+            9
+          ],
+          [
+            4,
+            17,
+            3
+          ],
+          [
+            4,
+            5,
+            13
+          ],
+          [
+            4,
+            11,
+            3
+          ],
+          [
+            4,
+            5,
+            17
+          ],
+          [
+            4,
+            11,
+            10
+          ],
+          [
+            2,
+            15,
+            0
+          ],
+          [
+            2,
+            7,
+            1
+          ],
+          [
+            2,
+            9,
+            1
+          ],
+          [
+            2,
+            7,
+            15
+          ],
+          [
+            16,
+            17,
+            3
+          ],
+          [
+            16,
+            1,
+            3
+          ],
+          [
+            16,
+            7,
+            14
+          ],
+          [
+            16,
+            7,
+            1
+          ],
+          [
+            16,
+            15,
+            0
+          ],
+          [
+            16,
+            12,
+            0
+          ],
+          [
+            16,
+            12,
+            13
+          ],
+          [
+            16,
+            15,
+            14
+          ],
+          [
+            16,
+            5,
+            13
+          ],
+          [
+            8,
+            1,
+            3
+          ],
+          [
+            8,
+            9,
+            1
+          ],
+          [
+            8,
+            11,
+            3
+          ],
+          [
+            8,
+            11,
+            6
+          ],
+          [
+            8,
+            12,
+            0
+          ],
+          [
+            8,
+            4,
+            10
+          ],
+          [
+            8,
+            10,
+            6
+          ],
+          [
+            8,
+            4,
+            12
+          ],
+          [
+            8,
+            2,
+            0
+          ]
+        ],
+        "derivation_details": {
+          "vertex_centroid": [
+            12.967726689402026,
+            2.8328539778973267,
+            3.262579728754978
+          ],
+          "pca_eigenvalues_descending": [
+            1.4285442162436004,
+            0.7475842765978609,
+            0.4728843613970089
+          ],
+          "rout": 1.7509657415774869,
+          "rin": 1.4341572070295383
+        }
+      },
+      "quality_flags": [],
+      "provenance": {
+        "dump_artifact_id": "dump_SC_FeTi_allH",
+        "descriptor_artifact_id": "descriptor_table",
+        "coordinate_authority": "dump",
+        "reported_corrected_energy_authority": "descriptor_table",
+        "raw_non_frozen_zpe_authority": "dump"
+      }
+    },
+    {
+      "site_id": "site_SCR_FeTi_H_122",
+      "host_sample_id": "host_SCR_FeTi",
+      "initial_sample_id": "initial_SCR_FeTi_H_122",
+      "source_key": {
+        "structure": "SC_FeTi_allH",
+        "atom_id": 122,
+        "descriptor_index": 20,
+        "site_sequence": 3
+      },
+      "candidate_atom": {
+        "species": "H",
+        "source_type": 2,
+        "source_atom_id": 122,
+        "position": {
+          "value": [
+            14.4557,
+            2.8333,
+            2.68053
+          ],
+          "unit": "angstrom",
+          "coordinate_frame": "source_dump_cartesian",
+          "wrapped": false,
+          "authoritative_source": "dump_SC_FeTi_allH"
+        }
+      },
+      "construction": {
+        "operation": {
+          "method": "AddAtom",
+          "input_sample": "host_SCR_FeTi",
+          "output_sample": "initial_SCR_FeTi_H_122"
+        },
+        "host_selection": "retain every source atom with type != 2",
+        "added_atom_selection": "retain only source type-2 atom with id 122",
+        "physical_atom_count": 121,
+        "cell_source": "dump_SC_FeTi_allH",
+        "periodic_boundary_conditions": [
+          true,
+          true,
+          true
+        ]
+      },
+      "calculations": {
+        "frozen": {
+          "workflow_id": "workflow_host_SCR_FeTi_frozen",
+          "constraints": {
+            "cell": "fixed",
+            "movable_atoms": "selected H only",
+            "fixed_atoms": "all non-H atoms"
+          },
+          "properties": {
+            "solution_energy": {
+              "value": 0.318414,
+              "unit": "eV",
+              "status": "reported",
+              "definition": "E_host+H,frozen - E_host - 0.5*E_H2",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_SE"
+              }
+            },
+            "zpe_contribution": {
+              "value": 0.278189,
+              "unit": "eV",
+              "status": "reported",
+              "definition": "Three-mode local H zero-point energy in the frozen calculation geometry.",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_ZPE"
+              }
+            },
+            "solution_energy_zpe_corrected": {
+              "value": 0.46312,
+              "unit": "eV",
+              "status": "reported_derived",
+              "definition": "Reported frozen solution energy corrected by the site-H and H2 zero-point-energy terms.",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_SE_ZPEC"
+              },
+              "derivation": {
+                "expression": "SE + ZPE_site - 0.5*ZPE_H2",
+                "half_zpe_h2_eV": 0.1334825,
+                "recomputed_value": 0.4631205,
+                "difference_from_reported": 5.000000000143778e-07
+              }
+            },
+            "bader_charge_transfer_as_reported": {
+              "value": 1.4405,
+              "unit": "e",
+              "status": "reported",
+              "definition": "Reported H Bader charge-transfer value, preserved without sign or reference-state conversion.",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_BC"
+              }
+            }
+          }
+        },
+        "non_frozen": {
+          "workflow_id": "workflow_host_SCR_FeTi_non_frozen",
+          "constraints": {
+            "cell": "fixed",
+            "movable_atoms": "all atoms",
+            "fixed_atoms": "none"
+          },
+          "properties": {
+            "solution_energy": {
+              "value": 0.087314,
+              "unit": "eV",
+              "status": "reported",
+              "definition": "E_host+H,non-frozen - E_host - 0.5*E_H2",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_SE_NF"
+              }
+            },
+            "zpe_contribution": {
+              "value": 0.23114,
+              "unit": "eV",
+              "status": "reported",
+              "definition": "Three-mode local H zero-point energy evaluated about the non-frozen relaxed geometry.",
+              "source": {
+                "artifact_id": "dump_SC_FeTi_allH",
+                "column": "ZPE_NF"
+              },
+              "source_comparison": {
+                "dump_value": 0.23114,
+                "descriptor_table_value": 0.23114,
+                "agreement": true
+              }
+            },
+            "solution_energy_zpe_corrected": {
+              "value": 0.184972,
+              "unit": "eV",
+              "status": "reported_derived",
+              "definition": "Reported non-frozen solution energy corrected by the site-H and H2 zero-point-energy terms.",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_SE_NF_ZPEC"
+              },
+              "derivation": {
+                "expression": "SE_NF + ZPE_NF - 0.5*ZPE_H2",
+                "half_zpe_h2_eV": 0.1334825,
+                "recomputed_from_primary_dump_zpe": 0.1849715,
+                "difference_using_primary_dump_zpe": -4.999999999866223e-07,
+                "recomputed_from_descriptor_table_zpe": 0.1849715,
+                "difference_using_descriptor_table_zpe": -4.999999999866223e-07
+              }
+            },
+            "bader_charge_transfer_as_reported": {
+              "value": 1.441663,
+              "unit": "e",
+              "status": "reported",
+              "definition": "Reported H Bader charge-transfer value, preserved without sign or reference-state conversion.",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_BC_NF"
+              },
+              "raw_stored_value": null,
+              "normalization_reason": null
+            }
+          }
+        }
+      },
+      "pre_insertion_descriptors": {
+        "charge_density": {
+          "value": 433.860042,
+          "unit": null,
+          "status": "reported",
+          "definition": "Total charge integrated over the candidate-H Voronoi region in the H-free host, divided by that region's Voronoi volume.",
+          "source": {
+            "artifact_id": "descriptor_table",
+            "column": "Atom_CD"
+          },
+          "unit_symbol": "e/Å³",
+          "composite_unit": {
+            "numerator": "e",
+            "denominator": "angstrom^3"
+          }
+        },
+        "geometry": {
+          "minimum_nearest_neighbor_distance": {
+            "value": 1.4162,
+            "unit": "angstrom",
+            "status": "reported",
+            "definition": "Shortest distance from the candidate H position to a host atom.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Min_NN_Distance"
+            }
+          },
+          "closest_neighbor_element": {
+            "value": "Fe",
+            "unit": null,
+            "status": "reported",
+            "definition": "Element identity of the closest host atom.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Closest_NN_Element"
+            }
+          },
+          "voronoi_volume": {
+            "value": 5.74591,
+            "unit": "angstrom^3",
+            "status": "reported",
+            "definition": "Volume of the candidate-H Voronoi region in the H-free host.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Voronoi_Volume"
+            }
+          },
+          "number_of_faces": {
+            "value": 9,
+            "unit": "1",
+            "status": "reported",
+            "definition": "Reported number of Voronoi-polyhedron faces.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Num_Faces"
+            }
+          },
+          "surface_area": {
+            "value": 19.524735949579277,
+            "unit": "angstrom^2",
+            "status": "recomputed",
+            "definition": "Sum of triangular convex-hull face areas.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Faces+Vertices"
+            }
+          },
+          "volume_cuberoot": {
+            "value": 1.7910990618323595,
+            "unit": "angstrom",
+            "status": "recomputed",
+            "definition": "Cube root of the Voronoi volume.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Voronoi_Volume"
+            }
+          },
+          "area_over_volume": {
+            "value": 3.3980232808344155,
+            "unit": "angstrom^-1",
+            "status": "recomputed",
+            "definition": "Convex-hull surface area divided by Voronoi volume.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Faces+Vertices+Voronoi_Volume"
+            }
+          },
+          "sphericity": {
+            "value": 0.7945809854664176,
+            "unit": "1",
+            "status": "recomputed",
+            "definition": "pi^(1/3)*(6V)^(2/3)/A.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Faces+Vertices+Voronoi_Volume"
+            }
+          },
+          "elongation_lambda1_over_lambda3": {
+            "value": 2.9406588099605875,
+            "unit": "1",
+            "status": "recomputed",
+            "definition": "Ratio of largest to smallest PCA eigenvalue of the void vertices.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Vertices"
+            }
+          },
+          "anisotropy_lambda2_over_lambda3": {
+            "value": 2.1709330195728267,
+            "unit": "1",
+            "status": "recomputed",
+            "definition": "Ratio of middle to smallest PCA eigenvalue of the void vertices.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Vertices"
+            }
+          },
+          "rout_over_rin": {
+            "value": 1.4780363345494671,
+            "unit": "1",
+            "status": "recomputed",
+            "definition": "Maximum divided by minimum vertex radius relative to the vertex centroid.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Vertices"
+            }
+          },
+          "cross_check": {
+            "artifact_id": "selected_descriptor_crosscheck",
+            "role": "numerical validation only; never authoritative",
+            "matched_by": {
+              "Structure": "SC_FeTi_allH",
+              "Index": 20
+            }
+          }
+        }
+      },
+      "voronoi_topology": {
+        "coordinate_unit": "angstrom",
+        "vertices": [
+          [
+            14.91105008666418,
+            2.130260167040135,
+            4.028195685829927
+          ],
+          [
+            14.917528835037476,
+            3.541840116806608,
+            4.01739731817727
+          ],
+          [
+            13.098724226285077,
+            2.123792016979378,
+            3.144623640247428
+          ],
+          [
+            15.804082133336303,
+            3.542508888594279,
+            2.2373135576794447
+          ],
+          [
+            14.0132480111619,
+            3.5409767157883185,
+            1.3351633214831302
+          ],
+          [
+            14.001287681932556,
+            2.1370003089628398,
+            1.3299732634711077
+          ],
+          [
+            13.09008886995615,
+            2.123783718250397,
+            3.1185651327468866
+          ],
+          [
+            15.802863651384257,
+            2.1259997594974456,
+            2.2375422703787513
+          ],
+          [
+            13.098691864592563,
+            3.54028517302281,
+            3.130602069575408
+          ],
+          [
+            13.08151493653676,
+            2.1513515585670895,
+            3.135960405009895
+          ],
+          [
+            14.912596314552092,
+            2.125337120223787,
+            4.025083351370647
+          ],
+          [
+            14.907844179823734,
+            2.125333240602329,
+            4.026681297071708
+          ],
+          [
+            14.009126618806524,
+            2.1244703880099687,
+            1.3339296614796687
+          ],
+          [
+            13.99706558049383,
+            2.124460542325617,
+            1.33800600176689
+          ]
+        ],
+        "edges": [
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            3,
+            10
+          ],
+          [
+            5,
+            13
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            9,
+            11
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            11
+          ],
+          [
+            0,
+            11
+          ],
+          [
+            10,
+            12
+          ],
+          [
+            7,
+            10
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            8,
+            11
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            9,
+            13
+          ],
+          [
+            0,
+            10
+          ],
+          [
+            1,
+            11
+          ],
+          [
+            2,
+            10
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            6,
+            13
+          ],
+          [
+            7,
+            12
+          ],
+          [
+            6,
+            10
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            4,
+            13
+          ],
+          [
+            10,
+            13
+          ],
+          [
+            8,
+            13
+          ],
+          [
+            2,
+            9
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            1,
+            10
+          ],
+          [
+            6,
+            9
+          ]
+        ],
+        "faces": [
+          [
+            2,
+            6,
+            9
+          ],
+          [
+            13,
+            12,
+            5
+          ],
+          [
+            10,
+            11,
+            0
+          ],
+          [
+            8,
+            1,
+            3
+          ],
+          [
+            8,
+            4,
+            3
+          ],
+          [
+            12,
+            4,
+            5
+          ],
+          [
+            12,
+            7,
+            3
+          ],
+          [
+            12,
+            4,
+            3
+          ],
+          [
+            11,
+            1,
+            0
+          ],
+          [
+            11,
+            8,
+            9
+          ],
+          [
+            11,
+            8,
+            1
+          ],
+          [
+            11,
+            2,
+            9
+          ],
+          [
+            13,
+            4,
+            5
+          ],
+          [
+            13,
+            6,
+            9
+          ],
+          [
+            13,
+            8,
+            9
+          ],
+          [
+            13,
+            8,
+            4
+          ],
+          [
+            10,
+            1,
+            0
+          ],
+          [
+            10,
+            1,
+            3
+          ],
+          [
+            10,
+            7,
+            3
+          ],
+          [
+            10,
+            12,
+            7
+          ],
+          [
+            10,
+            2,
+            6
+          ],
+          [
+            10,
+            11,
+            2
+          ],
+          [
+            10,
+            13,
+            6
+          ],
+          [
+            10,
+            13,
+            12
+          ]
+        ],
+        "derivation_details": {
+          "vertex_centroid": [
+            14.260408070754531,
+            2.5326714081907857,
+            2.745645498306298
+          ],
+          "pca_eigenvalues_descending": [
+            1.2400468366144608,
+            0.9154610573333544,
+            0.42169014385966136
+          ],
+          "rout": 1.9134008231880872,
+          "rin": 1.2945560122318152
+        }
+      },
+      "quality_flags": [],
+      "provenance": {
+        "dump_artifact_id": "dump_SC_FeTi_allH",
+        "descriptor_artifact_id": "descriptor_table",
+        "coordinate_authority": "dump",
+        "reported_corrected_energy_authority": "descriptor_table",
+        "raw_non_frozen_zpe_authority": "dump"
+      }
+    },
+    {
+      "site_id": "site_SCR_FeTi_H_123",
+      "host_sample_id": "host_SCR_FeTi",
+      "initial_sample_id": "initial_SCR_FeTi_H_123",
+      "source_key": {
+        "structure": "SC_FeTi_allH",
+        "atom_id": 123,
+        "descriptor_index": 21,
+        "site_sequence": 4
+      },
+      "candidate_atom": {
+        "species": "H",
+        "source_type": 2,
+        "source_atom_id": 123,
+        "position": {
+          "value": [
+            13.0949,
+            1.4165,
+            3.13334
+          ],
+          "unit": "angstrom",
+          "coordinate_frame": "source_dump_cartesian",
+          "wrapped": false,
+          "authoritative_source": "dump_SC_FeTi_allH"
+        }
+      },
+      "construction": {
+        "operation": {
+          "method": "AddAtom",
+          "input_sample": "host_SCR_FeTi",
+          "output_sample": "initial_SCR_FeTi_H_123"
+        },
+        "host_selection": "retain every source atom with type != 2",
+        "added_atom_selection": "retain only source type-2 atom with id 123",
+        "physical_atom_count": 121,
+        "cell_source": "dump_SC_FeTi_allH",
+        "periodic_boundary_conditions": [
+          true,
+          true,
+          true
+        ]
+      },
+      "calculations": {
+        "frozen": {
+          "workflow_id": "workflow_host_SCR_FeTi_frozen",
+          "constraints": {
+            "cell": "fixed",
+            "movable_atoms": "selected H only",
+            "fixed_atoms": "all non-H atoms"
+          },
+          "properties": {
+            "solution_energy": {
+              "value": 1.3872,
+              "unit": "eV",
+              "status": "reported",
+              "definition": "E_host+H,frozen - E_host - 0.5*E_H2",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_SE"
+              }
+            },
+            "zpe_contribution": {
+              "value": 0.390475,
+              "unit": "eV",
+              "status": "reported",
+              "definition": "Three-mode local H zero-point energy in the frozen calculation geometry.",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_ZPE"
+              }
+            },
+            "solution_energy_zpe_corrected": {
+              "value": 1.644192,
+              "unit": "eV",
+              "status": "reported_derived",
+              "definition": "Reported frozen solution energy corrected by the site-H and H2 zero-point-energy terms.",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_SE_ZPEC"
+              },
+              "derivation": {
+                "expression": "SE + ZPE_site - 0.5*ZPE_H2",
+                "half_zpe_h2_eV": 0.1334825,
+                "recomputed_value": 1.6441925,
+                "difference_from_reported": 4.999999998478444e-07
+              }
+            },
+            "bader_charge_transfer_as_reported": {
+              "value": 1.47027,
+              "unit": "e",
+              "status": "reported",
+              "definition": "Reported H Bader charge-transfer value, preserved without sign or reference-state conversion.",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_BC"
+              }
+            }
+          }
+        },
+        "non_frozen": {
+          "workflow_id": "workflow_host_SCR_FeTi_non_frozen",
+          "constraints": {
+            "cell": "fixed",
+            "movable_atoms": "all atoms",
+            "fixed_atoms": "none"
+          },
+          "properties": {
+            "solution_energy": {
+              "value": 0.088714,
+              "unit": "eV",
+              "status": "reported",
+              "definition": "E_host+H,non-frozen - E_host - 0.5*E_H2",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_SE_NF"
+              }
+            },
+            "zpe_contribution": {
+              "value": 0.23567,
+              "unit": "eV",
+              "status": "reported",
+              "definition": "Three-mode local H zero-point energy evaluated about the non-frozen relaxed geometry.",
+              "source": {
+                "artifact_id": "dump_SC_FeTi_allH",
+                "column": "ZPE_NF"
+              },
+              "source_comparison": {
+                "dump_value": 0.23567,
+                "descriptor_table_value": 0.23567,
+                "agreement": true
+              }
+            },
+            "solution_energy_zpe_corrected": {
+              "value": 0.190902,
+              "unit": "eV",
+              "status": "reported_derived",
+              "definition": "Reported non-frozen solution energy corrected by the site-H and H2 zero-point-energy terms.",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_SE_NF_ZPEC"
+              },
+              "derivation": {
+                "expression": "SE_NF + ZPE_NF - 0.5*ZPE_H2",
+                "half_zpe_h2_eV": 0.1334825,
+                "recomputed_from_primary_dump_zpe": 0.1909015,
+                "difference_using_primary_dump_zpe": -4.999999999866223e-07,
+                "recomputed_from_descriptor_table_zpe": 0.1909015,
+                "difference_using_descriptor_table_zpe": -4.999999999866223e-07
+              }
+            },
+            "bader_charge_transfer_as_reported": {
+              "value": 1.41814,
+              "unit": "e",
+              "status": "reported",
+              "definition": "Reported H Bader charge-transfer value, preserved without sign or reference-state conversion.",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_BC_NF"
+              },
+              "raw_stored_value": null,
+              "normalization_reason": null
+            }
+          }
+        }
+      },
+      "pre_insertion_descriptors": {
+        "charge_density": {
+          "value": 418.417744,
+          "unit": null,
+          "status": "reported",
+          "definition": "Total charge integrated over the candidate-H Voronoi region in the H-free host, divided by that region's Voronoi volume.",
+          "source": {
+            "artifact_id": "descriptor_table",
+            "column": "Atom_CD"
+          },
+          "unit_symbol": "e/Å³",
+          "composite_unit": {
+            "numerator": "e",
+            "denominator": "angstrom^3"
+          }
+        },
+        "geometry": {
+          "minimum_nearest_neighbor_distance": {
+            "value": 1.435096,
+            "unit": "angstrom",
+            "status": "reported",
+            "definition": "Shortest distance from the candidate H position to a host atom.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Min_NN_Distance"
+            }
+          },
+          "closest_neighbor_element": {
+            "value": "Cr",
+            "unit": null,
+            "status": "reported",
+            "definition": "Element identity of the closest host atom.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Closest_NN_Element"
+            }
+          },
+          "voronoi_volume": {
+            "value": 5.927009,
+            "unit": "angstrom^3",
+            "status": "reported",
+            "definition": "Volume of the candidate-H Voronoi region in the H-free host.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Voronoi_Volume"
+            }
+          },
+          "number_of_faces": {
+            "value": 13,
+            "unit": "1",
+            "status": "reported",
+            "definition": "Reported number of Voronoi-polyhedron faces.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Num_Faces"
+            }
+          },
+          "surface_area": {
+            "value": 19.920614260874387,
+            "unit": "angstrom^2",
+            "status": "recomputed",
+            "definition": "Sum of triangular convex-hull face areas.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Faces+Vertices"
+            }
+          },
+          "volume_cuberoot": {
+            "value": 1.809721984506231,
+            "unit": "angstrom",
+            "status": "recomputed",
+            "definition": "Cube root of the Voronoi volume.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Voronoi_Volume"
+            }
+          },
+          "area_over_volume": {
+            "value": 3.360989372696142,
+            "unit": "angstrom^-1",
+            "status": "recomputed",
+            "definition": "Convex-hull surface area divided by Voronoi volume.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Faces+Vertices+Voronoi_Volume"
+            }
+          },
+          "sphericity": {
+            "value": 0.7950695537861407,
+            "unit": "1",
+            "status": "recomputed",
+            "definition": "pi^(1/3)*(6V)^(2/3)/A.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Faces+Vertices+Voronoi_Volume"
+            }
+          },
+          "elongation_lambda1_over_lambda3": {
+            "value": 2.349078921364135,
+            "unit": "1",
+            "status": "recomputed",
+            "definition": "Ratio of largest to smallest PCA eigenvalue of the void vertices.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Vertices"
+            }
+          },
+          "anisotropy_lambda2_over_lambda3": {
+            "value": 1.9727222100522568,
+            "unit": "1",
+            "status": "recomputed",
+            "definition": "Ratio of middle to smallest PCA eigenvalue of the void vertices.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Vertices"
+            }
+          },
+          "rout_over_rin": {
+            "value": 1.194552942924963,
+            "unit": "1",
+            "status": "recomputed",
+            "definition": "Maximum divided by minimum vertex radius relative to the vertex centroid.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Vertices"
+            }
+          },
+          "cross_check": {
+            "artifact_id": "selected_descriptor_crosscheck",
+            "role": "numerical validation only; never authoritative",
+            "matched_by": {
+              "Structure": "SC_FeTi_allH",
+              "Index": 21
+            }
+          }
+        }
+      },
+      "voronoi_topology": {
+        "coordinate_unit": "angstrom",
+        "vertices": [
+          [
+            12.424767835606376,
+            8.881784197001252e-16,
+            3.392324928781402
+          ],
+          [
+            13.329352202133778,
+            1.4299127821913757,
+            1.5636770322336881
+          ],
+          [
+            12.424767835606376,
+            2.833,
+            3.392324928781402
+          ],
+          [
+            11.966465683588797,
+            1.40087440657828,
+            2.0049891791461176
+          ],
+          [
+            12.857610542945014,
+            1.4510875398533316,
+            4.702591876506276
+          ],
+          [
+            12.931129292585666,
+            1.416500000000001,
+            4.7131987275795835
+          ],
+          [
+            14.224176693554673,
+            1.416500000000001,
+            4.255523544485373
+          ],
+          [
+            12.473617001543245,
+            -0.03155330752037977,
+            3.3416191647255533
+          ],
+          [
+            12.404460879372085,
+            8.881784197001252e-16,
+            3.330853329256744
+          ],
+          [
+            12.857610542945014,
+            1.3819124601466704,
+            4.702591876506276
+          ],
+          [
+            13.778183690154867,
+            0.0005546896823005465,
+            2.913869709347183
+          ],
+          [
+            13.770349517635552,
+            2.8324378008653532,
+            2.8903026409726813
+          ],
+          [
+            11.966465683588797,
+            1.4321255934217214,
+            2.0049891791461176
+          ],
+          [
+            11.990123298700471,
+            1.4165000000000008,
+            1.9810063409808905
+          ],
+          [
+            13.770349517635552,
+            0.0005621991346478339,
+            2.8903026409726813
+          ],
+          [
+            13.750273810005055,
+            -0.01225113169561931,
+            2.9101868221146328
+          ],
+          [
+            13.750273810005057,
+            2.84525113169562,
+            2.9101868221146328
+          ],
+          [
+            13.778183690154867,
+            2.8324453103177003,
+            2.9138697093471824
+          ],
+          [
+            12.473617001543245,
+            2.8645533075203806,
+            3.3416191647255538
+          ],
+          [
+            12.404460879372085,
+            2.833,
+            3.3308533292567444
+          ],
+          [
+            13.329352202133778,
+            1.4030872178086256,
+            1.5636770322336881
+          ],
+          [
+            13.29923576539975,
+            1.4165000000000008,
+            1.5593323565124504
+          ]
+        ],
+        "edges": [
+          [
+            4,
+            9
+          ],
+          [
+            12,
+            16
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            12,
+            19
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            5,
+            10
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            11,
+            14
+          ],
+          [
+            11,
+            17
+          ],
+          [
+            10,
+            15
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            2,
+            17
+          ],
+          [
+            1,
+            21
+          ],
+          [
+            16,
+            19
+          ],
+          [
+            7,
+            10
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            18,
+            19
+          ],
+          [
+            6,
+            17
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            5,
+            9
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            14,
+            21
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            8,
+            14
+          ],
+          [
+            0,
+            10
+          ],
+          [
+            11,
+            16
+          ],
+          [
+            10,
+            14
+          ],
+          [
+            1,
+            11
+          ],
+          [
+            2,
+            16
+          ],
+          [
+            13,
+            16
+          ],
+          [
+            1,
+            20
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            2,
+            19
+          ],
+          [
+            16,
+            21
+          ],
+          [
+            6,
+            10
+          ],
+          [
+            16,
+            18
+          ],
+          [
+            7,
+            15
+          ],
+          [
+            20,
+            21
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            3,
+            14
+          ],
+          [
+            14,
+            17
+          ],
+          [
+            14,
+            20
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            9
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            2,
+            18
+          ],
+          [
+            1,
+            16
+          ],
+          [
+            13,
+            21
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            7,
+            14
+          ]
+        ],
+        "faces": [
+          [
+            13,
+            12,
+            3
+          ],
+          [
+            5,
+            4,
+            9
+          ],
+          [
+            16,
+            17,
+            11
+          ],
+          [
+            20,
+            1,
+            21
+          ],
+          [
+            2,
+            19,
+            18
+          ],
+          [
+            7,
+            0,
+            8
+          ],
+          [
+            14,
+            10,
+            15
+          ],
+          [
+            16,
+            19,
+            18
+          ],
+          [
+            16,
+            1,
+            21
+          ],
+          [
+            16,
+            13,
+            21
+          ],
+          [
+            16,
+            13,
+            12
+          ],
+          [
+            16,
+            1,
+            11
+          ],
+          [
+            16,
+            19,
+            12
+          ],
+          [
+            2,
+            16,
+            18
+          ],
+          [
+            2,
+            17,
+            6
+          ],
+          [
+            2,
+            5,
+            6
+          ],
+          [
+            2,
+            5,
+            4
+          ],
+          [
+            2,
+            16,
+            17
+          ],
+          [
+            2,
+            12,
+            3
+          ],
+          [
+            2,
+            4,
+            9
+          ],
+          [
+            2,
+            8,
+            3
+          ],
+          [
+            2,
+            19,
+            12
+          ],
+          [
+            2,
+            0,
+            9
+          ],
+          [
+            2,
+            0,
+            8
+          ],
+          [
+            10,
+            5,
+            6
+          ],
+          [
+            10,
+            7,
+            15
+          ],
+          [
+            10,
+            5,
+            9
+          ],
+          [
+            10,
+            0,
+            9
+          ],
+          [
+            10,
+            7,
+            0
+          ],
+          [
+            14,
+            8,
+            3
+          ],
+          [
+            14,
+            20,
+            21
+          ],
+          [
+            14,
+            13,
+            21
+          ],
+          [
+            14,
+            13,
+            3
+          ],
+          [
+            14,
+            7,
+            15
+          ],
+          [
+            14,
+            7,
+            8
+          ],
+          [
+            14,
+            17,
+            6
+          ],
+          [
+            14,
+            17,
+            11
+          ],
+          [
+            14,
+            1,
+            11
+          ],
+          [
+            14,
+            20,
+            1
+          ],
+          [
+            14,
+            10,
+            6
+          ]
+        ],
+        "derivation_details": {
+          "vertex_centroid": [
+            12.997946698918641,
+            1.4165000000000005,
+            3.0277222879875847
+          ],
+          "pca_eigenvalues_descending": [
+            1.1583365728839354,
+            0.9727541562192324,
+            0.49310245064532654
+          ],
+          "rout": 1.7352624946107238,
+          "rin": 1.4526459500085347
+        }
+      },
+      "quality_flags": [],
+      "provenance": {
+        "dump_artifact_id": "dump_SC_FeTi_allH",
+        "descriptor_artifact_id": "descriptor_table",
+        "coordinate_authority": "dump",
+        "reported_corrected_energy_authority": "descriptor_table",
+        "raw_non_frozen_zpe_authority": "dump"
+      }
+    },
+    {
+      "site_id": "site_SCR_FeTi_H_124",
+      "host_sample_id": "host_SCR_FeTi",
+      "initial_sample_id": "initial_SCR_FeTi_H_124",
+      "source_key": {
+        "structure": "SC_FeTi_allH",
+        "atom_id": 124,
+        "descriptor_index": 22,
+        "site_sequence": 5
+      },
+      "candidate_atom": {
+        "species": "H",
+        "source_type": 2,
+        "source_atom_id": 124,
+        "position": {
+          "value": [
+            13.76,
+            2.83,
+            2.9
+          ],
+          "unit": "angstrom",
+          "coordinate_frame": "source_dump_cartesian",
+          "wrapped": false,
+          "authoritative_source": "dump_SC_FeTi_allH"
+        }
+      },
+      "construction": {
+        "operation": {
+          "method": "AddAtom",
+          "input_sample": "host_SCR_FeTi",
+          "output_sample": "initial_SCR_FeTi_H_124"
+        },
+        "host_selection": "retain every source atom with type != 2",
+        "added_atom_selection": "retain only source type-2 atom with id 124",
+        "physical_atom_count": 121,
+        "cell_source": "dump_SC_FeTi_allH",
+        "periodic_boundary_conditions": [
+          true,
+          true,
+          true
+        ]
+      },
+      "calculations": {
+        "frozen": {
+          "workflow_id": "workflow_host_SCR_FeTi_frozen",
+          "constraints": {
+            "cell": "fixed",
+            "movable_atoms": "selected H only",
+            "fixed_atoms": "all non-H atoms"
+          },
+          "properties": {
+            "solution_energy": {
+              "value": 0.31841,
+              "unit": "eV",
+              "status": "reported",
+              "definition": "E_host+H,frozen - E_host - 0.5*E_H2",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_SE"
+              }
+            },
+            "zpe_contribution": {
+              "value": 0.278164,
+              "unit": "eV",
+              "status": "reported",
+              "definition": "Three-mode local H zero-point energy in the frozen calculation geometry.",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_ZPE"
+              }
+            },
+            "solution_energy_zpe_corrected": {
+              "value": 0.463092,
+              "unit": "eV",
+              "status": "reported_derived",
+              "definition": "Reported frozen solution energy corrected by the site-H and H2 zero-point-energy terms.",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_SE_ZPEC"
+              },
+              "derivation": {
+                "expression": "SE + ZPE_site - 0.5*ZPE_H2",
+                "half_zpe_h2_eV": 0.1334825,
+                "recomputed_value": 0.46309150000000004,
+                "difference_from_reported": -4.999999999588667e-07
+              }
+            },
+            "bader_charge_transfer_as_reported": {
+              "value": 1.439931,
+              "unit": "e",
+              "status": "reported",
+              "definition": "Reported H Bader charge-transfer value, preserved without sign or reference-state conversion.",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_BC"
+              }
+            }
+          }
+        },
+        "non_frozen": {
+          "workflow_id": "workflow_host_SCR_FeTi_non_frozen",
+          "constraints": {
+            "cell": "fixed",
+            "movable_atoms": "all atoms",
+            "fixed_atoms": "none"
+          },
+          "properties": {
+            "solution_energy": {
+              "value": 0.086814,
+              "unit": "eV",
+              "status": "reported",
+              "definition": "E_host+H,non-frozen - E_host - 0.5*E_H2",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_SE_NF"
+              }
+            },
+            "zpe_contribution": {
+              "value": 0.231016,
+              "unit": "eV",
+              "status": "reported",
+              "definition": "Three-mode local H zero-point energy evaluated about the non-frozen relaxed geometry.",
+              "source": {
+                "artifact_id": "dump_SC_FeTi_allH",
+                "column": "ZPE_NF"
+              },
+              "source_comparison": {
+                "dump_value": 0.231016,
+                "descriptor_table_value": 0.231016,
+                "agreement": true
+              }
+            },
+            "solution_energy_zpe_corrected": {
+              "value": 0.184347,
+              "unit": "eV",
+              "status": "reported_derived",
+              "definition": "Reported non-frozen solution energy corrected by the site-H and H2 zero-point-energy terms.",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_SE_NF_ZPEC"
+              },
+              "derivation": {
+                "expression": "SE_NF + ZPE_NF - 0.5*ZPE_H2",
+                "half_zpe_h2_eV": 0.1334825,
+                "recomputed_from_primary_dump_zpe": 0.1843475,
+                "difference_using_primary_dump_zpe": 4.999999999866223e-07,
+                "recomputed_from_descriptor_table_zpe": 0.1843475,
+                "difference_using_descriptor_table_zpe": 4.999999999866223e-07
+              }
+            },
+            "bader_charge_transfer_as_reported": {
+              "value": 1.4418,
+              "unit": "e",
+              "status": "reported",
+              "definition": "Reported H Bader charge-transfer value, preserved without sign or reference-state conversion.",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_BC_NF"
+              },
+              "raw_stored_value": null,
+              "normalization_reason": null
+            }
+          }
+        }
+      },
+      "pre_insertion_descriptors": {
+        "charge_density": {
+          "value": 424.458682,
+          "unit": null,
+          "status": "reported",
+          "definition": "Total charge integrated over the candidate-H Voronoi region in the H-free host, divided by that region's Voronoi volume.",
+          "source": {
+            "artifact_id": "descriptor_table",
+            "column": "Atom_CD"
+          },
+          "unit_symbol": "e/Å³",
+          "composite_unit": {
+            "numerator": "e",
+            "denominator": "angstrom^3"
+          }
+        },
+        "geometry": {
+          "minimum_nearest_neighbor_distance": {
+            "value": 1.58721,
+            "unit": "angstrom",
+            "status": "reported",
+            "definition": "Shortest distance from the candidate H position to a host atom.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Min_NN_Distance"
+            }
+          },
+          "closest_neighbor_element": {
+            "value": "Fe",
+            "unit": null,
+            "status": "reported",
+            "definition": "Element identity of the closest host atom.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Closest_NN_Element"
+            }
+          },
+          "voronoi_volume": {
+            "value": 5.930767,
+            "unit": "angstrom^3",
+            "status": "reported",
+            "definition": "Volume of the candidate-H Voronoi region in the H-free host.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Voronoi_Volume"
+            }
+          },
+          "number_of_faces": {
+            "value": 8,
+            "unit": "1",
+            "status": "reported",
+            "definition": "Reported number of Voronoi-polyhedron faces.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Num_Faces"
+            }
+          },
+          "surface_area": {
+            "value": 19.920363122093317,
+            "unit": "angstrom^2",
+            "status": "recomputed",
+            "definition": "Sum of triangular convex-hull face areas.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Faces+Vertices"
+            }
+          },
+          "volume_cuberoot": {
+            "value": 1.8101043863975212,
+            "unit": "angstrom",
+            "status": "recomputed",
+            "definition": "Cube root of the Voronoi volume.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Voronoi_Volume"
+            }
+          },
+          "area_over_volume": {
+            "value": 3.3588173539937274,
+            "unit": "angstrom^-1",
+            "status": "recomputed",
+            "definition": "Convex-hull surface area divided by Voronoi volume.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Faces+Vertices+Voronoi_Volume"
+            }
+          },
+          "sphericity": {
+            "value": 0.7954156201770962,
+            "unit": "1",
+            "status": "recomputed",
+            "definition": "pi^(1/3)*(6V)^(2/3)/A.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Faces+Vertices+Voronoi_Volume"
+            }
+          },
+          "elongation_lambda1_over_lambda3": {
+            "value": 1.8680121133555225,
+            "unit": "1",
+            "status": "recomputed",
+            "definition": "Ratio of largest to smallest PCA eigenvalue of the void vertices.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Vertices"
+            }
+          },
+          "anisotropy_lambda2_over_lambda3": {
+            "value": 1.0181199449916842,
+            "unit": "1",
+            "status": "recomputed",
+            "definition": "Ratio of middle to smallest PCA eigenvalue of the void vertices.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Vertices"
+            }
+          },
+          "rout_over_rin": {
+            "value": 1.0346572470903772,
+            "unit": "1",
+            "status": "recomputed",
+            "definition": "Maximum divided by minimum vertex radius relative to the vertex centroid.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Vertices"
+            }
+          },
+          "cross_check": {
+            "artifact_id": "selected_descriptor_crosscheck",
+            "role": "numerical validation only; never authoritative",
+            "matched_by": {
+              "Structure": "SC_FeTi_allH",
+              "Index": 22
+            }
+          }
+        }
+      },
+      "voronoi_topology": {
+        "coordinate_unit": "angstrom",
+        "vertices": [
+          [
+            14.848514194000703,
+            2.325341158693071,
+            3.8389583507901817
+          ],
+          [
+            15.231059051498642,
+            2.9341911465329793,
+            2.429952299751267
+          ],
+          [
+            12.915012273904633,
+            1.5659251411628576,
+            2.5902447464653484
+          ],
+          [
+            13.27103783433466,
+            1.5746846802385979,
+            3.664606287954008
+          ],
+          [
+            14.055611215651854,
+            2.29829688333741,
+            1.4948013112512275
+          ],
+          [
+            14.066592059138488,
+            3.3608393478241156,
+            1.5047127971427645
+          ],
+          [
+            15.231234380400668,
+            2.732752578455889,
+            2.4298675827309255
+          ],
+          [
+            12.352044802573474,
+            2.833000000000001,
+            3.5404273880201833
+          ],
+          [
+            12.92628048764002,
+            4.092514836395387,
+            2.62825291587019
+          ],
+          [
+            12.256112383147142,
+            2.833000000000001,
+            3.25581785723721
+          ],
+          [
+            14.851323079168262,
+            3.335855551496937,
+            3.8258143074725686
+          ],
+          [
+            13.258464942216882,
+            4.084857615995291,
+            3.629670917910799
+          ]
+        ],
+        "edges": [
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            3,
+            10
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            3,
+            9
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            5,
+            9
+          ],
+          [
+            8,
+            11
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            0,
+            10
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            11
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            7,
+            9
+          ],
+          [
+            3,
+            11
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            9
+          ],
+          [
+            1,
+            10
+          ],
+          [
+            7,
+            11
+          ],
+          [
+            7,
+            8
+          ]
+        ],
+        "faces": [
+          [
+            5,
+            2,
+            9
+          ],
+          [
+            5,
+            8,
+            9
+          ],
+          [
+            5,
+            2,
+            4
+          ],
+          [
+            7,
+            8,
+            9
+          ],
+          [
+            7,
+            11,
+            8
+          ],
+          [
+            1,
+            5,
+            8
+          ],
+          [
+            1,
+            11,
+            8
+          ],
+          [
+            1,
+            11,
+            10
+          ],
+          [
+            1,
+            0,
+            6
+          ],
+          [
+            1,
+            0,
+            10
+          ],
+          [
+            1,
+            5,
+            4
+          ],
+          [
+            1,
+            4,
+            6
+          ],
+          [
+            3,
+            2,
+            4
+          ],
+          [
+            3,
+            4,
+            6
+          ],
+          [
+            3,
+            0,
+            6
+          ],
+          [
+            3,
+            11,
+            10
+          ],
+          [
+            3,
+            7,
+            11
+          ],
+          [
+            3,
+            0,
+            10
+          ],
+          [
+            3,
+            2,
+            9
+          ],
+          [
+            3,
+            7,
+            9
+          ]
+        ],
+        "derivation_details": {
+          "vertex_centroid": [
+            13.771940558639619,
+            2.8309382450110454,
+            2.902760563549723
+          ],
+          "pca_eigenvalues_descending": [
+            1.2406591716721156,
+            0.6761946769966369,
+            0.6641601319402106
+          ],
+          "rout": 1.5595673675780681,
+          "rin": 1.5073275444248062
+        }
+      },
+      "quality_flags": [],
+      "provenance": {
+        "dump_artifact_id": "dump_SC_FeTi_allH",
+        "descriptor_artifact_id": "descriptor_table",
+        "coordinate_authority": "dump",
+        "reported_corrected_energy_authority": "descriptor_table",
+        "raw_non_frozen_zpe_authority": "dump"
+      }
+    },
+    {
+      "site_id": "site_SCR_FeTi_H_125",
+      "host_sample_id": "host_SCR_FeTi",
+      "initial_sample_id": "initial_SCR_FeTi_H_125",
+      "source_key": {
+        "structure": "SC_FeTi_allH",
+        "atom_id": 125,
+        "descriptor_index": 23,
+        "site_sequence": 6
+      },
+      "candidate_atom": {
+        "species": "H",
+        "source_type": 2,
+        "source_atom_id": 125,
+        "position": {
+          "value": [
+            14.68,
+            2.83,
+            3.35
+          ],
+          "unit": "angstrom",
+          "coordinate_frame": "source_dump_cartesian",
+          "wrapped": false,
+          "authoritative_source": "dump_SC_FeTi_allH"
+        }
+      },
+      "construction": {
+        "operation": {
+          "method": "AddAtom",
+          "input_sample": "host_SCR_FeTi",
+          "output_sample": "initial_SCR_FeTi_H_125"
+        },
+        "host_selection": "retain every source atom with type != 2",
+        "added_atom_selection": "retain only source type-2 atom with id 125",
+        "physical_atom_count": 121,
+        "cell_source": "dump_SC_FeTi_allH",
+        "periodic_boundary_conditions": [
+          true,
+          true,
+          true
+        ]
+      },
+      "calculations": {
+        "frozen": {
+          "workflow_id": "workflow_host_SCR_FeTi_frozen",
+          "constraints": {
+            "cell": "fixed",
+            "movable_atoms": "selected H only",
+            "fixed_atoms": "all non-H atoms"
+          },
+          "properties": {
+            "solution_energy": {
+              "value": 0.3709,
+              "unit": "eV",
+              "status": "reported",
+              "definition": "E_host+H,frozen - E_host - 0.5*E_H2",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_SE"
+              }
+            },
+            "zpe_contribution": {
+              "value": 0.28316,
+              "unit": "eV",
+              "status": "reported",
+              "definition": "Three-mode local H zero-point energy in the frozen calculation geometry.",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_ZPE"
+              }
+            },
+            "solution_energy_zpe_corrected": {
+              "value": 0.520578,
+              "unit": "eV",
+              "status": "reported_derived",
+              "definition": "Reported frozen solution energy corrected by the site-H and H2 zero-point-energy terms.",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_SE_ZPEC"
+              },
+              "derivation": {
+                "expression": "SE + ZPE_site - 0.5*ZPE_H2",
+                "half_zpe_h2_eV": 0.1334825,
+                "recomputed_value": 0.5205775000000001,
+                "difference_from_reported": -4.999999998478444e-07
+              }
+            },
+            "bader_charge_transfer_as_reported": {
+              "value": 1.431541,
+              "unit": "e",
+              "status": "reported",
+              "definition": "Reported H Bader charge-transfer value, preserved without sign or reference-state conversion.",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_BC"
+              }
+            }
+          }
+        },
+        "non_frozen": {
+          "workflow_id": "workflow_host_SCR_FeTi_non_frozen",
+          "constraints": {
+            "cell": "fixed",
+            "movable_atoms": "all atoms",
+            "fixed_atoms": "none"
+          },
+          "properties": {
+            "solution_energy": {
+              "value": 0.132614,
+              "unit": "eV",
+              "status": "reported",
+              "definition": "E_host+H,non-frozen - E_host - 0.5*E_H2",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_SE_NF"
+              }
+            },
+            "zpe_contribution": {
+              "value": 0.23757,
+              "unit": "eV",
+              "status": "reported",
+              "definition": "Three-mode local H zero-point energy evaluated about the non-frozen relaxed geometry.",
+              "source": {
+                "artifact_id": "dump_SC_FeTi_allH",
+                "column": "ZPE_NF"
+              },
+              "source_comparison": {
+                "dump_value": 0.23757,
+                "descriptor_table_value": 0.23757,
+                "agreement": true
+              }
+            },
+            "solution_energy_zpe_corrected": {
+              "value": 0.236702,
+              "unit": "eV",
+              "status": "reported_derived",
+              "definition": "Reported non-frozen solution energy corrected by the site-H and H2 zero-point-energy terms.",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_SE_NF_ZPEC"
+              },
+              "derivation": {
+                "expression": "SE_NF + ZPE_NF - 0.5*ZPE_H2",
+                "half_zpe_h2_eV": 0.1334825,
+                "recomputed_from_primary_dump_zpe": 0.2367015,
+                "difference_using_primary_dump_zpe": -4.999999999866223e-07,
+                "recomputed_from_descriptor_table_zpe": 0.2367015,
+                "difference_using_descriptor_table_zpe": -4.999999999866223e-07
+              }
+            },
+            "bader_charge_transfer_as_reported": {
+              "value": 1.40252,
+              "unit": "e",
+              "status": "reported",
+              "definition": "Reported H Bader charge-transfer value, preserved without sign or reference-state conversion.",
+              "source": {
+                "artifact_id": "descriptor_table",
+                "column": "Atom_BC_NF"
+              },
+              "raw_stored_value": null,
+              "normalization_reason": null
+            }
+          }
+        }
+      },
+      "pre_insertion_descriptors": {
+        "charge_density": {
+          "value": 421.332576,
+          "unit": null,
+          "status": "reported",
+          "definition": "Total charge integrated over the candidate-H Voronoi region in the H-free host, divided by that region's Voronoi volume.",
+          "source": {
+            "artifact_id": "descriptor_table",
+            "column": "Atom_CD"
+          },
+          "unit_symbol": "e/Å³",
+          "composite_unit": {
+            "numerator": "e",
+            "denominator": "angstrom^3"
+          }
+        },
+        "geometry": {
+          "minimum_nearest_neighbor_distance": {
+            "value": 1.579834,
+            "unit": "angstrom",
+            "status": "reported",
+            "definition": "Shortest distance from the candidate H position to a host atom.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Min_NN_Distance"
+            }
+          },
+          "closest_neighbor_element": {
+            "value": "Fe",
+            "unit": null,
+            "status": "reported",
+            "definition": "Element identity of the closest host atom.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Closest_NN_Element"
+            }
+          },
+          "voronoi_volume": {
+            "value": 5.868343,
+            "unit": "angstrom^3",
+            "status": "reported",
+            "definition": "Volume of the candidate-H Voronoi region in the H-free host.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Voronoi_Volume"
+            }
+          },
+          "number_of_faces": {
+            "value": 8,
+            "unit": "1",
+            "status": "reported",
+            "definition": "Reported number of Voronoi-polyhedron faces.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Num_Faces"
+            }
+          },
+          "surface_area": {
+            "value": 19.807130751949728,
+            "unit": "angstrom^2",
+            "status": "recomputed",
+            "definition": "Sum of triangular convex-hull face areas.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Faces+Vertices"
+            }
+          },
+          "volume_cuberoot": {
+            "value": 1.8037312518471955,
+            "unit": "angstrom",
+            "status": "recomputed",
+            "definition": "Cube root of the Voronoi volume.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Voronoi_Volume"
+            }
+          },
+          "area_over_volume": {
+            "value": 3.3752510294557982,
+            "unit": "angstrom^-1",
+            "status": "recomputed",
+            "definition": "Convex-hull surface area divided by Voronoi volume.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Faces+Vertices+Voronoi_Volume"
+            }
+          },
+          "sphericity": {
+            "value": 0.7943396040355494,
+            "unit": "1",
+            "status": "recomputed",
+            "definition": "pi^(1/3)*(6V)^(2/3)/A.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Faces+Vertices+Voronoi_Volume"
+            }
+          },
+          "elongation_lambda1_over_lambda3": {
+            "value": 1.8508020467445718,
+            "unit": "1",
+            "status": "recomputed",
+            "definition": "Ratio of largest to smallest PCA eigenvalue of the void vertices.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Vertices"
+            }
+          },
+          "anisotropy_lambda2_over_lambda3": {
+            "value": 1.0210712645581776,
+            "unit": "1",
+            "status": "recomputed",
+            "definition": "Ratio of middle to smallest PCA eigenvalue of the void vertices.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Vertices"
+            }
+          },
+          "rout_over_rin": {
+            "value": 1.0202414266904918,
+            "unit": "1",
+            "status": "recomputed",
+            "definition": "Maximum divided by minimum vertex radius relative to the vertex centroid.",
+            "source": {
+              "artifact_id": "descriptor_table",
+              "column": "Vertices"
+            }
+          },
+          "cross_check": {
+            "artifact_id": "selected_descriptor_crosscheck",
+            "role": "numerical validation only; never authoritative",
+            "matched_by": {
+              "Structure": "SC_FeTi_allH",
+              "Index": 23
+            }
+          }
+        }
+      },
+      "voronoi_topology": {
+        "coordinate_unit": "angstrom",
+        "vertices": [
+          [
+            14.392457319128667,
+            1.5899808743638149,
+            4.199984510365882
+          ],
+          [
+            15.415559510259904,
+            1.591407968327296,
+            3.855957701043983
+          ],
+          [
+            14.18640422205958,
+            2.7160083861193858,
+            1.8909851375600757
+          ],
+          [
+            15.64087664027188,
+            3.369250951558722,
+            2.2921799354566126
+          ],
+          [
+            15.075594089399543,
+            2.835586679195601,
+            4.8404629675353466
+          ],
+          [
+            13.251671455024717,
+            2.3011676273002903,
+            3.0785068228961467
+          ],
+          [
+            14.188358082422779,
+            2.949648000824584,
+            1.8917356456913426
+          ],
+          [
+            15.642246383326649,
+            2.296486095859592,
+            2.2915821312052964
+          ],
+          [
+            15.281046362916587,
+            2.8347273073972783,
+            4.770576711700766
+          ],
+          [
+            13.266986054337446,
+            3.3607679355459172,
+            3.07367200001164
+          ],
+          [
+            15.412087614327056,
+            4.072125534899537,
+            3.8594331971422795
+          ],
+          [
+            14.433502008502535,
+            4.074313953915399,
+            4.193640417513739
+          ]
+        ],
+        "edges": [
+          [
+            4,
+            9
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            10
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            9,
+            11
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            7,
+            10
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            5,
+            9
+          ],
+          [
+            4,
+            11
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            6,
+            10
+          ],
+          [
+            4,
+            10
+          ],
+          [
+            8,
+            10
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            9
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            1,
+            10
+          ],
+          [
+            6,
+            9
+          ]
+        ],
+        "faces": [
+          [
+            9,
+            2,
+            5
+          ],
+          [
+            9,
+            2,
+            6
+          ],
+          [
+            3,
+            2,
+            7
+          ],
+          [
+            3,
+            2,
+            6
+          ],
+          [
+            1,
+            2,
+            5
+          ],
+          [
+            1,
+            0,
+            5
+          ],
+          [
+            1,
+            2,
+            7
+          ],
+          [
+            4,
+            0,
+            5
+          ],
+          [
+            4,
+            9,
+            5
+          ],
+          [
+            4,
+            9,
+            11
+          ],
+          [
+            4,
+            1,
+            0
+          ],
+          [
+            4,
+            1,
+            8
+          ],
+          [
+            10,
+            9,
+            11
+          ],
+          [
+            10,
+            9,
+            6
+          ],
+          [
+            10,
+            3,
+            6
+          ],
+          [
+            10,
+            3,
+            7
+          ],
+          [
+            10,
+            1,
+            7
+          ],
+          [
+            10,
+            1,
+            8
+          ],
+          [
+            10,
+            4,
+            11
+          ],
+          [
+            10,
+            4,
+            8
+          ]
+        ],
+        "derivation_details": {
+          "vertex_centroid": [
+            14.682232478498113,
+            2.832622609608951,
+            3.3532264315102585
+          ],
+          "pca_eigenvalues_descending": [
+            1.2284962176874061,
+            0.6777505939683752,
+            0.6637642420205029
+          ],
+          "rout": 1.550619264506617,
+          "rin": 1.5198552263620488
+        }
+      },
+      "quality_flags": [],
+      "provenance": {
+        "dump_artifact_id": "dump_SC_FeTi_allH",
+        "descriptor_artifact_id": "descriptor_table",
+        "coordinate_authority": "dump",
+        "reported_corrected_energy_authority": "descriptor_table",
+        "raw_non_frozen_zpe_authority": "dump"
+      }
+    }
+  ]
+}

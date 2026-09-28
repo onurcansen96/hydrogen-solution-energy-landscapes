@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ocdo:hydrogen-solution-landscape:site-collection:1",
+  "title": "Hydrogen solution-energy site collection",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "structure_id",
+    "host_sample_id",
+    "site_count",
+    "angle_metadata",
+    "sites"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "structure_id": {
+      "type": "string"
+    },
+    "host_sample_id": {
+      "type": "string"
+    },
+    "site_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "angle_metadata": {
+      "type": "object"
+    },
+    "sites": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "site_id",
+          "source_key",
+          "candidate_atom",
+          "construction",
+          "calculations",
+          "pre_insertion_descriptors",
+          "provenance"
+        ],
+        "properties": {
+          "site_id": {
+            "type": "string"
+          },
+          "host_sample_id": {
+            "type": "string"
+          },
+          "initial_sample_id": {
+            "type": "string"
+          },
+          "quality_flags": {
+            "type": "array"
+          }
+        }
+      }
+    }
+  }
+}

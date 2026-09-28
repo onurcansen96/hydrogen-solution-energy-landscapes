@@ -1,0 +1,374 @@
+{
+  "schema_version": "1.1.0",
+  "extension_namespace": "urn:ocdo:hydrogen-solution-landscape:1",
+  "source_authority_order": [
+    "dump: cell, atom ID, LAMMPS type and Cartesian coordinates; primary raw ZPE_NF when sources conflict",
+    "Solution_Energy_Descriptors.txt: corrected energies, raw Voronoi topology and tabulated site properties",
+    "recomputed geometry: derived paper descriptors from canonical topology",
+    "manuscript: crystallographic plane/axis, reported S5m tilt/twist components, family-level GB energy and computational description",
+    "derived crystallography: explicit ideal CSL axis-angles and the SCR orientation angle, with formulas and reference directions",
+    "author clarification: EDIFF, initial magnetic moments, BC convention, CD definition/unit and missing-value policy"
+  ],
+  "aggregate_dump_semantics": {
+    "type_2_role": "mutually alternative candidate H positions",
+    "physical_configuration": "all atoms with type != 2 plus exactly one selected type-2 row",
+    "forbidden_interpretation": "all type-2 rows simultaneously occupied by H"
+  },
+  "crystallographic_angles": {
+    "native_json_path": "computational_sample[*].<grain_boundary_block>.misorientation_angle",
+    "extended_json_path": "computational_sample[*].x_hydrogen_landscape.angle_metadata",
+    "site_collection_json_path": "angle_metadata",
+    "manifest_json_path": "structures[*].angle_metadata",
+    "status_policy": "S5m tilt/twist are manuscript-reported exactly as printed; lower-angle ideal CSL representatives and the SCR orientation rotation are explicitly marked derived.",
+    "families": {
+      "SCR": {
+        "angle_scope": "family-level rotated-single-crystal orientation",
+        "angle_type": "single_crystal_orientation_rotation",
+        "orientation_rotation": {
+          "angle_magnitude": {
+            "value": 18.43494882292201,
+            "unit": "degree"
+          },
+          "signed_angle": {
+            "value": -18.43494882292201,
+            "unit": "degree"
+          },
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "reference_direction": [
+            -1,
+            0,
+            0
+          ],
+          "target_direction": [
+            -3,
+            1,
+            0
+          ],
+          "right_hand_rule_axis": [
+            0,
+            0,
+            1
+          ],
+          "status": "derived_from_orientation_vectors",
+          "derivation": "angle magnitude = atan(1/3); signed angle is clockwise from [-1,0,0] to [-3,1,0] about +[0,0,1]",
+          "not_a_grain_boundary_misorientation": true
+        }
+      },
+      "S3": {
+        "angle_scope": "family-level grain-boundary crystallography; identical for every chemistry and H site in the family",
+        "angle_type": "grain_boundary_misorientation",
+        "misorientation": {
+          "value": 70.52877936550931,
+          "unit": "degree",
+          "rotation_axis": [
+            1,
+            -1,
+            0
+          ],
+          "boundary_plane": [
+            1,
+            1,
+            -2
+          ],
+          "status": "derived_ideal_CSL_axis_angle",
+          "derivation": "2*atan(sqrt(2)/2)",
+          "angle_convention": "lower-angle representative in [0,90] degrees for the listed ideal cubic CSL plane/axis construction; symmetry-equivalent complementary conventions may exist",
+          "definition": "Ideal cubic CSL axis-angle for the listed Sigma representation; the manuscript specifies the plane/axis but does not print this number."
+        }
+      },
+      "S5": {
+        "angle_scope": "family-level grain-boundary crystallography; identical for every chemistry and H site in the family",
+        "angle_type": "grain_boundary_misorientation",
+        "misorientation": {
+          "value": 36.86989764584402,
+          "unit": "degree",
+          "rotation_axis": [
+            0,
+            0,
+            1
+          ],
+          "boundary_plane": [
+            -3,
+            1,
+            0
+          ],
+          "status": "derived_ideal_CSL_axis_angle",
+          "derivation": "2*atan(1/3)",
+          "angle_convention": "lower-angle representative in [0,90] degrees for the listed ideal cubic CSL plane/axis construction; symmetry-equivalent complementary conventions may exist",
+          "definition": "Ideal cubic CSL axis-angle for the listed Sigma representation; the manuscript specifies the plane/axis but does not print this number."
+        }
+      },
+      "S27": {
+        "angle_scope": "family-level grain-boundary crystallography; identical for every chemistry and H site in the family",
+        "angle_type": "grain_boundary_misorientation",
+        "misorientation": {
+          "value": 31.586338096527925,
+          "unit": "degree",
+          "rotation_axis": [
+            1,
+            1,
+            0
+          ],
+          "boundary_plane": [
+            5,
+            -5,
+            2
+          ],
+          "status": "derived_ideal_CSL_axis_angle",
+          "derivation": "2*atan(sqrt(2)/5)",
+          "angle_convention": "lower-angle representative in [0,90] degrees for the listed ideal cubic CSL plane/axis construction; symmetry-equivalent complementary conventions may exist",
+          "definition": "Ideal cubic CSL axis-angle for the listed Sigma representation; the manuscript specifies the plane/axis but does not print this number."
+        }
+      },
+      "S5m": {
+        "angle_scope": "family-level grain-boundary crystallography; identical for every chemistry and H site in the family",
+        "angle_type": "grain_boundary_misorientation",
+        "misorientation": {
+          "value": 36.86989764584402,
+          "unit": "degree",
+          "rotation_axis": [
+            1,
+            0,
+            0
+          ],
+          "boundary_plane": [
+            1,
+            1,
+            -2
+          ],
+          "status": "derived_ideal_CSL_axis_angle",
+          "derivation": "2*atan(1/3)",
+          "angle_convention": "lower-angle representative in [0,90] degrees for the listed ideal cubic CSL plane/axis construction; symmetry-equivalent complementary conventions may exist",
+          "definition": "Ideal cubic CSL axis-angle for the listed Sigma representation; the manuscript specifies the plane/axis but does not print this number."
+        },
+        "mixed_character_components": {
+          "tilt": {
+            "value": 33.6,
+            "unit": "degree",
+            "status": "reported_in_manuscript"
+          },
+          "twist": {
+            "value": 0.27,
+            "unit": "degree",
+            "status": "reported_in_manuscript"
+          },
+          "interpretation": "Reported mixed-boundary character components; values and degree units are preserved exactly as printed, without reinterpretation. Do not add them together or substitute their sum for the CSL axis-angle."
+        }
+      }
+    }
+  },
+  "field_object_shape": "Quantitative JSON paths identify property objects; the numerical datum is stored in their value member.",
+  "fields": {
+    "Structure": {
+      "json_path": "source_key.structure",
+      "unit": null,
+      "provenance_class": "imported_identifier",
+      "definition": "Raw aggregate-dump structure key, including the _allH suffix."
+    },
+    "Index": {
+      "json_path": "source_key.descriptor_index",
+      "unit": null,
+      "provenance_class": "imported_identifier",
+      "definition": "Unique zero-based row index in Solution_Energy_Descriptors.txt."
+    },
+    "Atom_id": {
+      "json_path": "source_key.atom_id",
+      "unit": null,
+      "provenance_class": "imported_identifier",
+      "definition": "LAMMPS atom ID of the selected candidate-H row."
+    },
+    "Atom_type": {
+      "json_path": "candidate_atom.source_type",
+      "unit": null,
+      "provenance_class": "imported_identifier",
+      "definition": "LAMMPS type of the selected atom; candidate H is always type 2."
+    },
+    "Coordinates": {
+      "json_path": "candidate_atom.position.value",
+      "unit": "angstrom",
+      "provenance_class": "imported_authoritative",
+      "definition": "Cartesian x, y, z position copied from the authoritative aggregate dump."
+    },
+    "SE": {
+      "json_path": "calculations.frozen.properties.solution_energy",
+      "unit": "eV",
+      "provenance_class": "reported",
+      "source_aliases": [
+        "SE",
+        "Atom_SE"
+      ],
+      "definition": "Frozen-host H solution energy E_host+H,F - E_host - 0.5 E_H2."
+    },
+    "SE_NF": {
+      "json_path": "calculations.non_frozen.properties.solution_energy",
+      "unit": "eV",
+      "provenance_class": "reported",
+      "source_aliases": [
+        "SE_NF",
+        "Atom_SE_NF"
+      ],
+      "definition": "All-ion-relaxed H solution energy at fixed cell: E_host+H,NF - E_host - 0.5 E_H2."
+    },
+    "ZPE": {
+      "json_path": "calculations.frozen.properties.zpe_contribution",
+      "unit": "eV",
+      "provenance_class": "reported",
+      "source_aliases": [
+        "ZPE",
+        "Atom_ZPE"
+      ],
+      "definition": "Three-mode local-H zero-point energy for the frozen branch."
+    },
+    "ZPE_NF": {
+      "json_path": "calculations.non_frozen.properties.zpe_contribution",
+      "unit": "eV",
+      "provenance_class": "reported",
+      "source_aliases": [
+        "ZPE_NF",
+        "Atom_ZPE_NF"
+      ],
+      "definition": "Three-mode local-H zero-point energy about the non-frozen relaxed geometry; the dump is primary where sources conflict."
+    },
+    "Atom_SE_ZPEC": {
+      "json_path": "calculations.frozen.properties.solution_energy_zpe_corrected",
+      "unit": "eV",
+      "provenance_class": "reported_derived",
+      "release_name": "SE_ZPEC_F",
+      "definition": "Reported frozen ZPE-corrected solution energy: SE + ZPE - 0.5 ZPE_H2."
+    },
+    "Atom_SE_NF_ZPEC": {
+      "json_path": "calculations.non_frozen.properties.solution_energy_zpe_corrected",
+      "unit": "eV",
+      "provenance_class": "reported_derived",
+      "release_name": "SE_ZPEC_NF",
+      "definition": "Reported non-frozen ZPE-corrected solution energy: SE_NF + ZPE_NF - 0.5 ZPE_H2."
+    },
+    "BC": {
+      "json_path": "calculations.frozen.properties.bader_charge_transfer_as_reported",
+      "unit": "e",
+      "provenance_class": "reported",
+      "definition": "H Bader charge-transfer value preserved exactly as reported, without sign or reference-state conversion."
+    },
+    "BC_NF": {
+      "json_path": "calculations.non_frozen.properties.bader_charge_transfer_as_reported",
+      "unit": "e",
+      "provenance_class": "reported_or_restored_missing",
+      "definition": "Non-frozen H Bader charge-transfer value preserved exactly as reported; known upstream NA-to-zero placeholders are restored to null."
+    },
+    "CD": {
+      "json_path": "pre_insertion_descriptors.charge_density",
+      "unit": "e/Å³",
+      "unit_ascii": "e/angstrom^3",
+      "provenance_class": "reported_pre_insertion_descriptor",
+      "definition": "Precomputed total charge in the candidate-H Voronoi region of the H-free host divided by the region volume; imported from the descriptor table. Separately distributed CHGCAR resources are listed in charge_density_manifest.json and are not read by this scalar converter."
+    },
+    "Voronoi_Volume": {
+      "json_path": "pre_insertion_descriptors.geometry.voronoi_volume",
+      "unit": "angstrom^3",
+      "provenance_class": "reported_pre_insertion_descriptor",
+      "definition": "Volume of the candidate-H Voronoi region in the H-free host."
+    },
+    "Num_Faces": {
+      "json_path": "pre_insertion_descriptors.geometry.number_of_faces",
+      "unit": "1",
+      "provenance_class": "reported_pre_insertion_descriptor",
+      "definition": "Number of faces of the candidate-site Voronoi polyhedron."
+    },
+    "Min_NN_Distance": {
+      "json_path": "pre_insertion_descriptors.geometry.minimum_nearest_neighbor_distance",
+      "unit": "angstrom",
+      "provenance_class": "reported_pre_insertion_descriptor",
+      "definition": "Shortest distance from the candidate position to a host atom."
+    },
+    "Closest_NN_Element": {
+      "json_path": "pre_insertion_descriptors.geometry.closest_neighbor_element",
+      "unit": null,
+      "provenance_class": "reported_pre_insertion_descriptor",
+      "definition": "Chemical element of the closest host atom."
+    },
+    "Vertices": {
+      "json_path": "voronoi_topology.vertices",
+      "unit": "angstrom",
+      "provenance_class": "imported_raw_topology",
+      "definition": "Cartesian coordinates of the serialized candidate-site Voronoi vertices."
+    },
+    "Edges": {
+      "json_path": "voronoi_topology.edges",
+      "unit": null,
+      "provenance_class": "imported_raw_topology",
+      "definition": "Pairs of zero-based indices into the Vertices array."
+    },
+    "Faces": {
+      "json_path": "voronoi_topology.faces",
+      "unit": null,
+      "provenance_class": "imported_raw_topology",
+      "definition": "Triangular faces represented by triples of zero-based indices into the Vertices array."
+    }
+  },
+  "derived_descriptors": {
+    "surface_area": {
+      "json_path": "pre_insertion_descriptors.geometry.surface_area",
+      "unit": "angstrom^2",
+      "provenance_class": "recomputed",
+      "definition": "Sum of the triangular face areas defined by Faces and Vertices."
+    },
+    "volume_cuberoot": {
+      "json_path": "pre_insertion_descriptors.geometry.volume_cuberoot",
+      "unit": "angstrom",
+      "provenance_class": "recomputed",
+      "definition": "V^(1/3), where V is the reported Voronoi volume."
+    },
+    "area_over_volume": {
+      "json_path": "pre_insertion_descriptors.geometry.area_over_volume",
+      "unit": "angstrom^-1",
+      "provenance_class": "recomputed",
+      "definition": "A/V, where A is the recomputed triangular-face surface area."
+    },
+    "sphericity": {
+      "json_path": "pre_insertion_descriptors.geometry.sphericity",
+      "unit": "1",
+      "provenance_class": "recomputed",
+      "definition": "pi^(1/3)*(6V)^(2/3)/A."
+    },
+    "elongation_lambda1_over_lambda3": {
+      "json_path": "pre_insertion_descriptors.geometry.elongation_lambda1_over_lambda3",
+      "unit": "1",
+      "provenance_class": "recomputed",
+      "definition": "Largest divided by smallest PCA eigenvalue of the Voronoi vertices."
+    },
+    "anisotropy_lambda2_over_lambda3": {
+      "json_path": "pre_insertion_descriptors.geometry.anisotropy_lambda2_over_lambda3",
+      "unit": "1",
+      "provenance_class": "recomputed",
+      "definition": "Middle divided by smallest PCA eigenvalue of the Voronoi vertices."
+    },
+    "rout_over_rin": {
+      "json_path": "pre_insertion_descriptors.geometry.rout_over_rin",
+      "unit": "1",
+      "provenance_class": "recomputed",
+      "definition": "Maximum divided by minimum vertex distance from the vertex centroid."
+    }
+  },
+  "missing_value_policy": {
+    "json_representation": "JSON null",
+    "no_imputation": true,
+    "forbidden_sentinels": [
+      "NaN",
+      "Infinity",
+      "NA",
+      "nan",
+      "zero-filled upstream NA"
+    ],
+    "status_values": [
+      "reported",
+      "reported_derived",
+      "recomputed",
+      "not_calculated",
+      "restored_missing"
+    ]
+  }
+}

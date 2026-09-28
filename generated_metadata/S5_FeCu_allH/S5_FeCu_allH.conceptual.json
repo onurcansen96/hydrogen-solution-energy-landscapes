@@ -1,0 +1,1313 @@
+{
+  "dataset": {
+    "identifier": null,
+    "title": "Hydrogen solution-energy landscape host metadata for S5_FeCu_allH",
+    "creators": [
+      {
+        "id": null,
+        "name": "Onur Can Şen"
+      },
+      {
+        "id": null,
+        "name": "Farnoosh Ghaderi"
+      },
+      {
+        "id": null,
+        "name": "Santiago Benito"
+      },
+      {
+        "id": null,
+        "name": "Sebastian Weber"
+      },
+      {
+        "id": null,
+        "name": "Rebecca Janisch"
+      }
+    ],
+    "publication": {
+      "id": null,
+      "identifier": null,
+      "title": null
+    },
+    "samples": [
+      "host_S5_FeCu"
+    ]
+  },
+  "computational_sample": [
+    {
+      "id": "host_S5_FeCu",
+      "material": {
+        "element_ratio": {
+          "Cu": 0.016666666666666666,
+          "Fe": 0.9833333333333333
+        },
+        "crystal_structure": {
+          "spacegroup_symbol": "Im-3m",
+          "spacegroup_number": 229,
+          "unit_cell": {
+            "bravais_lattice": "https://www.wikidata.org/wiki/Q851536",
+            "lattice_parameter": [
+              2.833,
+              2.833,
+              2.833
+            ],
+            "angle": [
+              90.0,
+              90.0,
+              90.0
+            ]
+          }
+        }
+      },
+      "simulation_cell": {
+        "volume": {
+          "value": 1414.383851590241
+        },
+        "number_of_atoms": 120,
+        "length": [
+          27.86404383,
+          5.666,
+          8.95873261
+        ],
+        "vector": [
+          [
+            27.86404383,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            5.666,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            8.95873261
+          ]
+        ],
+        "angle": [
+          90.0,
+          90.0,
+          90.0
+        ],
+        "repetitions": [],
+        "grain_size": null,
+        "number_of_grains": null
+      },
+      "atom_attribute": {
+        "position": [
+          [
+            8.8225651479,
+            1.8596772385,
+            2.0234276326
+          ],
+          [
+            5.2161166619,
+            1.8576267524,
+            0.2364681003
+          ],
+          [
+            7.0227920992,
+            0.4421187111,
+            1.1267297804
+          ],
+          [
+            6.1272861156,
+            1.8584016971,
+            2.9137121888
+          ],
+          [
+            7.9257206945,
+            0.44600805,
+            3.8144269078
+          ],
+          [
+            7.0405771753,
+            1.8602768348,
+            5.6118207862
+          ],
+          [
+            8.8327660372,
+            0.444648815,
+            6.50829209
+          ],
+          [
+            7.9265999559,
+            1.8591524078,
+            8.2982088204
+          ],
+          [
+            2.4495188673,
+            1.8508599204,
+            1.1311829341
+          ],
+          [
+            4.3066956098,
+            0.443594773,
+            2.0261486684
+          ],
+          [
+            3.4754016218,
+            1.8836929306,
+            3.8477322962
+          ],
+          [
+            5.2446729487,
+            0.4470277447,
+            4.7141639048
+          ],
+          [
+            4.3230869003,
+            1.8632583826,
+            6.5070218824
+          ],
+          [
+            6.1290802459,
+            0.4461694317,
+            7.4016188932
+          ],
+          [
+            0.5126466277,
+            0.2916644111,
+            0.2787092773
+          ],
+          [
+            0.4982061864,
+            1.755517429,
+            4.9105887878
+          ],
+          [
+            2.5023828812,
+            0.4532330492,
+            5.5831639422
+          ],
+          [
+            1.6419677215,
+            1.921251059,
+            7.3895093901
+          ],
+          [
+            3.4056147511,
+            0.4519240793,
+            8.3159897122
+          ],
+          [
+            8.821592228,
+            4.6928440352,
+            2.0239925075
+          ],
+          [
+            5.2152080888,
+            4.6974117207,
+            0.2347483838
+          ],
+          [
+            7.0251160921,
+            3.27560765,
+            1.1249168008
+          ],
+          [
+            6.1260413016,
+            4.6967207132,
+            2.9130915015
+          ],
+          [
+            7.9278986366,
+            3.2781858255,
+            3.8183360357
+          ],
+          [
+            7.0398355317,
+            4.6986673565,
+            5.6111866776
+          ],
+          [
+            8.830931421,
+            3.2776972132,
+            6.5076233724
+          ],
+          [
+            7.9265229176,
+            4.6933348757,
+            8.2978653707
+          ],
+          [
+            2.4589334883,
+            4.6682112534,
+            1.1135187459
+          ],
+          [
+            4.3100390369,
+            3.2776892151,
+            2.0186328335
+          ],
+          [
+            3.4591755851,
+            4.679970375,
+            3.8371039836
+          ],
+          [
+            5.2586768397,
+            3.2812944397,
+            4.725414741
+          ],
+          [
+            4.3195193308,
+            4.709880767,
+            6.5037796191
+          ],
+          [
+            6.1323977311,
+            3.2780678403,
+            7.4022516516
+          ],
+          [
+            0.5056456918,
+            3.1315715479,
+            0.3027201228
+          ],
+          [
+            1.6582493211,
+            3.310350493,
+            2.9859709992
+          ],
+          [
+            0.4858962943,
+            4.4906270282,
+            4.8540219785
+          ],
+          [
+            2.5121735918,
+            3.2854407824,
+            5.5965318832
+          ],
+          [
+            1.6369453464,
+            4.7579019017,
+            7.382775236
+          ],
+          [
+            3.4148758827,
+            3.2840573314,
+            8.3046306641
+          ],
+          [
+            11.5277282335,
+            1.8645501586,
+            1.1202123568
+          ],
+          [
+            13.3040959254,
+            0.5037454814,
+            2.0337125613
+          ],
+          [
+            12.4444379421,
+            1.8641095036,
+            3.8360294602
+          ],
+          [
+            13.3242375798,
+            1.8925362394,
+            6.5173800059
+          ],
+          [
+            9.7253653448,
+            0.4430888363,
+            0.2345092631
+          ],
+          [
+            10.6241189305,
+            0.451544555,
+            2.9224592653
+          ],
+          [
+            9.7239717706,
+            1.8601947577,
+            4.7147006532
+          ],
+          [
+            11.5317227159,
+            0.4494571617,
+            5.600143086
+          ],
+          [
+            10.6424350182,
+            1.8597315719,
+            7.4078925405
+          ],
+          [
+            12.4611644579,
+            0.4346237539,
+            8.3237468566
+          ],
+          [
+            11.5240165766,
+            4.696064772,
+            1.121888058
+          ],
+          [
+            13.2991236411,
+            3.3404750554,
+            2.0332997569
+          ],
+          [
+            12.4214480184,
+            4.6955438448,
+            3.832066967
+          ],
+          [
+            13.2945724899,
+            4.7308181024,
+            6.4964387622
+          ],
+          [
+            9.7248883722,
+            3.2745291323,
+            0.2320164278
+          ],
+          [
+            10.6223686111,
+            3.2801144846,
+            2.9209960549
+          ],
+          [
+            9.7223287614,
+            4.6953964307,
+            4.7145168168
+          ],
+          [
+            11.5279751839,
+            3.27489775,
+            5.6014730857
+          ],
+          [
+            10.6372433235,
+            4.6950375391,
+            7.4049226497
+          ],
+          [
+            12.466291385,
+            3.2653170982,
+            8.3156795078
+          ],
+          [
+            27.2347316614,
+            1.4805704811,
+            7.375031727
+          ],
+          [
+            27.2571328366,
+            0.0903539845,
+            2.8905697646
+          ],
+          [
+            26.3935300773,
+            1.5469277743,
+            1.0835410284
+          ],
+          [
+            25.4651893449,
+            1.5310136714,
+            3.8067946054
+          ],
+          [
+            26.3762626023,
+            0.1168593793,
+            5.5715960756
+          ],
+          [
+            24.5571169503,
+            1.5290226264,
+            6.4834113594
+          ],
+          [
+            25.4596492431,
+            0.1160936188,
+            8.2873593237
+          ],
+          [
+            23.6579527754,
+            1.535687148,
+            0.2133258078
+          ],
+          [
+            24.575315843,
+            0.1186707371,
+            1.9990351404
+          ],
+          [
+            22.7658654489,
+            1.5349609304,
+            2.8991363434
+          ],
+          [
+            23.6567626481,
+            0.1190474554,
+            4.691564123
+          ],
+          [
+            21.8585791841,
+            1.5342730378,
+            5.592574061
+          ],
+          [
+            22.7554599662,
+            0.1197500271,
+            7.3832842202
+          ],
+          [
+            20.9553609901,
+            1.5380218274,
+            8.2795213059
+          ],
+          [
+            21.8594832589,
+            0.1210441874,
+            1.1089399972
+          ],
+          [
+            20.0612605061,
+            1.5354989974,
+            2.00378272
+          ],
+          [
+            20.9733418981,
+            0.1198820644,
+            3.7939018816
+          ],
+          [
+            19.1774698613,
+            1.5354851598,
+            4.6911333029
+          ],
+          [
+            20.059837214,
+            0.1228772559,
+            6.4916708823
+          ],
+          [
+            19.148649098,
+            0.125005856,
+            0.2103137182
+          ],
+          [
+            27.2303475689,
+            4.3097325951,
+            7.3753474997
+          ],
+          [
+            26.3989069277,
+            4.3820880143,
+            1.0923070164
+          ],
+          [
+            27.2283545435,
+            2.9175568458,
+            2.9111586004
+          ],
+          [
+            25.4614614207,
+            4.3711222034,
+            3.8056210963
+          ],
+          [
+            26.3556274376,
+            2.9513883528,
+            5.5753933419
+          ],
+          [
+            24.5555019557,
+            4.3656956369,
+            6.4849183173
+          ],
+          [
+            25.4562245896,
+            2.9509418815,
+            8.2854358799
+          ],
+          [
+            23.6576157135,
+            4.3703222868,
+            0.2156987982
+          ],
+          [
+            24.5701395922,
+            2.9495353704,
+            2.0018550605
+          ],
+          [
+            22.764006717,
+            4.368051134,
+            2.8994046963
+          ],
+          [
+            23.6553668107,
+            2.9503612061,
+            4.6917769258
+          ],
+          [
+            21.8611033607,
+            4.3678064114,
+            5.5887507517
+          ],
+          [
+            22.7548360997,
+            2.9528188252,
+            7.3832038877
+          ],
+          [
+            20.9578826548,
+            4.3706409494,
+            8.2812757925
+          ],
+          [
+            21.8598876882,
+            2.952902335,
+            1.109680169
+          ],
+          [
+            20.065000041,
+            4.3691739491,
+            2.0030113585
+          ],
+          [
+            20.9727283758,
+            2.9480025436,
+            3.794307297
+          ],
+          [
+            19.1910031292,
+            4.3672337071,
+            4.6805647673
+          ],
+          [
+            20.0585595497,
+            2.9507612769,
+            6.4920083926
+          ],
+          [
+            19.1476436739,
+            2.9515475543,
+            0.2116517747
+          ],
+          [
+            18.2390380745,
+            1.5402695025,
+            7.3797837628
+          ],
+          [
+            17.3384475949,
+            1.5336733339,
+            1.0897196208
+          ],
+          [
+            18.2553740711,
+            0.1205276583,
+            2.8998315846
+          ],
+          [
+            16.4323107246,
+            1.5315636332,
+            3.8229889713
+          ],
+          [
+            17.4065415737,
+            0.10337353,
+            5.5579233142
+          ],
+          [
+            16.3814918767,
+            0.1356204955,
+            8.2748575964
+          ],
+          [
+            14.4438753849,
+            1.697517394,
+            0.1702116132
+          ],
+          [
+            15.5758777041,
+            0.0674979088,
+            2.0152870168
+          ],
+          [
+            14.4309825294,
+            0.2205272399,
+            4.49979621
+          ],
+          [
+            18.2418230355,
+            4.3722191079,
+            7.3865446178
+          ],
+          [
+            17.3482881671,
+            4.3675813207,
+            1.1021358128
+          ],
+          [
+            18.2517347058,
+            2.9404918649,
+            2.9029098685
+          ],
+          [
+            16.443611958,
+            4.3656429157,
+            3.8098902397
+          ],
+          [
+            17.3918122691,
+            2.9708786709,
+            5.5685488712
+          ],
+          [
+            15.5899957109,
+            4.3448783293,
+            6.4211952744
+          ],
+          [
+            16.3910742469,
+            2.9853922826,
+            8.2934316912
+          ],
+          [
+            14.4361943698,
+            4.5240421893,
+            0.1461246263
+          ],
+          [
+            15.5705487051,
+            2.897807059,
+            2.0225135138
+          ],
+          [
+            14.4179106186,
+            3.1565021838,
+            4.5551644643
+          ],
+          [
+            1.6860700057,
+            0.4729668086,
+            3.0047841041
+          ],
+          [
+            15.6179346461,
+            1.51888496,
+            6.4017461746
+          ]
+        ],
+        "species": [
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Fe",
+          "Cu",
+          "Cu"
+        ],
+        "file_path": null,
+        "file_format": null,
+        "file_species": null
+      },
+      "calculated_property": [
+        {
+          "id": "gb_energy_S5_FeCu",
+          "label": "Paper reference grain-boundary energy",
+          "basename": "GrainBoundaryEnergy",
+          "value": 1.54,
+          "unit": "J-PER-M2",
+          "associate_to_sample": [
+            "host_S5_FeCu"
+          ]
+        }
+      ],
+      "substitutional": {
+        "concentration": 0.016666666666666666,
+        "number": 2
+      },
+      "symmetric_tilt_grain_boundary": {
+        "sigma": 5,
+        "plane": [
+          -3,
+          1,
+          0
+        ],
+        "misorientation_angle": 36.86989764584402,
+        "rotation_axis": [
+          0,
+          0,
+          1
+        ]
+      },
+      "x_hydrogen_landscape": {
+        "namespace": "urn:ocdo:hydrogen-solution-landscape:1",
+        "schema_version": "1.1.0",
+        "source_structure_id": "S5_FeCu_allH",
+        "paper_structure_id": "S5_FeCu_allH",
+        "raw_family": "S5",
+        "paper_abbreviation": "S5",
+        "chemistry": "FeCu",
+        "structure_class": "symmetric_tilt_grain_boundary",
+        "host_definition": "all source dump atoms whose LAMMPS type is not 2",
+        "host_atom_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          178,
+          179
+        ],
+        "host_source_types": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          3,
+          3
+        ],
+        "host_species_counts": {
+          "Cu": 2,
+          "Fe": 118
+        },
+        "type_species_map": {
+          "1": "Fe",
+          "2": "H",
+          "3": "Cu"
+        },
+        "source_box_bounds": [
+          [
+            0.0,
+            27.86404383
+          ],
+          [
+            0.0,
+            5.666
+          ],
+          [
+            0.0,
+            8.95873261
+          ]
+        ],
+        "source_box_bounds_header": "ITEM: BOX BOUNDS pp pp pp",
+        "periodic_boundary_conditions": [
+          true,
+          true,
+          true
+        ],
+        "source_coordinates_preserved_unwrapped": true,
+        "paper_initial_cell_angstrom": [
+          26.87,
+          5.66,
+          8.95
+        ],
+        "actual_dump_cell_is_authoritative": true,
+        "k_mesh": [
+          1,
+          6,
+          4
+        ],
+        "segregation_optimization": "all_sites",
+        "normal_volume_optimization": true,
+        "rigid_body_translation": true,
+        "solute_species": "Cu",
+        "solute_or_vacancy_count": 2,
+        "reference_grain_boundary_energy_scope": "family-level paper reference; not independently recomputed for every chemistry or H site",
+        "orientation_plane": null,
+        "cell_orientation": null,
+        "angle_metadata": {
+          "angle_scope": "family-level grain-boundary crystallography; identical for every chemistry and H site in the family",
+          "angle_type": "grain_boundary_misorientation",
+          "misorientation": {
+            "value": 36.86989764584402,
+            "unit": "degree",
+            "rotation_axis": [
+              0,
+              0,
+              1
+            ],
+            "boundary_plane": [
+              -3,
+              1,
+              0
+            ],
+            "status": "derived_ideal_CSL_axis_angle",
+            "derivation": "2*atan(1/3)",
+            "angle_convention": "lower-angle representative in [0,90] degrees for the listed ideal cubic CSL plane/axis construction; symmetry-equivalent complementary conventions may exist",
+            "definition": "Ideal cubic CSL axis-angle for the listed Sigma representation; the manuscript specifies the plane/axis but does not print this number."
+          }
+        }
+      }
+    }
+  ],
+  "workflow": [
+    {
+      "id": "workflow_host_S5_FeCu_frozen",
+      "algorithm": null,
+      "method": "DensityFunctionalTheory",
+      "xc_functional": "PBE",
+      "input_parameter": [],
+      "input_sample": [
+        "host_S5_FeCu"
+      ],
+      "output_sample": [],
+      "output_parameter": [],
+      "calculated_property": [],
+      "degrees_of_freedom": [
+        "AtomicPositionRelaxation"
+      ],
+      "interatomic_potential": {
+        "potential_type": null,
+        "uri": null
+      },
+      "software": [
+        {
+          "uri": "https://www.vasp.at/",
+          "version": null,
+          "label": "VASP"
+        }
+      ],
+      "workflow_manager": {
+        "uri": null,
+        "version": null,
+        "label": null
+      },
+      "thermodynamic_ensemble": null,
+      "x_hydrogen_landscape": {
+        "namespace": "urn:ocdo:hydrogen-solution-landscape:1",
+        "protocol_role": "one-H frozen relaxation",
+        "cell": "fixed",
+        "movable_atoms": "selected H only",
+        "fixed_atoms": "all non-H atoms",
+        "output_geometry_available": false,
+        "computational_settings_ref": "../computational_settings.json",
+        "site_results_location": "per-structure hydrogen-site sidecar"
+      }
+    },
+    {
+      "id": "workflow_host_S5_FeCu_non_frozen",
+      "algorithm": null,
+      "method": "DensityFunctionalTheory",
+      "xc_functional": "PBE",
+      "input_parameter": [],
+      "input_sample": [
+        "host_S5_FeCu"
+      ],
+      "output_sample": [],
+      "output_parameter": [],
+      "calculated_property": [],
+      "degrees_of_freedom": [
+        "AtomicPositionRelaxation"
+      ],
+      "interatomic_potential": {
+        "potential_type": null,
+        "uri": null
+      },
+      "software": [
+        {
+          "uri": "https://www.vasp.at/",
+          "version": null,
+          "label": "VASP"
+        }
+      ],
+      "workflow_manager": {
+        "uri": null,
+        "version": null,
+        "label": null
+      },
+      "thermodynamic_ensemble": null,
+      "x_hydrogen_landscape": {
+        "namespace": "urn:ocdo:hydrogen-solution-landscape:1",
+        "protocol_role": "one-H non-frozen relaxation",
+        "cell": "fixed",
+        "movable_atoms": "all atoms",
+        "fixed_atoms": "none",
+        "output_geometry_available": false,
+        "computational_settings_ref": "../computational_settings.json",
+        "site_results_location": "per-structure hydrogen-site sidecar"
+      }
+    }
+  ],
+  "operation": [],
+  "math_operation": [],
+  "x_hydrogen_landscape": {
+    "namespace": "urn:ocdo:hydrogen-solution-landscape:1",
+    "schema_version": "1.1.0",
+    "publication_status": "unpublished",
+    "source_structure_id": "S5_FeCu_allH",
+    "paper_structure_id": "S5_FeCu_allH",
+    "site_collection": "S5_FeCu_allH.hydrogen_sites.json",
+    "site_count": 59,
+    "computational_settings": "../computational_settings.json",
+    "field_dictionary": "../field_dictionary.json",
+    "angle_metadata": {
+      "angle_scope": "family-level grain-boundary crystallography; identical for every chemistry and H site in the family",
+      "angle_type": "grain_boundary_misorientation",
+      "misorientation": {
+        "value": 36.86989764584402,
+        "unit": "degree",
+        "rotation_axis": [
+          0,
+          0,
+          1
+        ],
+        "boundary_plane": [
+          -3,
+          1,
+          0
+        ],
+        "status": "derived_ideal_CSL_axis_angle",
+        "derivation": "2*atan(1/3)",
+        "angle_convention": "lower-angle representative in [0,90] degrees for the listed ideal cubic CSL plane/axis construction; symmetry-equivalent complementary conventions may exist",
+        "definition": "Ideal cubic CSL axis-angle for the listed Sigma representation; the manuscript specifies the plane/axis but does not print this number."
+      }
+    },
+    "raw_aggregate_dump_is_not_a_physical_many_H_sample": true,
+    "source_artifact_ids": [
+      "dump_S5_FeCu_allH",
+      "descriptor_table"
+    ]
+  }
+}

@@ -1,0 +1,2113 @@
+{
+  "schema_version": "1.1.0",
+  "generator": {
+    "name": "convert_h_solution_landscape.py",
+    "version": "1.1.0"
+  },
+  "generated_at_utc": "2026-07-16T12:05:37Z",
+  "dataset_title": "Hydrogen solution-energy landscapes in ferritic Fe environments",
+  "publication_status": "unpublished",
+  "citation": null,
+  "doi": null,
+  "structure_count": 25,
+  "site_count": 1648,
+  "conceptual_dictionary_core": "dataset.conceptual.json",
+  "computational_settings": "computational_settings.json",
+  "field_dictionary": "field_dictionary.json",
+  "source_manifest": "source_manifest.json",
+  "validation_report": "validation_report.json",
+  "structures": [
+    {
+      "source_structure_id": "S27_FeCr_allH",
+      "paper_structure_id": "S27_FeCr_allH",
+      "host_sample_id": "host_S27_FeCr",
+      "raw_family": "S27",
+      "paper_family": "S27",
+      "chemistry": "FeCr",
+      "structure_class": "symmetric_tilt_grain_boundary",
+      "host_atom_count": 216,
+      "hydrogen_site_count": 92,
+      "conceptual_file": "S27_FeCr_allH/S27_FeCr_allH.conceptual.json",
+      "site_file": "S27_FeCr_allH/S27_FeCr_allH.hydrogen_sites.json",
+      "source_dump_artifact_id": "dump_S27_FeCr_allH",
+      "angle_metadata": {
+        "angle_scope": "family-level grain-boundary crystallography; identical for every chemistry and H site in the family",
+        "angle_type": "grain_boundary_misorientation",
+        "misorientation": {
+          "value": 31.586338096527925,
+          "unit": "degree",
+          "rotation_axis": [
+            1,
+            1,
+            0
+          ],
+          "boundary_plane": [
+            5,
+            -5,
+            2
+          ],
+          "status": "derived_ideal_CSL_axis_angle",
+          "derivation": "2*atan(sqrt(2)/5)",
+          "angle_convention": "lower-angle representative in [0,90] degrees for the listed ideal cubic CSL plane/axis construction; symmetry-equivalent complementary conventions may exist",
+          "definition": "Ideal cubic CSL axis-angle for the listed Sigma representation; the manuscript specifies the plane/axis but does not print this number."
+        }
+      },
+      "summary": {
+        "solution_energy_frozen_eV": {
+          "count": 92,
+          "missing": 0,
+          "minimum": -0.061886,
+          "maximum": 0.529214,
+          "mean": 0.16859552173913042
+        },
+        "solution_energy_non_frozen_eV": {
+          "count": 92,
+          "missing": 0,
+          "minimum": -0.147486,
+          "maximum": 0.182614,
+          "mean": 0.02015204347826087
+        },
+        "solution_energy_zpe_corrected_frozen_eV": {
+          "count": 92,
+          "missing": 0,
+          "minimum": -0.052506,
+          "maximum": 0.656786,
+          "mean": 0.2417595
+        },
+        "solution_energy_zpe_corrected_non_frozen_eV": {
+          "count": 92,
+          "missing": 0,
+          "minimum": -0.103052,
+          "maximum": 0.26099,
+          "mean": 0.05877959782608695
+        }
+      }
+    },
+    {
+      "source_structure_id": "S27_FeCu_allH",
+      "paper_structure_id": "S27_FeCu_allH",
+      "host_sample_id": "host_S27_FeCu",
+      "raw_family": "S27",
+      "paper_family": "S27",
+      "chemistry": "FeCu",
+      "structure_class": "symmetric_tilt_grain_boundary",
+      "host_atom_count": 216,
+      "hydrogen_site_count": 95,
+      "conceptual_file": "S27_FeCu_allH/S27_FeCu_allH.conceptual.json",
+      "site_file": "S27_FeCu_allH/S27_FeCu_allH.hydrogen_sites.json",
+      "source_dump_artifact_id": "dump_S27_FeCu_allH",
+      "angle_metadata": {
+        "angle_scope": "family-level grain-boundary crystallography; identical for every chemistry and H site in the family",
+        "angle_type": "grain_boundary_misorientation",
+        "misorientation": {
+          "value": 31.586338096527925,
+          "unit": "degree",
+          "rotation_axis": [
+            1,
+            1,
+            0
+          ],
+          "boundary_plane": [
+            5,
+            -5,
+            2
+          ],
+          "status": "derived_ideal_CSL_axis_angle",
+          "derivation": "2*atan(sqrt(2)/5)",
+          "angle_convention": "lower-angle representative in [0,90] degrees for the listed ideal cubic CSL plane/axis construction; symmetry-equivalent complementary conventions may exist",
+          "definition": "Ideal cubic CSL axis-angle for the listed Sigma representation; the manuscript specifies the plane/axis but does not print this number."
+        }
+      },
+      "summary": {
+        "solution_energy_frozen_eV": {
+          "count": 95,
+          "missing": 0,
+          "minimum": -0.055686,
+          "maximum": 0.484014,
+          "mean": 0.1943182105263158
+        },
+        "solution_energy_non_frozen_eV": {
+          "count": 95,
+          "missing": 0,
+          "minimum": -0.111386,
+          "maximum": 0.253214,
+          "mean": 0.04064452631578947
+        },
+        "solution_energy_zpe_corrected_frozen_eV": {
+          "count": 95,
+          "missing": 0,
+          "minimum": -0.049046,
+          "maximum": 0.601811,
+          "mean": 0.26878462105263157
+        },
+        "solution_energy_zpe_corrected_non_frozen_eV": {
+          "count": 95,
+          "missing": 0,
+          "minimum": -0.103755,
+          "maximum": 0.337748,
+          "mean": 0.0783344947368421
+        }
+      }
+    },
+    {
+      "source_structure_id": "S27_FeTi_allH",
+      "paper_structure_id": "S27_FeTi_allH",
+      "host_sample_id": "host_S27_FeTi",
+      "raw_family": "S27",
+      "paper_family": "S27",
+      "chemistry": "FeTi",
+      "structure_class": "symmetric_tilt_grain_boundary",
+      "host_atom_count": 216,
+      "hydrogen_site_count": 97,
+      "conceptual_file": "S27_FeTi_allH/S27_FeTi_allH.conceptual.json",
+      "site_file": "S27_FeTi_allH/S27_FeTi_allH.hydrogen_sites.json",
+      "source_dump_artifact_id": "dump_S27_FeTi_allH",
+      "angle_metadata": {
+        "angle_scope": "family-level grain-boundary crystallography; identical for every chemistry and H site in the family",
+        "angle_type": "grain_boundary_misorientation",
+        "misorientation": {
+          "value": 31.586338096527925,
+          "unit": "degree",
+          "rotation_axis": [
+            1,
+            1,
+            0
+          ],
+          "boundary_plane": [
+            5,
+            -5,
+            2
+          ],
+          "status": "derived_ideal_CSL_axis_angle",
+          "derivation": "2*atan(sqrt(2)/5)",
+          "angle_convention": "lower-angle representative in [0,90] degrees for the listed ideal cubic CSL plane/axis construction; symmetry-equivalent complementary conventions may exist",
+          "definition": "Ideal cubic CSL axis-angle for the listed Sigma representation; the manuscript specifies the plane/axis but does not print this number."
+        }
+      },
+      "summary": {
+        "solution_energy_frozen_eV": {
+          "count": 97,
+          "missing": 0,
+          "minimum": -0.085686,
+          "maximum": 1.280314,
+          "mean": 0.22448410309278352
+        },
+        "solution_energy_non_frozen_eV": {
+          "count": 97,
+          "missing": 0,
+          "minimum": -0.131186,
+          "maximum": 0.430414,
+          "mean": 0.029263484536082473
+        },
+        "solution_energy_zpe_corrected_frozen_eV": {
+          "count": 97,
+          "missing": 0,
+          "minimum": -0.076888,
+          "maximum": 1.290507,
+          "mean": 0.3047956288659794
+        },
+        "solution_energy_zpe_corrected_non_frozen_eV": {
+          "count": 96,
+          "missing": 1,
+          "minimum": -0.124116,
+          "maximum": 0.486318,
+          "mean": 0.06964352083333333
+        }
+      }
+    },
+    {
+      "source_structure_id": "S27_FeVac_allH",
+      "paper_structure_id": "S27_FeVac_allH",
+      "host_sample_id": "host_S27_FeVac",
+      "raw_family": "S27",
+      "paper_family": "S27",
+      "chemistry": "FeVac",
+      "structure_class": "symmetric_tilt_grain_boundary",
+      "host_atom_count": 214,
+      "hydrogen_site_count": 94,
+      "conceptual_file": "S27_FeVac_allH/S27_FeVac_allH.conceptual.json",
+      "site_file": "S27_FeVac_allH/S27_FeVac_allH.hydrogen_sites.json",
+      "source_dump_artifact_id": "dump_S27_FeVac_allH",
+      "angle_metadata": {
+        "angle_scope": "family-level grain-boundary crystallography; identical for every chemistry and H site in the family",
+        "angle_type": "grain_boundary_misorientation",
+        "misorientation": {
+          "value": 31.586338096527925,
+          "unit": "degree",
+          "rotation_axis": [
+            1,
+            1,
+            0
+          ],
+          "boundary_plane": [
+            5,
+            -5,
+            2
+          ],
+          "status": "derived_ideal_CSL_axis_angle",
+          "derivation": "2*atan(sqrt(2)/5)",
+          "angle_convention": "lower-angle representative in [0,90] degrees for the listed ideal cubic CSL plane/axis construction; symmetry-equivalent complementary conventions may exist",
+          "definition": "Ideal cubic CSL axis-angle for the listed Sigma representation; the manuscript specifies the plane/axis but does not print this number."
+        }
+      },
+      "summary": {
+        "solution_energy_frozen_eV": {
+          "count": 94,
+          "missing": 0,
+          "minimum": -0.074386,
+          "maximum": 0.364614,
+          "mean": 0.17109059574468083
+        },
+        "solution_energy_non_frozen_eV": {
+          "count": 94,
+          "missing": 0,
+          "minimum": -0.408986,
+          "maximum": 0.140414,
+          "mean": -0.030274297872340428
+        },
+        "solution_energy_zpe_corrected_frozen_eV": {
+          "count": 94,
+          "missing": 0,
+          "minimum": -0.059215,
+          "maximum": 0.483113,
+          "mean": 0.25042229787234044
+        },
+        "solution_energy_zpe_corrected_non_frozen_eV": {
+          "count": 94,
+          "missing": 0,
+          "minimum": -0.415401,
+          "maximum": 0.217018,
+          "mean": -0.005882436170212766
+        }
+      }
+    },
+    {
+      "source_structure_id": "S27_PureFe_allH",
+      "paper_structure_id": "S27_PureFe_allH",
+      "host_sample_id": "host_S27_PureFe",
+      "raw_family": "S27",
+      "paper_family": "S27",
+      "chemistry": "PureFe",
+      "structure_class": "symmetric_tilt_grain_boundary",
+      "host_atom_count": 216,
+      "hydrogen_site_count": 93,
+      "conceptual_file": "S27_PureFe_allH/S27_PureFe_allH.conceptual.json",
+      "site_file": "S27_PureFe_allH/S27_PureFe_allH.hydrogen_sites.json",
+      "source_dump_artifact_id": "dump_S27_PureFe_allH",
+      "angle_metadata": {
+        "angle_scope": "family-level grain-boundary crystallography; identical for every chemistry and H site in the family",
+        "angle_type": "grain_boundary_misorientation",
+        "misorientation": {
+          "value": 31.586338096527925,
+          "unit": "degree",
+          "rotation_axis": [
+            1,
+            1,
+            0
+          ],
+          "boundary_plane": [
+            5,
+            -5,
+            2
+          ],
+          "status": "derived_ideal_CSL_axis_angle",
+          "derivation": "2*atan(sqrt(2)/5)",
+          "angle_convention": "lower-angle representative in [0,90] degrees for the listed ideal cubic CSL plane/axis construction; symmetry-equivalent complementary conventions may exist",
+          "definition": "Ideal cubic CSL axis-angle for the listed Sigma representation; the manuscript specifies the plane/axis but does not print this number."
+        }
+      },
+      "summary": {
+        "solution_energy_frozen_eV": {
+          "count": 93,
+          "missing": 0,
+          "minimum": -0.082786,
+          "maximum": 0.371014,
+          "mean": 0.1435441075268817
+        },
+        "solution_energy_non_frozen_eV": {
+          "count": 93,
+          "missing": 0,
+          "minimum": -0.132986,
+          "maximum": 0.550214,
+          "mean": 0.004155935483870968
+        },
+        "solution_energy_zpe_corrected_frozen_eV": {
+          "count": 93,
+          "missing": 0,
+          "minimum": -0.072693,
+          "maximum": 0.499354,
+          "mean": 0.21538652688172044
+        },
+        "solution_energy_zpe_corrected_non_frozen_eV": {
+          "count": 93,
+          "missing": 0,
+          "minimum": -0.122545,
+          "maximum": 0.559956,
+          "mean": 0.04502763440860215
+        }
+      }
+    },
+    {
+      "source_structure_id": "S3_FeCr_allH",
+      "paper_structure_id": "S3_FeCr_allH",
+      "host_sample_id": "host_S3_FeCr",
+      "raw_family": "S3",
+      "paper_family": "S3",
+      "chemistry": "FeCr",
+      "structure_class": "symmetric_tilt_grain_boundary",
+      "host_atom_count": 96,
+      "hydrogen_site_count": 32,
+      "conceptual_file": "S3_FeCr_allH/S3_FeCr_allH.conceptual.json",
+      "site_file": "S3_FeCr_allH/S3_FeCr_allH.hydrogen_sites.json",
+      "source_dump_artifact_id": "dump_S3_FeCr_allH",
+      "angle_metadata": {
+        "angle_scope": "family-level grain-boundary crystallography; identical for every chemistry and H site in the family",
+        "angle_type": "grain_boundary_misorientation",
+        "misorientation": {
+          "value": 70.52877936550931,
+          "unit": "degree",
+          "rotation_axis": [
+            1,
+            -1,
+            0
+          ],
+          "boundary_plane": [
+            1,
+            1,
+            -2
+          ],
+          "status": "derived_ideal_CSL_axis_angle",
+          "derivation": "2*atan(sqrt(2)/2)",
+          "angle_convention": "lower-angle representative in [0,90] degrees for the listed ideal cubic CSL plane/axis construction; symmetry-equivalent complementary conventions may exist",
+          "definition": "Ideal cubic CSL axis-angle for the listed Sigma representation; the manuscript specifies the plane/axis but does not print this number."
+        }
+      },
+      "summary": {
+        "solution_energy_frozen_eV": {
+          "count": 32,
+          "missing": 0,
+          "minimum": 0.110244,
+          "maximum": 0.531294,
+          "mean": 0.2426080625
+        },
+        "solution_energy_non_frozen_eV": {
+          "count": 32,
+          "missing": 0,
+          "minimum": -0.033906,
+          "maximum": 0.102934,
+          "mean": 0.0082180625
+        },
+        "solution_energy_zpe_corrected_frozen_eV": {
+          "count": 32,
+          "missing": 0,
+          "minimum": 0.173208,
+          "maximum": 0.65394,
+          "mean": 0.33017275
+        },
+        "solution_energy_zpe_corrected_non_frozen_eV": {
+          "count": 32,
+          "missing": 0,
+          "minimum": 0.012414,
+          "maximum": 0.138863,
+          "mean": 0.04783515625
+        }
+      }
+    },
+    {
+      "source_structure_id": "S3_FeCu_allH",
+      "paper_structure_id": "S3_FeCu_allH",
+      "host_sample_id": "host_S3_FeCu",
+      "raw_family": "S3",
+      "paper_family": "S3",
+      "chemistry": "FeCu",
+      "structure_class": "symmetric_tilt_grain_boundary",
+      "host_atom_count": 96,
+      "hydrogen_site_count": 31,
+      "conceptual_file": "S3_FeCu_allH/S3_FeCu_allH.conceptual.json",
+      "site_file": "S3_FeCu_allH/S3_FeCu_allH.hydrogen_sites.json",
+      "source_dump_artifact_id": "dump_S3_FeCu_allH",
+      "angle_metadata": {
+        "angle_scope": "family-level grain-boundary crystallography; identical for every chemistry and H site in the family",
+        "angle_type": "grain_boundary_misorientation",
+        "misorientation": {
+          "value": 70.52877936550931,
+          "unit": "degree",
+          "rotation_axis": [
+            1,
+            -1,
+            0
+          ],
+          "boundary_plane": [
+            1,
+            1,
+            -2
+          ],
+          "status": "derived_ideal_CSL_axis_angle",
+          "derivation": "2*atan(sqrt(2)/2)",
+          "angle_convention": "lower-angle representative in [0,90] degrees for the listed ideal cubic CSL plane/axis construction; symmetry-equivalent complementary conventions may exist",
+          "definition": "Ideal cubic CSL axis-angle for the listed Sigma representation; the manuscript specifies the plane/axis but does not print this number."
+        }
+      },
+      "summary": {
+        "solution_energy_frozen_eV": {
+          "count": 31,
+          "missing": 0,
+          "minimum": 0.124944,
+          "maximum": 0.333494,
+          "mean": 0.18931335483870967
+        },
+        "solution_energy_non_frozen_eV": {
+          "count": 31,
+          "missing": 0,
+          "minimum": -0.050726,
+          "maximum": 0.125294,
+          "mean": -0.0026508387096774192
+        },
+        "solution_energy_zpe_corrected_frozen_eV": {
+          "count": 31,
+          "missing": 0,
+          "minimum": 0.185337,
+          "maximum": 0.470157,
+          "mean": 0.27848470967741934
+        },
+        "solution_energy_zpe_corrected_non_frozen_eV": {
+          "count": 31,
+          "missing": 0,
+          "minimum": -0.006966,
+          "maximum": 0.214886,
+          "mean": 0.04583690322580645
+        }
+      }
+    },
+    {
+      "source_structure_id": "S3_FeTi_allH",
+      "paper_structure_id": "S3_FeTi_allH",
+      "host_sample_id": "host_S3_FeTi",
+      "raw_family": "S3",
+      "paper_family": "S3",
+      "chemistry": "FeTi",
+      "structure_class": "symmetric_tilt_grain_boundary",
+      "host_atom_count": 96,
+      "hydrogen_site_count": 32,
+      "conceptual_file": "S3_FeTi_allH/S3_FeTi_allH.conceptual.json",
+      "site_file": "S3_FeTi_allH/S3_FeTi_allH.hydrogen_sites.json",
+      "source_dump_artifact_id": "dump_S3_FeTi_allH",
+      "angle_metadata": {
+        "angle_scope": "family-level grain-boundary crystallography; identical for every chemistry and H site in the family",
+        "angle_type": "grain_boundary_misorientation",
+        "misorientation": {
+          "value": 70.52877936550931,
+          "unit": "degree",
+          "rotation_axis": [
+            1,
+            -1,
+            0
+          ],
+          "boundary_plane": [
+            1,
+            1,
+            -2
+          ],
+          "status": "derived_ideal_CSL_axis_angle",
+          "derivation": "2*atan(sqrt(2)/2)",
+          "angle_convention": "lower-angle representative in [0,90] degrees for the listed ideal cubic CSL plane/axis construction; symmetry-equivalent complementary conventions may exist",
+          "definition": "Ideal cubic CSL axis-angle for the listed Sigma representation; the manuscript specifies the plane/axis but does not print this number."
+        }
+      },
+      "summary": {
+        "solution_energy_frozen_eV": {
+          "count": 32,
+          "missing": 0,
+          "minimum": 0.086814,
+          "maximum": 0.428444,
+          "mean": 0.17006775
+        },
+        "solution_energy_non_frozen_eV": {
+          "count": 32,
+          "missing": 0,
+          "minimum": -0.097356,
+          "maximum": 0.166314,
+          "mean": -0.037475375
+        },
+        "solution_energy_zpe_corrected_frozen_eV": {
+          "count": 32,
+          "missing": 0,
+          "minimum": 0.148414,
+          "maximum": 0.570942,
+          "mean": 0.24949878125
+        },
+        "solution_energy_zpe_corrected_non_frozen_eV": {
+          "count": 32,
+          "missing": 0,
+          "minimum": -0.05507,
+          "maximum": 0.252478,
+          "mean": 0.004164062499999999
+        }
+      }
+    },
+    {
+      "source_structure_id": "S3_FeVac_allH",
+      "paper_structure_id": "S3_FeVac_allH",
+      "host_sample_id": "host_S3_FeVac",
+      "raw_family": "S3",
+      "paper_family": "S3",
+      "chemistry": "FeVac",
+      "structure_class": "symmetric_tilt_grain_boundary",
+      "host_atom_count": 94,
+      "hydrogen_site_count": 10,
+      "conceptual_file": "S3_FeVac_allH/S3_FeVac_allH.conceptual.json",
+      "site_file": "S3_FeVac_allH/S3_FeVac_allH.hydrogen_sites.json",
+      "source_dump_artifact_id": "dump_S3_FeVac_allH",
+      "angle_metadata": {
+        "angle_scope": "family-level grain-boundary crystallography; identical for every chemistry and H site in the family",
+        "angle_type": "grain_boundary_misorientation",
+        "misorientation": {
+          "value": 70.52877936550931,
+          "unit": "degree",
+          "rotation_axis": [
+            1,
+            -1,
+            0
+          ],
+          "boundary_plane": [
+            1,
+            1,
+            -2
+          ],
+          "status": "derived_ideal_CSL_axis_angle",
+          "derivation": "2*atan(sqrt(2)/2)",
+          "angle_convention": "lower-angle representative in [0,90] degrees for the listed ideal cubic CSL plane/axis construction; symmetry-equivalent complementary conventions may exist",
+          "definition": "Ideal cubic CSL axis-angle for the listed Sigma representation; the manuscript specifies the plane/axis but does not print this number."
+        }
+      },
+      "summary": {
+        "solution_energy_frozen_eV": {
+          "count": 10,
+          "missing": 0,
+          "minimum": -0.336896,
+          "maximum": 0.439784,
+          "mean": -0.247593
+        },
+        "solution_energy_non_frozen_eV": {
+          "count": 10,
+          "missing": 0,
+          "minimum": -0.357486,
+          "maximum": 0.201504,
+          "mean": -0.29306
+        },
+        "solution_energy_zpe_corrected_frozen_eV": {
+          "count": 10,
+          "missing": 0,
+          "minimum": -0.32434,
+          "maximum": 0.591332,
+          "mean": -0.2173032
+        },
+        "solution_energy_zpe_corrected_non_frozen_eV": {
+          "count": 10,
+          "missing": 0,
+          "minimum": -0.350792,
+          "maximum": 0.309011,
+          "mean": -0.2715672
+        }
+      }
+    },
+    {
+      "source_structure_id": "S3_PureFe_allH",
+      "paper_structure_id": "S3_PureFe_allH",
+      "host_sample_id": "host_S3_PureFe",
+      "raw_family": "S3",
+      "paper_family": "S3",
+      "chemistry": "PureFe",
+      "structure_class": "symmetric_tilt_grain_boundary",
+      "host_atom_count": 96,
+      "hydrogen_site_count": 8,
+      "conceptual_file": "S3_PureFe_allH/S3_PureFe_allH.conceptual.json",
+      "site_file": "S3_PureFe_allH/S3_PureFe_allH.hydrogen_sites.json",
+      "source_dump_artifact_id": "dump_S3_PureFe_allH",
+      "angle_metadata": {
+        "angle_scope": "family-level grain-boundary crystallography; identical for every chemistry and H site in the family",
+        "angle_type": "grain_boundary_misorientation",
+        "misorientation": {
+          "value": 70.52877936550931,
+          "unit": "degree",
+          "rotation_axis": [
+            1,
+            -1,
+            0
+          ],
+          "boundary_plane": [
+            1,
+            1,
+            -2
+          ],
+          "status": "derived_ideal_CSL_axis_angle",
+          "derivation": "2*atan(sqrt(2)/2)",
+          "angle_convention": "lower-angle representative in [0,90] degrees for the listed ideal cubic CSL plane/axis construction; symmetry-equivalent complementary conventions may exist",
+          "definition": "Ideal cubic CSL axis-angle for the listed Sigma representation; the manuscript specifies the plane/axis but does not print this number."
+        }
+      },
+      "summary": {
+        "solution_energy_frozen_eV": {
+          "count": 8,
+          "missing": 0,
+          "minimum": 0.240878,
+          "maximum": 0.263074,
+          "mean": 0.2496955
+        },
+        "solution_energy_non_frozen_eV": {
+          "count": 8,
+          "missing": 0,
+          "minimum": -0.031166,
+          "maximum": -0.030346,
+          "mean": -0.030721
+        },
+        "solution_energy_zpe_corrected_frozen_eV": {
+          "count": 8,
+          "missing": 0,
+          "minimum": 0.324127,
+          "maximum": 0.350722,
+          "mean": 0.334958875
+        },
+        "solution_energy_zpe_corrected_non_frozen_eV": {
+          "count": 8,
+          "missing": 0,
+          "minimum": -0.001791,
+          "maximum": 0.002116,
+          "mean": -0.0001965
+        }
+      }
+    },
+    {
+      "source_structure_id": "S5_FeCr_allH",
+      "paper_structure_id": "S5_FeCr_allH",
+      "host_sample_id": "host_S5_FeCr",
+      "raw_family": "S5",
+      "paper_family": "S5",
+      "chemistry": "FeCr",
+      "structure_class": "symmetric_tilt_grain_boundary",
+      "host_atom_count": 120,
+      "hydrogen_site_count": 63,
+      "conceptual_file": "S5_FeCr_allH/S5_FeCr_allH.conceptual.json",
+      "site_file": "S5_FeCr_allH/S5_FeCr_allH.hydrogen_sites.json",
+      "source_dump_artifact_id": "dump_S5_FeCr_allH",
+      "angle_metadata": {
+        "angle_scope": "family-level grain-boundary crystallography; identical for every chemistry and H site in the family",
+        "angle_type": "grain_boundary_misorientation",
+        "misorientation": {
+          "value": 36.86989764584402,
+          "unit": "degree",
+          "rotation_axis": [
+            0,
+            0,
+            1
+          ],
+          "boundary_plane": [
+            -3,
+            1,
+            0
+          ],
+          "status": "derived_ideal_CSL_axis_angle",
+          "derivation": "2*atan(1/3)",
+          "angle_convention": "lower-angle representative in [0,90] degrees for the listed ideal cubic CSL plane/axis construction; symmetry-equivalent complementary conventions may exist",
+          "definition": "Ideal cubic CSL axis-angle for the listed Sigma representation; the manuscript specifies the plane/axis but does not print this number."
+        }
+      },
+      "summary": {
+        "solution_energy_frozen_eV": {
+          "count": 63,
+          "missing": 0,
+          "minimum": -0.202386,
+          "maximum": 0.351214,
+          "mean": 0.03818225396825397
+        },
+        "solution_energy_non_frozen_eV": {
+          "count": 63,
+          "missing": 0,
+          "minimum": -0.223886,
+          "maximum": 0.112314,
+          "mean": -0.08302409523809524
+        },
+        "solution_energy_zpe_corrected_frozen_eV": {
+          "count": 63,
+          "missing": 0,
+          "minimum": -0.237377,
+          "maximum": 0.443938,
+          "mean": 0.09232403174603175
+        },
+        "solution_energy_zpe_corrected_non_frozen_eV": {
+          "count": 63,
+          "missing": 0,
+          "minimum": -0.248778,
+          "maximum": 0.142722,
+          "mean": -0.061181936507936505
+        }
+      }
+    },
+    {
+      "source_structure_id": "S5_FeCu_allH",
+      "paper_structure_id": "S5_FeCu_allH",
+      "host_sample_id": "host_S5_FeCu",
+      "raw_family": "S5",
+      "paper_family": "S5",
+      "chemistry": "FeCu",
+      "structure_class": "symmetric_tilt_grain_boundary",
+      "host_atom_count": 120,
+      "hydrogen_site_count": 59,
+      "conceptual_file": "S5_FeCu_allH/S5_FeCu_allH.conceptual.json",
+      "site_file": "S5_FeCu_allH/S5_FeCu_allH.hydrogen_sites.json",
+      "source_dump_artifact_id": "dump_S5_FeCu_allH",
+      "angle_metadata": {
+        "angle_scope": "family-level grain-boundary crystallography; identical for every chemistry and H site in the family",
+        "angle_type": "grain_boundary_misorientation",
+        "misorientation": {
+          "value": 36.86989764584402,
+          "unit": "degree",
+          "rotation_axis": [
+            0,
+            0,
+            1
+          ],
+          "boundary_plane": [
+            -3,
+            1,
+            0
+          ],
+          "status": "derived_ideal_CSL_axis_angle",
+          "derivation": "2*atan(1/3)",
+          "angle_convention": "lower-angle representative in [0,90] degrees for the listed ideal cubic CSL plane/axis construction; symmetry-equivalent complementary conventions may exist",
+          "definition": "Ideal cubic CSL axis-angle for the listed Sigma representation; the manuscript specifies the plane/axis but does not print this number."
+        }
+      },
+      "summary": {
+        "solution_energy_frozen_eV": {
+          "count": 59,
+          "missing": 0,
+          "minimum": -0.255606,
+          "maximum": 0.419554,
+          "mean": 0.006570271186440676
+        },
+        "solution_energy_non_frozen_eV": {
+          "count": 59,
+          "missing": 0,
+          "minimum": -0.272386,
+          "maximum": 0.021234,
+          "mean": -0.11857871186440679
+        },
+        "solution_energy_zpe_corrected_frozen_eV": {
+          "count": 59,
+          "missing": 0,
+          "minimum": -0.267578,
+          "maximum": 0.517484,
+          "mean": 0.0689110338983051
+        },
+        "solution_energy_zpe_corrected_non_frozen_eV": {
+          "count": 59,
+          "missing": 0,
+          "minimum": -0.281265,
+          "maximum": 0.084129,
+          "mean": -0.09199771186440678
+        }
+      }
+    },
+    {
+      "source_structure_id": "S5_FeTi_allH",
+      "paper_structure_id": "S5_FeTi_allH",
+      "host_sample_id": "host_S5_FeTi",
+      "raw_family": "S5",
+      "paper_family": "S5",
+      "chemistry": "FeTi",
+      "structure_class": "symmetric_tilt_grain_boundary",
+      "host_atom_count": 120,
+      "hydrogen_site_count": 180,
+      "conceptual_file": "S5_FeTi_allH/S5_FeTi_allH.conceptual.json",
+      "site_file": "S5_FeTi_allH/S5_FeTi_allH.hydrogen_sites.json",
+      "source_dump_artifact_id": "dump_S5_FeTi_allH",
+      "angle_metadata": {
+        "angle_scope": "family-level grain-boundary crystallography; identical for every chemistry and H site in the family",
+        "angle_type": "grain_boundary_misorientation",
+        "misorientation": {
+          "value": 36.86989764584402,
+          "unit": "degree",
+          "rotation_axis": [
+            0,
+            0,
+            1
+          ],
+          "boundary_plane": [
+            -3,
+            1,
+            0
+          ],
+          "status": "derived_ideal_CSL_axis_angle",
+          "derivation": "2*atan(1/3)",
+          "angle_convention": "lower-angle representative in [0,90] degrees for the listed ideal cubic CSL plane/axis construction; symmetry-equivalent complementary conventions may exist",
+          "definition": "Ideal cubic CSL axis-angle for the listed Sigma representation; the manuscript specifies the plane/axis but does not print this number."
+        }
+      },
+      "summary": {
+        "solution_energy_frozen_eV": {
+          "count": 180,
+          "missing": 0,
+          "minimum": 0.081214,
+          "maximum": 0.552414,
+          "mean": 0.1990217777777778
+        },
+        "solution_energy_non_frozen_eV": {
+          "count": 180,
+          "missing": 0,
+          "minimum": -0.115986,
+          "maximum": 0.116914,
+          "mean": -0.023339333333333333
+        },
+        "solution_energy_zpe_corrected_frozen_eV": {
+          "count": 180,
+          "missing": 0,
+          "minimum": 0.192566,
+          "maximum": 0.707205,
+          "mean": 0.33446679444444444
+        },
+        "solution_energy_zpe_corrected_non_frozen_eV": {
+          "count": 179,
+          "missing": 1,
+          "minimum": -0.054763,
+          "maximum": 0.196881,
+          "mean": 0.06148303910614525
+        }
+      }
+    },
+    {
+      "source_structure_id": "S5_FeVac_allH",
+      "paper_structure_id": "S5_FeVac_allH",
+      "host_sample_id": "host_S5_FeVac",
+      "raw_family": "S5",
+      "paper_family": "S5",
+      "chemistry": "FeVac",
+      "structure_class": "symmetric_tilt_grain_boundary",
+      "host_atom_count": 118,
+      "hydrogen_site_count": 51,
+      "conceptual_file": "S5_FeVac_allH/S5_FeVac_allH.conceptual.json",
+      "site_file": "S5_FeVac_allH/S5_FeVac_allH.hydrogen_sites.json",
+      "source_dump_artifact_id": "dump_S5_FeVac_allH",
+      "angle_metadata": {
+        "angle_scope": "family-level grain-boundary crystallography; identical for every chemistry and H site in the family",
+        "angle_type": "grain_boundary_misorientation",
+        "misorientation": {
+          "value": 36.86989764584402,
+          "unit": "degree",
+          "rotation_axis": [
+            0,
+            0,
+            1
+          ],
+          "boundary_plane": [
+            -3,
+            1,
+            0
+          ],
+          "status": "derived_ideal_CSL_axis_angle",
+          "derivation": "2*atan(1/3)",
+          "angle_convention": "lower-angle representative in [0,90] degrees for the listed ideal cubic CSL plane/axis construction; symmetry-equivalent complementary conventions may exist",
+          "definition": "Ideal cubic CSL axis-angle for the listed Sigma representation; the manuscript specifies the plane/axis but does not print this number."
+        }
+      },
+      "summary": {
+        "solution_energy_frozen_eV": {
+          "count": 51,
+          "missing": 0,
+          "minimum": -0.250626,
+          "maximum": 0.306304,
+          "mean": -0.08567403921568627
+        },
+        "solution_energy_non_frozen_eV": {
+          "count": 51,
+          "missing": 0,
+          "minimum": -0.277436,
+          "maximum": 0.150984,
+          "mean": -0.1771367843137255
+        },
+        "solution_energy_zpe_corrected_frozen_eV": {
+          "count": 51,
+          "missing": 0,
+          "minimum": -0.24353,
+          "maximum": 0.416367,
+          "mean": -0.06634711764705882
+        },
+        "solution_energy_zpe_corrected_non_frozen_eV": {
+          "count": 51,
+          "missing": 0,
+          "minimum": -0.277875,
+          "maximum": 0.222876,
+          "mean": -0.1716533137254902
+        }
+      }
+    },
+    {
+      "source_structure_id": "S5_PureFe_allH",
+      "paper_structure_id": "S5_PureFe_allH",
+      "host_sample_id": "host_S5_PureFe",
+      "raw_family": "S5",
+      "paper_family": "S5",
+      "chemistry": "PureFe",
+      "structure_class": "symmetric_tilt_grain_boundary",
+      "host_atom_count": 120,
+      "hydrogen_site_count": 72,
+      "conceptual_file": "S5_PureFe_allH/S5_PureFe_allH.conceptual.json",
+      "site_file": "S5_PureFe_allH/S5_PureFe_allH.hydrogen_sites.json",
+      "source_dump_artifact_id": "dump_S5_PureFe_allH",
+      "angle_metadata": {
+        "angle_scope": "family-level grain-boundary crystallography; identical for every chemistry and H site in the family",
+        "angle_type": "grain_boundary_misorientation",
+        "misorientation": {
+          "value": 36.86989764584402,
+          "unit": "degree",
+          "rotation_axis": [
+            0,
+            0,
+            1
+          ],
+          "boundary_plane": [
+            -3,
+            1,
+            0
+          ],
+          "status": "derived_ideal_CSL_axis_angle",
+          "derivation": "2*atan(1/3)",
+          "angle_convention": "lower-angle representative in [0,90] degrees for the listed ideal cubic CSL plane/axis construction; symmetry-equivalent complementary conventions may exist",
+          "definition": "Ideal cubic CSL axis-angle for the listed Sigma representation; the manuscript specifies the plane/axis but does not print this number."
+        }
+      },
+      "summary": {
+        "solution_energy_frozen_eV": {
+          "count": 72,
+          "missing": 0,
+          "minimum": -0.239786,
+          "maximum": 0.204614,
+          "mean": -0.031606833333333334
+        },
+        "solution_energy_non_frozen_eV": {
+          "count": 72,
+          "missing": 0,
+          "minimum": -0.264986,
+          "maximum": -0.003086,
+          "mean": -0.142761
+        },
+        "solution_energy_zpe_corrected_frozen_eV": {
+          "count": 72,
+          "missing": 0,
+          "minimum": -0.269969,
+          "maximum": 0.31363,
+          "mean": 0.016139958333333333
+        },
+        "solution_energy_zpe_corrected_non_frozen_eV": {
+          "count": 72,
+          "missing": 0,
+          "minimum": -0.290419,
+          "maximum": 0.039104,
+          "mean": -0.12284051388888889
+        }
+      }
+    },
+    {
+      "source_structure_id": "S5m_FeCr_allH",
+      "paper_structure_id": "S5m_FeCr_allH",
+      "host_sample_id": "host_S5m_FeCr",
+      "raw_family": "S5m",
+      "paper_family": "S5m",
+      "chemistry": "FeCr",
+      "structure_class": "mixed_grain_boundary",
+      "host_atom_count": 180,
+      "hydrogen_site_count": 123,
+      "conceptual_file": "S5m_FeCr_allH/S5m_FeCr_allH.conceptual.json",
+      "site_file": "S5m_FeCr_allH/S5m_FeCr_allH.hydrogen_sites.json",
+      "source_dump_artifact_id": "dump_S5m_FeCr_allH",
+      "angle_metadata": {
+        "angle_scope": "family-level grain-boundary crystallography; identical for every chemistry and H site in the family",
+        "angle_type": "grain_boundary_misorientation",
+        "misorientation": {
+          "value": 36.86989764584402,
+          "unit": "degree",
+          "rotation_axis": [
+            1,
+            0,
+            0
+          ],
+          "boundary_plane": [
+            1,
+            1,
+            -2
+          ],
+          "status": "derived_ideal_CSL_axis_angle",
+          "derivation": "2*atan(1/3)",
+          "angle_convention": "lower-angle representative in [0,90] degrees for the listed ideal cubic CSL plane/axis construction; symmetry-equivalent complementary conventions may exist",
+          "definition": "Ideal cubic CSL axis-angle for the listed Sigma representation; the manuscript specifies the plane/axis but does not print this number."
+        },
+        "mixed_character_components": {
+          "tilt": {
+            "value": 33.6,
+            "unit": "degree",
+            "status": "reported_in_manuscript"
+          },
+          "twist": {
+            "value": 0.27,
+            "unit": "degree",
+            "status": "reported_in_manuscript"
+          },
+          "interpretation": "Reported mixed-boundary character components; values and degree units are preserved exactly as printed, without reinterpretation. Do not add them together or substitute their sum for the CSL axis-angle."
+        }
+      },
+      "summary": {
+        "solution_energy_frozen_eV": {
+          "count": 123,
+          "missing": 0,
+          "minimum": -0.167786,
+          "maximum": 0.419314,
+          "mean": 0.038241642276422766
+        },
+        "solution_energy_non_frozen_eV": {
+          "count": 123,
+          "missing": 0,
+          "minimum": -0.293586,
+          "maximum": 0.129614,
+          "mean": -0.08957543089430894
+        },
+        "solution_energy_zpe_corrected_frozen_eV": {
+          "count": 123,
+          "missing": 0,
+          "minimum": -0.176411,
+          "maximum": 0.519446,
+          "mean": 0.0819010325203252
+        },
+        "solution_energy_zpe_corrected_non_frozen_eV": {
+          "count": 123,
+          "missing": 0,
+          "minimum": -0.290371,
+          "maximum": 0.18541,
+          "mean": -0.07344126829268294
+        }
+      }
+    },
+    {
+      "source_structure_id": "S5m_FeCu_allH",
+      "paper_structure_id": "S5m_FeCu_allH",
+      "host_sample_id": "host_S5m_FeCu",
+      "raw_family": "S5m",
+      "paper_family": "S5m",
+      "chemistry": "FeCu",
+      "structure_class": "mixed_grain_boundary",
+      "host_atom_count": 180,
+      "hydrogen_site_count": 130,
+      "conceptual_file": "S5m_FeCu_allH/S5m_FeCu_allH.conceptual.json",
+      "site_file": "S5m_FeCu_allH/S5m_FeCu_allH.hydrogen_sites.json",
+      "source_dump_artifact_id": "dump_S5m_FeCu_allH",
+      "angle_metadata": {
+        "angle_scope": "family-level grain-boundary crystallography; identical for every chemistry and H site in the family",
+        "angle_type": "grain_boundary_misorientation",
+        "misorientation": {
+          "value": 36.86989764584402,
+          "unit": "degree",
+          "rotation_axis": [
+            1,
+            0,
+            0
+          ],
+          "boundary_plane": [
+            1,
+            1,
+            -2
+          ],
+          "status": "derived_ideal_CSL_axis_angle",
+          "derivation": "2*atan(1/3)",
+          "angle_convention": "lower-angle representative in [0,90] degrees for the listed ideal cubic CSL plane/axis construction; symmetry-equivalent complementary conventions may exist",
+          "definition": "Ideal cubic CSL axis-angle for the listed Sigma representation; the manuscript specifies the plane/axis but does not print this number."
+        },
+        "mixed_character_components": {
+          "tilt": {
+            "value": 33.6,
+            "unit": "degree",
+            "status": "reported_in_manuscript"
+          },
+          "twist": {
+            "value": 0.27,
+            "unit": "degree",
+            "status": "reported_in_manuscript"
+          },
+          "interpretation": "Reported mixed-boundary character components; values and degree units are preserved exactly as printed, without reinterpretation. Do not add them together or substitute their sum for the CSL axis-angle."
+        }
+      },
+      "summary": {
+        "solution_energy_frozen_eV": {
+          "count": 130,
+          "missing": 0,
+          "minimum": -0.198486,
+          "maximum": 0.504914,
+          "mean": 0.04996861538461538
+        },
+        "solution_energy_non_frozen_eV": {
+          "count": 130,
+          "missing": 0,
+          "minimum": -0.281886,
+          "maximum": 0.178014,
+          "mean": -0.09368061538461539
+        },
+        "solution_energy_zpe_corrected_frozen_eV": {
+          "count": 130,
+          "missing": 0,
+          "minimum": -0.196381,
+          "maximum": 0.61613,
+          "mean": 0.09503878461538462
+        },
+        "solution_energy_zpe_corrected_non_frozen_eV": {
+          "count": 130,
+          "missing": 0,
+          "minimum": -0.27463,
+          "maximum": 0.252229,
+          "mean": -0.07721355384615385
+        }
+      }
+    },
+    {
+      "source_structure_id": "S5m_FeTi_allH",
+      "paper_structure_id": "S5m_FeTi_allH",
+      "host_sample_id": "host_S5m_FeTi",
+      "raw_family": "S5m",
+      "paper_family": "S5m",
+      "chemistry": "FeTi",
+      "structure_class": "mixed_grain_boundary",
+      "host_atom_count": 180,
+      "hydrogen_site_count": 117,
+      "conceptual_file": "S5m_FeTi_allH/S5m_FeTi_allH.conceptual.json",
+      "site_file": "S5m_FeTi_allH/S5m_FeTi_allH.hydrogen_sites.json",
+      "source_dump_artifact_id": "dump_S5m_FeTi_allH",
+      "angle_metadata": {
+        "angle_scope": "family-level grain-boundary crystallography; identical for every chemistry and H site in the family",
+        "angle_type": "grain_boundary_misorientation",
+        "misorientation": {
+          "value": 36.86989764584402,
+          "unit": "degree",
+          "rotation_axis": [
+            1,
+            0,
+            0
+          ],
+          "boundary_plane": [
+            1,
+            1,
+            -2
+          ],
+          "status": "derived_ideal_CSL_axis_angle",
+          "derivation": "2*atan(1/3)",
+          "angle_convention": "lower-angle representative in [0,90] degrees for the listed ideal cubic CSL plane/axis construction; symmetry-equivalent complementary conventions may exist",
+          "definition": "Ideal cubic CSL axis-angle for the listed Sigma representation; the manuscript specifies the plane/axis but does not print this number."
+        },
+        "mixed_character_components": {
+          "tilt": {
+            "value": 33.6,
+            "unit": "degree",
+            "status": "reported_in_manuscript"
+          },
+          "twist": {
+            "value": 0.27,
+            "unit": "degree",
+            "status": "reported_in_manuscript"
+          },
+          "interpretation": "Reported mixed-boundary character components; values and degree units are preserved exactly as printed, without reinterpretation. Do not add them together or substitute their sum for the CSL axis-angle."
+        }
+      },
+      "summary": {
+        "solution_energy_frozen_eV": {
+          "count": 117,
+          "missing": 0,
+          "minimum": -0.186986,
+          "maximum": 0.483114,
+          "mean": 0.073331094017094
+        },
+        "solution_energy_non_frozen_eV": {
+          "count": 117,
+          "missing": 0,
+          "minimum": -0.238986,
+          "maximum": 0.242214,
+          "mean": -0.06974582905982905
+        },
+        "solution_energy_zpe_corrected_frozen_eV": {
+          "count": 117,
+          "missing": 0,
+          "minimum": -0.18604,
+          "maximum": 0.628158,
+          "mean": 0.12721695726495727
+        },
+        "solution_energy_zpe_corrected_non_frozen_eV": {
+          "count": 117,
+          "missing": 0,
+          "minimum": -0.245468,
+          "maximum": 0.334776,
+          "mean": -0.046609273504273505
+        }
+      }
+    },
+    {
+      "source_structure_id": "S5m_FeVac_allH",
+      "paper_structure_id": "S5m_FeVac_allH",
+      "host_sample_id": "host_S5m_FeVac",
+      "raw_family": "S5m",
+      "paper_family": "S5m",
+      "chemistry": "FeVac",
+      "structure_class": "mixed_grain_boundary",
+      "host_atom_count": 178,
+      "hydrogen_site_count": 119,
+      "conceptual_file": "S5m_FeVac_allH/S5m_FeVac_allH.conceptual.json",
+      "site_file": "S5m_FeVac_allH/S5m_FeVac_allH.hydrogen_sites.json",
+      "source_dump_artifact_id": "dump_S5m_FeVac_allH",
+      "angle_metadata": {
+        "angle_scope": "family-level grain-boundary crystallography; identical for every chemistry and H site in the family",
+        "angle_type": "grain_boundary_misorientation",
+        "misorientation": {
+          "value": 36.86989764584402,
+          "unit": "degree",
+          "rotation_axis": [
+            1,
+            0,
+            0
+          ],
+          "boundary_plane": [
+            1,
+            1,
+            -2
+          ],
+          "status": "derived_ideal_CSL_axis_angle",
+          "derivation": "2*atan(1/3)",
+          "angle_convention": "lower-angle representative in [0,90] degrees for the listed ideal cubic CSL plane/axis construction; symmetry-equivalent complementary conventions may exist",
+          "definition": "Ideal cubic CSL axis-angle for the listed Sigma representation; the manuscript specifies the plane/axis but does not print this number."
+        },
+        "mixed_character_components": {
+          "tilt": {
+            "value": 33.6,
+            "unit": "degree",
+            "status": "reported_in_manuscript"
+          },
+          "twist": {
+            "value": 0.27,
+            "unit": "degree",
+            "status": "reported_in_manuscript"
+          },
+          "interpretation": "Reported mixed-boundary character components; values and degree units are preserved exactly as printed, without reinterpretation. Do not add them together or substitute their sum for the CSL axis-angle."
+        }
+      },
+      "summary": {
+        "solution_energy_frozen_eV": {
+          "count": 119,
+          "missing": 0,
+          "minimum": -0.181986,
+          "maximum": 0.468814,
+          "mean": 0.10026105882352941
+        },
+        "solution_energy_non_frozen_eV": {
+          "count": 119,
+          "missing": 0,
+          "minimum": -0.271886,
+          "maximum": 0.174014,
+          "mean": -0.07570784873949579
+        },
+        "solution_energy_zpe_corrected_frozen_eV": {
+          "count": 119,
+          "missing": 0,
+          "minimum": -0.164797,
+          "maximum": 0.567022,
+          "mean": 0.1529374537815126
+        },
+        "solution_energy_zpe_corrected_non_frozen_eV": {
+          "count": 119,
+          "missing": 0,
+          "minimum": -0.26941,
+          "maximum": 0.228496,
+          "mean": -0.058774302521008404
+        }
+      }
+    },
+    {
+      "source_structure_id": "S5m_PureFe_allH",
+      "paper_structure_id": "S5m_PureFe_allH",
+      "host_sample_id": "host_S5m_PureFe",
+      "raw_family": "S5m",
+      "paper_family": "S5m",
+      "chemistry": "PureFe",
+      "structure_class": "mixed_grain_boundary",
+      "host_atom_count": 180,
+      "hydrogen_site_count": 119,
+      "conceptual_file": "S5m_PureFe_allH/S5m_PureFe_allH.conceptual.json",
+      "site_file": "S5m_PureFe_allH/S5m_PureFe_allH.hydrogen_sites.json",
+      "source_dump_artifact_id": "dump_S5m_PureFe_allH",
+      "angle_metadata": {
+        "angle_scope": "family-level grain-boundary crystallography; identical for every chemistry and H site in the family",
+        "angle_type": "grain_boundary_misorientation",
+        "misorientation": {
+          "value": 36.86989764584402,
+          "unit": "degree",
+          "rotation_axis": [
+            1,
+            0,
+            0
+          ],
+          "boundary_plane": [
+            1,
+            1,
+            -2
+          ],
+          "status": "derived_ideal_CSL_axis_angle",
+          "derivation": "2*atan(1/3)",
+          "angle_convention": "lower-angle representative in [0,90] degrees for the listed ideal cubic CSL plane/axis construction; symmetry-equivalent complementary conventions may exist",
+          "definition": "Ideal cubic CSL axis-angle for the listed Sigma representation; the manuscript specifies the plane/axis but does not print this number."
+        },
+        "mixed_character_components": {
+          "tilt": {
+            "value": 33.6,
+            "unit": "degree",
+            "status": "reported_in_manuscript"
+          },
+          "twist": {
+            "value": 0.27,
+            "unit": "degree",
+            "status": "reported_in_manuscript"
+          },
+          "interpretation": "Reported mixed-boundary character components; values and degree units are preserved exactly as printed, without reinterpretation. Do not add them together or substitute their sum for the CSL axis-angle."
+        }
+      },
+      "summary": {
+        "solution_energy_frozen_eV": {
+          "count": 119,
+          "missing": 0,
+          "minimum": -0.149386,
+          "maximum": 0.348714,
+          "mean": 0.04537366386554621
+        },
+        "solution_energy_non_frozen_eV": {
+          "count": 119,
+          "missing": 0,
+          "minimum": -0.285886,
+          "maximum": 0.082614,
+          "mean": -0.1380423025210084
+        },
+        "solution_energy_zpe_corrected_frozen_eV": {
+          "count": 119,
+          "missing": 0,
+          "minimum": -0.163118,
+          "maximum": 0.458173,
+          "mean": 0.08751311764705882
+        },
+        "solution_energy_zpe_corrected_non_frozen_eV": {
+          "count": 119,
+          "missing": 0,
+          "minimum": -0.298443,
+          "maximum": 0.126372,
+          "mean": -0.12839614285714285
+        }
+      }
+    },
+    {
+      "source_structure_id": "SC_FeCr_allH",
+      "paper_structure_id": "SCR_FeCr_allH",
+      "host_sample_id": "host_SCR_FeCr",
+      "raw_family": "SC",
+      "paper_family": "SCR",
+      "chemistry": "FeCr",
+      "structure_class": "rotated_single_crystal",
+      "host_atom_count": 120,
+      "hydrogen_site_count": 6,
+      "conceptual_file": "SCR_FeCr_allH/SCR_FeCr_allH.conceptual.json",
+      "site_file": "SCR_FeCr_allH/SCR_FeCr_allH.hydrogen_sites.json",
+      "source_dump_artifact_id": "dump_SC_FeCr_allH",
+      "angle_metadata": {
+        "angle_scope": "family-level rotated-single-crystal orientation",
+        "angle_type": "single_crystal_orientation_rotation",
+        "orientation_rotation": {
+          "angle_magnitude": {
+            "value": 18.43494882292201,
+            "unit": "degree"
+          },
+          "signed_angle": {
+            "value": -18.43494882292201,
+            "unit": "degree"
+          },
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "reference_direction": [
+            -1,
+            0,
+            0
+          ],
+          "target_direction": [
+            -3,
+            1,
+            0
+          ],
+          "right_hand_rule_axis": [
+            0,
+            0,
+            1
+          ],
+          "status": "derived_from_orientation_vectors",
+          "derivation": "angle magnitude = atan(1/3); signed angle is clockwise from [-1,0,0] to [-3,1,0] about +[0,0,1]",
+          "not_a_grain_boundary_misorientation": true
+        }
+      },
+      "summary": {
+        "solution_energy_frozen_eV": {
+          "count": 6,
+          "missing": 0,
+          "minimum": 0.38491,
+          "maximum": 1.327413,
+          "mean": 0.5901291666666667
+        },
+        "solution_energy_non_frozen_eV": {
+          "count": 6,
+          "missing": 0,
+          "minimum": 0.149214,
+          "maximum": 0.638613,
+          "mean": 0.2731803333333333
+        },
+        "solution_energy_zpe_corrected_frozen_eV": {
+          "count": 6,
+          "missing": 0,
+          "minimum": 0.533426,
+          "maximum": 1.555737,
+          "mean": 0.7540966666666667
+        },
+        "solution_energy_zpe_corrected_non_frozen_eV": {
+          "count": 6,
+          "missing": 0,
+          "minimum": 0.015732,
+          "maximum": 0.50513,
+          "mean": 0.1396975
+        }
+      }
+    },
+    {
+      "source_structure_id": "SC_FeCu_allH",
+      "paper_structure_id": "SCR_FeCu_allH",
+      "host_sample_id": "host_SCR_FeCu",
+      "raw_family": "SC",
+      "paper_family": "SCR",
+      "chemistry": "FeCu",
+      "structure_class": "rotated_single_crystal",
+      "host_atom_count": 120,
+      "hydrogen_site_count": 6,
+      "conceptual_file": "SCR_FeCu_allH/SCR_FeCu_allH.conceptual.json",
+      "site_file": "SCR_FeCu_allH/SCR_FeCu_allH.hydrogen_sites.json",
+      "source_dump_artifact_id": "dump_SC_FeCu_allH",
+      "angle_metadata": {
+        "angle_scope": "family-level rotated-single-crystal orientation",
+        "angle_type": "single_crystal_orientation_rotation",
+        "orientation_rotation": {
+          "angle_magnitude": {
+            "value": 18.43494882292201,
+            "unit": "degree"
+          },
+          "signed_angle": {
+            "value": -18.43494882292201,
+            "unit": "degree"
+          },
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "reference_direction": [
+            -1,
+            0,
+            0
+          ],
+          "target_direction": [
+            -3,
+            1,
+            0
+          ],
+          "right_hand_rule_axis": [
+            0,
+            0,
+            1
+          ],
+          "status": "derived_from_orientation_vectors",
+          "derivation": "angle magnitude = atan(1/3); signed angle is clockwise from [-1,0,0] to [-3,1,0] about +[0,0,1]",
+          "not_a_grain_boundary_misorientation": true
+        }
+      },
+      "summary": {
+        "solution_energy_frozen_eV": {
+          "count": 6,
+          "missing": 0,
+          "minimum": 0.377813,
+          "maximum": 0.924913,
+          "mean": 0.4933783333333333
+        },
+        "solution_energy_non_frozen_eV": {
+          "count": 6,
+          "missing": 0,
+          "minimum": 0.145814,
+          "maximum": 0.326914,
+          "mean": 0.1987473333333333
+        },
+        "solution_energy_zpe_corrected_frozen_eV": {
+          "count": 6,
+          "missing": 0,
+          "minimum": 0.524649,
+          "maximum": 1.113171,
+          "mean": 0.6462723333333333
+        },
+        "solution_energy_zpe_corrected_non_frozen_eV": {
+          "count": 6,
+          "missing": 0,
+          "minimum": 0.247187,
+          "maximum": 0.368688,
+          "mean": 0.28698033333333334
+        }
+      }
+    },
+    {
+      "source_structure_id": "SC_FeTi_allH",
+      "paper_structure_id": "SCR_FeTi_allH",
+      "host_sample_id": "host_SCR_FeTi",
+      "raw_family": "SC",
+      "paper_family": "SCR",
+      "chemistry": "FeTi",
+      "structure_class": "rotated_single_crystal",
+      "host_atom_count": 120,
+      "hydrogen_site_count": 6,
+      "conceptual_file": "SCR_FeTi_allH/SCR_FeTi_allH.conceptual.json",
+      "site_file": "SCR_FeTi_allH/SCR_FeTi_allH.hydrogen_sites.json",
+      "source_dump_artifact_id": "dump_SC_FeTi_allH",
+      "angle_metadata": {
+        "angle_scope": "family-level rotated-single-crystal orientation",
+        "angle_type": "single_crystal_orientation_rotation",
+        "orientation_rotation": {
+          "angle_magnitude": {
+            "value": 18.43494882292201,
+            "unit": "degree"
+          },
+          "signed_angle": {
+            "value": -18.43494882292201,
+            "unit": "degree"
+          },
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "reference_direction": [
+            -1,
+            0,
+            0
+          ],
+          "target_direction": [
+            -3,
+            1,
+            0
+          ],
+          "right_hand_rule_axis": [
+            0,
+            0,
+            1
+          ],
+          "status": "derived_from_orientation_vectors",
+          "derivation": "angle magnitude = atan(1/3); signed angle is clockwise from [-1,0,0] to [-3,1,0] about +[0,0,1]",
+          "not_a_grain_boundary_misorientation": true
+        }
+      },
+      "summary": {
+        "solution_energy_frozen_eV": {
+          "count": 6,
+          "missing": 0,
+          "minimum": 0.31841,
+          "maximum": 1.576214,
+          "mean": 0.7325413333333333
+        },
+        "solution_energy_non_frozen_eV": {
+          "count": 6,
+          "missing": 0,
+          "minimum": 0.080614,
+          "maximum": 0.809514,
+          "mean": 0.214264
+        },
+        "solution_energy_zpe_corrected_frozen_eV": {
+          "count": 6,
+          "missing": 0,
+          "minimum": 0.463092,
+          "maximum": 1.849978,
+          "mean": 0.919396
+        },
+        "solution_energy_zpe_corrected_non_frozen_eV": {
+          "count": 6,
+          "missing": 0,
+          "minimum": 0.176036,
+          "maximum": 0.957461,
+          "mean": 0.32173666666666667
+        }
+      }
+    },
+    {
+      "source_structure_id": "SC_FeVac_allH",
+      "paper_structure_id": "SCR_FeVac_allH",
+      "host_sample_id": "host_SCR_FeVac",
+      "raw_family": "SC",
+      "paper_family": "SCR",
+      "chemistry": "FeVac",
+      "structure_class": "rotated_single_crystal",
+      "host_atom_count": 119,
+      "hydrogen_site_count": 7,
+      "conceptual_file": "SCR_FeVac_allH/SCR_FeVac_allH.conceptual.json",
+      "site_file": "SCR_FeVac_allH/SCR_FeVac_allH.hydrogen_sites.json",
+      "source_dump_artifact_id": "dump_SC_FeVac_allH",
+      "angle_metadata": {
+        "angle_scope": "family-level rotated-single-crystal orientation",
+        "angle_type": "single_crystal_orientation_rotation",
+        "orientation_rotation": {
+          "angle_magnitude": {
+            "value": 18.43494882292201,
+            "unit": "degree"
+          },
+          "signed_angle": {
+            "value": -18.43494882292201,
+            "unit": "degree"
+          },
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "reference_direction": [
+            -1,
+            0,
+            0
+          ],
+          "target_direction": [
+            -3,
+            1,
+            0
+          ],
+          "right_hand_rule_axis": [
+            0,
+            0,
+            1
+          ],
+          "status": "derived_from_orientation_vectors",
+          "derivation": "angle magnitude = atan(1/3); signed angle is clockwise from [-1,0,0] to [-3,1,0] about +[0,0,1]",
+          "not_a_grain_boundary_misorientation": true
+        }
+      },
+      "summary": {
+        "solution_energy_frozen_eV": {
+          "count": 7,
+          "missing": 0,
+          "minimum": -0.394185,
+          "maximum": 0.409714,
+          "mean": 0.06947128571428572
+        },
+        "solution_energy_non_frozen_eV": {
+          "count": 7,
+          "missing": 0,
+          "minimum": -0.410585,
+          "maximum": 0.165514,
+          "mean": -0.09534299999999998
+        },
+        "solution_energy_zpe_corrected_frozen_eV": {
+          "count": 7,
+          "missing": 0,
+          "minimum": -0.382584,
+          "maximum": 0.569272,
+          "mean": 0.16306785714285715
+        },
+        "solution_energy_zpe_corrected_non_frozen_eV": {
+          "count": 7,
+          "missing": 0,
+          "minimum": -0.40489,
+          "maximum": 0.264049,
+          "mean": -0.03291471428571429
+        }
+      }
+    },
+    {
+      "source_structure_id": "SC_PureFe_allH",
+      "paper_structure_id": "SCR_PureFe_allH",
+      "host_sample_id": "host_SCR_PureFe",
+      "raw_family": "SC",
+      "paper_family": "SCR",
+      "chemistry": "PureFe",
+      "structure_class": "rotated_single_crystal",
+      "host_atom_count": 120,
+      "hydrogen_site_count": 6,
+      "conceptual_file": "SCR_PureFe_allH/SCR_PureFe_allH.conceptual.json",
+      "site_file": "SCR_PureFe_allH/SCR_PureFe_allH.hydrogen_sites.json",
+      "source_dump_artifact_id": "dump_SC_PureFe_allH",
+      "angle_metadata": {
+        "angle_scope": "family-level rotated-single-crystal orientation",
+        "angle_type": "single_crystal_orientation_rotation",
+        "orientation_rotation": {
+          "angle_magnitude": {
+            "value": 18.43494882292201,
+            "unit": "degree"
+          },
+          "signed_angle": {
+            "value": -18.43494882292201,
+            "unit": "degree"
+          },
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "reference_direction": [
+            -1,
+            0,
+            0
+          ],
+          "target_direction": [
+            -3,
+            1,
+            0
+          ],
+          "right_hand_rule_axis": [
+            0,
+            0,
+            1
+          ],
+          "status": "derived_from_orientation_vectors",
+          "derivation": "angle magnitude = atan(1/3); signed angle is clockwise from [-1,0,0] to [-3,1,0] about +[0,0,1]",
+          "not_a_grain_boundary_misorientation": true
+        }
+      },
+      "summary": {
+        "solution_energy_frozen_eV": {
+          "count": 6,
+          "missing": 0,
+          "minimum": 0.4203,
+          "maximum": 0.912013,
+          "mean": 0.7399768333333333
+        },
+        "solution_energy_non_frozen_eV": {
+          "count": 6,
+          "missing": 0,
+          "minimum": 0.182114,
+          "maximum": 0.387613,
+          "mean": 0.29421216666666666
+        },
+        "solution_energy_zpe_corrected_frozen_eV": {
+          "count": 6,
+          "missing": 0,
+          "minimum": 0.56963,
+          "maximum": 1.119274,
+          "mean": 0.9268044999999999
+        },
+        "solution_energy_zpe_corrected_non_frozen_eV": {
+          "count": 6,
+          "missing": 0,
+          "minimum": 0.286442,
+          "maximum": 0.479497,
+          "mean": 0.38203716666666665
+        }
+      }
+    }
+  ],
+  "output_artifacts": [
+    {
+      "path": "computational_settings.json",
+      "byte_size": 10882,
+      "sha256": "719fea9abb662222eda415c541945ac0f6ed0a91b8730023771c2f9dd0038944"
+    },
+    {
+      "path": "dataset.conceptual.json",
+      "byte_size": 715167,
+      "sha256": "5fe9633cb3f72203f2843abd616f2a93228db35defab3e1ba0eb6f8754af89a9"
+    },
+    {
+      "path": "field_dictionary.json",
+      "byte_size": 15615,
+      "sha256": "3c231e8918051d31aee8b8e8c4e0e3a101fe00ea459c9caa60f9f1a7b4a82b45"
+    },
+    {
+      "path": "README.md",
+      "byte_size": 275,
+      "sha256": "c4542ea374b1ee0c9e45eda69a4a4de36e22b065f431803f7a3893c1e00e7743"
+    },
+    {
+      "path": "S27_FeCr_allH/S27_FeCr_allH.conceptual.json",
+      "byte_size": 41180,
+      "sha256": "518b7588c155bd1266874e2a847785b57349d4c3eef88b3179a2cfc377d07d83"
+    },
+    {
+      "path": "S27_FeCr_allH/S27_FeCr_allH.hydrogen_sites.json",
+      "byte_size": 1683507,
+      "sha256": "3ffe266b6b28093df16e9a2b58b4b4c3eecb41f2d419f6f167eed44f70d25dea"
+    },
+    {
+      "path": "S27_FeCu_allH/S27_FeCu_allH.conceptual.json",
+      "byte_size": 41086,
+      "sha256": "2a7525c0c0072f27f5788b740bcd76bb46c9e92961aa33fb8dac01547aadac9b"
+    },
+    {
+      "path": "S27_FeCu_allH/S27_FeCu_allH.hydrogen_sites.json",
+      "byte_size": 1731006,
+      "sha256": "5250b4b94e6683c233131c3074d992d7471ae757e0000e74dca355fe9168ef73"
+    },
+    {
+      "path": "S27_FeTi_allH/S27_FeTi_allH.conceptual.json",
+      "byte_size": 40648,
+      "sha256": "9334d2d527198439a14ec732da834d754d2a52c43a394fa87e4ce9e1a597af91"
+    },
+    {
+      "path": "S27_FeTi_allH/S27_FeTi_allH.hydrogen_sites.json",
+      "byte_size": 1788991,
+      "sha256": "38e90b43cf22a98e85beca0da350829b8da123210b9427ea75bd3e70afd87219"
+    },
+    {
+      "path": "S27_FeVac_allH/S27_FeVac_allH.conceptual.json",
+      "byte_size": 40699,
+      "sha256": "e63a60a4bc794fbd1c192628a503be14646a4c053b41b3517e6ee91c6ebc87d2"
+    },
+    {
+      "path": "S27_FeVac_allH/S27_FeVac_allH.hydrogen_sites.json",
+      "byte_size": 1688050,
+      "sha256": "48f5f35036331133cef121d61aa239c401bf738b925cb37ffc53ccb2874fea4b"
+    },
+    {
+      "path": "S27_PureFe_allH/S27_PureFe_allH.conceptual.json",
+      "byte_size": 40276,
+      "sha256": "d9afac98bede884c8709d7e91f935e8342984a9fa8d74993a0e26efc443c736c"
+    },
+    {
+      "path": "S27_PureFe_allH/S27_PureFe_allH.hydrogen_sites.json",
+      "byte_size": 1706921,
+      "sha256": "30b0e47f77f27603aa1c706de70c952624ea7ce8f249073e9d4a0043c127eed0"
+    },
+    {
+      "path": "S3_FeCr_allH/S3_FeCr_allH.conceptual.json",
+      "byte_size": 23358,
+      "sha256": "0c157cd026b5aa4017835aa10cff63a83e7f115bcdff63cc5bad7b03dd70c006"
+    },
+    {
+      "path": "S3_FeCr_allH/S3_FeCr_allH.hydrogen_sites.json",
+      "byte_size": 554000,
+      "sha256": "fa4ede3f204010aefd1b1f6d559d743156fe3183a8936f33d7cbf74f72e03eb7"
+    },
+    {
+      "path": "S3_FeCu_allH/S3_FeCu_allH.conceptual.json",
+      "byte_size": 23360,
+      "sha256": "f0370795f0c7687051132afb980a2a84429e9e6f7afdaf5b367b0cb24a6063aa"
+    },
+    {
+      "path": "S3_FeCu_allH/S3_FeCu_allH.hydrogen_sites.json",
+      "byte_size": 539644,
+      "sha256": "dbc860dfcb25af2e7d6e9ecbc3bd041c51c0fd22689878c0d7866f110800c91e"
+    },
+    {
+      "path": "S3_FeTi_allH/S3_FeTi_allH.conceptual.json",
+      "byte_size": 23608,
+      "sha256": "cfa8646941b133d85445b6ea530daa10dc0236a56c0788832c4d03ef697457d2"
+    },
+    {
+      "path": "S3_FeTi_allH/S3_FeTi_allH.hydrogen_sites.json",
+      "byte_size": 564438,
+      "sha256": "7f78d55dfed2fc7c72b1bff494db1a3eb898eb44352d20b1e996706824095518"
+    },
+    {
+      "path": "S3_FeVac_allH/S3_FeVac_allH.conceptual.json",
+      "byte_size": 23157,
+      "sha256": "01bb1398161973cf43d94e5eea62d80a3ae21a1da08b55ccaf22d24d0893adfa"
+    },
+    {
+      "path": "S3_FeVac_allH/S3_FeVac_allH.hydrogen_sites.json",
+      "byte_size": 206897,
+      "sha256": "373d99dce620982605052b4e1a76e6935722a6ad0492eb3086d51dcbc298f4db"
+    },
+    {
+      "path": "S3_PureFe_allH/S3_PureFe_allH.conceptual.json",
+      "byte_size": 23109,
+      "sha256": "75560f1f2e5eb95a1250f94189f68c8c3c2938eece022a9efb6fa3ce5d1c620f"
+    },
+    {
+      "path": "S3_PureFe_allH/S3_PureFe_allH.hydrogen_sites.json",
+      "byte_size": 142709,
+      "sha256": "bf482f4e71ff3e25ce469f4f2b6f456c9c333ecce2f669aebc1768244d98c841"
+    },
+    {
+      "path": "S5_FeCr_allH/S5_FeCr_allH.conceptual.json",
+      "byte_size": 27106,
+      "sha256": "ccf1c1fa4d47aa896e90adc343d4513ea76e50e59dc77a0e6a6ec15118a16bd3"
+    },
+    {
+      "path": "S5_FeCr_allH/S5_FeCr_allH.hydrogen_sites.json",
+      "byte_size": 1110976,
+      "sha256": "a1dd3635eca23cb7b704a83398a248a7ba0072335c4a7f5c227a2ee9f07aee91"
+    },
+    {
+      "path": "S5_FeCu_allH/S5_FeCu_allH.conceptual.json",
+      "byte_size": 27084,
+      "sha256": "0ce3463b06d247b626406db59e5c167d957583449ceafbc5b49a227b7c59d6e3"
+    },
+    {
+      "path": "S5_FeCu_allH/S5_FeCu_allH.hydrogen_sites.json",
+      "byte_size": 1047821,
+      "sha256": "8326285b7781c76116fadcd2ea68883255e55459d5e4194fa554718de6f3c09c"
+    },
+    {
+      "path": "S5_FeTi_allH/S5_FeTi_allH.conceptual.json",
+      "byte_size": 27106,
+      "sha256": "a98fd29b930f8fa0fa1c06d2a34dd52b42bf6a5cf0d779d0d9e0bb095248ea80"
+    },
+    {
+      "path": "S5_FeTi_allH/S5_FeTi_allH.hydrogen_sites.json",
+      "byte_size": 2901375,
+      "sha256": "6abdafc5cdb1510b80abe6447efbbe31759b751f2baf9a6cde2a5377f4d14e13"
+    },
+    {
+      "path": "S5_FeVac_allH/S5_FeVac_allH.conceptual.json",
+      "byte_size": 26731,
+      "sha256": "88f15111f316fc288a4f0c93cbb20c189eb055125f5e764ece8b4b15e6eb438b"
+    },
+    {
+      "path": "S5_FeVac_allH/S5_FeVac_allH.hydrogen_sites.json",
+      "byte_size": 924802,
+      "sha256": "b0fa414f8f1ff1ede324a97ae28fcc452475ed52e5ad9921a6d57212a80cd202"
+    },
+    {
+      "path": "S5_PureFe_allH/S5_PureFe_allH.conceptual.json",
+      "byte_size": 26927,
+      "sha256": "132c8db321a8e4fb11391d0cbc9d113513b440ba61e3bfb52984dddbcd2c0ffa"
+    },
+    {
+      "path": "S5_PureFe_allH/S5_PureFe_allH.hydrogen_sites.json",
+      "byte_size": 1269472,
+      "sha256": "4b9335a0eed2ff748d35f1d71b9c11f935ee4a9db4a7f1bb4c80a195c26eed7d"
+    },
+    {
+      "path": "S5m_FeCr_allH/S5m_FeCr_allH.conceptual.json",
+      "byte_size": 37057,
+      "sha256": "5d7cf82b477d8242884f84ef3c73c94e690ace9d39995c6da42f80d876b8fda8"
+    },
+    {
+      "path": "S5m_FeCr_allH/S5m_FeCr_allH.hydrogen_sites.json",
+      "byte_size": 2322426,
+      "sha256": "ec974119385511eca4998c89a3101b2361e0bf28e692e03a1ec47bb20baf74a3"
+    },
+    {
+      "path": "S5m_FeCu_allH/S5m_FeCu_allH.conceptual.json",
+      "byte_size": 37072,
+      "sha256": "16d18090ce4e2622b1f238fc7cd65a6fe5da6414a0e67d4d743f0a51f093a2b9"
+    },
+    {
+      "path": "S5m_FeCu_allH/S5m_FeCu_allH.hydrogen_sites.json",
+      "byte_size": 2447212,
+      "sha256": "e09c018d57d4040077d6931f9bd3c92991daa3d39dd30bcc30e5c12df33a0dbb"
+    },
+    {
+      "path": "S5m_FeTi_allH/S5m_FeTi_allH.conceptual.json",
+      "byte_size": 37062,
+      "sha256": "1ce098b4e875110189cd73e2f8b3452815734e7b9d59e4d7530c87d2fa6f6279"
+    },
+    {
+      "path": "S5m_FeTi_allH/S5m_FeTi_allH.hydrogen_sites.json",
+      "byte_size": 2211857,
+      "sha256": "e848465e90af89bcbf103fac3097239d5a785c5c7115bc935ddc3dd7dc39d1bf"
+    },
+    {
+      "path": "S5m_FeVac_allH/S5m_FeVac_allH.conceptual.json",
+      "byte_size": 36693,
+      "sha256": "4325b6c8a7919c14082c1c74f7e57435856c28c4af9e7f0fd632fe256b13af6b"
+    },
+    {
+      "path": "S5m_FeVac_allH/S5m_FeVac_allH.hydrogen_sites.json",
+      "byte_size": 2195863,
+      "sha256": "ce16f056789fc9d3b81f341f27a081cba6be4834cbfa9b9e0f4ac0736027b94a"
+    },
+    {
+      "path": "S5m_PureFe_allH/S5m_PureFe_allH.conceptual.json",
+      "byte_size": 36864,
+      "sha256": "5c224334f4cdc1f28c3a1aa3a9c6bcceb532e07581ec44500b18e5839ffc80f4"
+    },
+    {
+      "path": "S5m_PureFe_allH/S5m_PureFe_allH.hydrogen_sites.json",
+      "byte_size": 2239429,
+      "sha256": "858b79a2f62c6a61b0a87c8892cb27c7dcef18afaa7759f01bfb9b9ec9932ada"
+    },
+    {
+      "path": "schemas/hydrogen_site_collection.schema.json",
+      "byte_size": 1281,
+      "sha256": "a89f7621fd1ad043b5b0a6f529e33fb65b096cc75aee475f37f4af862fa933da"
+    },
+    {
+      "path": "schemas/manifest.schema.json",
+      "byte_size": 841,
+      "sha256": "8de9f95cfa2cf56b74ddf38d69dc529a61f486a5fa3768ea08e864f87706205c"
+    },
+    {
+      "path": "SCR_FeCr_allH/SCR_FeCr_allH.conceptual.json",
+      "byte_size": 26680,
+      "sha256": "bc550c5be0d1d8d73f626d378f4e359ed27ec221e6884fb4c2d4936aa4d5326f"
+    },
+    {
+      "path": "SCR_FeCr_allH/SCR_FeCr_allH.hydrogen_sites.json",
+      "byte_size": 106656,
+      "sha256": "8493120d7b05ec790500f12d9dc3ba58b63e2d531f859d01d6b1a4bc66135bf5"
+    },
+    {
+      "path": "SCR_FeCu_allH/SCR_FeCu_allH.conceptual.json",
+      "byte_size": 26680,
+      "sha256": "b51d1f178719da5b7479e71db503c297aeff625ca2e5139b09c4205e630a970d"
+    },
+    {
+      "path": "SCR_FeCu_allH/SCR_FeCu_allH.hydrogen_sites.json",
+      "byte_size": 104275,
+      "sha256": "87f622843393dfdcbba1bd7c1609302d57cf20dfe01a74b670d4977626b28910"
+    },
+    {
+      "path": "SCR_FeTi_allH/SCR_FeTi_allH.conceptual.json",
+      "byte_size": 26683,
+      "sha256": "e6c795c70706c30758411a6485436fe610d4ee8a34bb8f7a73fc4789d3cd71dd"
+    },
+    {
+      "path": "SCR_FeTi_allH/SCR_FeTi_allH.hydrogen_sites.json",
+      "byte_size": 109339,
+      "sha256": "f06d607cd51ebd81452341de6895c8832eb89308aa94d63c05cecd1bd76abf92"
+    },
+    {
+      "path": "SCR_FeVac_allH/SCR_FeVac_allH.conceptual.json",
+      "byte_size": 26446,
+      "sha256": "4f2ebe9a64a95de5f95b21dfc8c7fa08ebbf29882dd600f9e82a2bb2f2ee3bb7"
+    },
+    {
+      "path": "SCR_FeVac_allH/SCR_FeVac_allH.hydrogen_sites.json",
+      "byte_size": 134589,
+      "sha256": "4084527b8f98495cabbc9f07fdd4b2c55802bbb5b9e603a668ee7b0312aa3af9"
+    },
+    {
+      "path": "SCR_PureFe_allH/SCR_PureFe_allH.conceptual.json",
+      "byte_size": 25802,
+      "sha256": "a4a99aa50ef3c503743f2be5a6d0c39ca4d9f341ed67af46f11bff74f2eac50d"
+    },
+    {
+      "path": "SCR_PureFe_allH/SCR_PureFe_allH.hydrogen_sites.json",
+      "byte_size": 106961,
+      "sha256": "10cbd72a65cfec00831fb6671cdf213b8cc09e3ea910de2bc0d057a5f6f3404d"
+    },
+    {
+      "path": "source_manifest.json",
+      "byte_size": 20573,
+      "sha256": "8a7ac9f69868b103b3e943f3226536cb178d10fd54f08b09b48098097fb93378"
+    },
+    {
+      "path": "validation_report.json",
+      "byte_size": 23696,
+      "sha256": "44f2c891885db5ac0392cc9ebb63f565f16b37f711d185b2457a2f289d87a2e5"
+    }
+  ],
+  "publication_packaging": {
+    "date": "2026-09-28",
+    "dataset_release_version": "1.0.0",
+    "original_source_manifest": "provenance/author_source_manifest.json",
+    "original_validation_report": "provenance/author_validation_report.json",
+    "release_audit": "provenance/release_audit.json",
+    "note": "Scientific records retain the supplied generation timestamp/version. Documentation, CD-resource wording and support-file checksums were updated for public release. See provenance/README.md.",
+    "data_license": "CC-BY-4.0",
+    "code_license": "MIT"
+  }
+}
