@@ -4,7 +4,7 @@ This guide retains the scientific definitions supplied with the author's
 metadata export. Packaging statements have been updated for the public
 release. Start with [README.md](README.md) for downloads and runnable examples.
 Scientific definitions and settings below are author-supplied descriptions,
-not an independent re-analysis of the unpublished manuscript.
+not an independent re-analysis of the published journal article.
 
 This release contains H-free atomistic host structures, alternative candidate
 hydrogen positions, density-functional-theory-derived hydrogen properties, and
@@ -12,15 +12,21 @@ local geometric/electronic descriptors for a rotated single crystal and four
 grain-boundary families in pure Fe, Fe-Cr, Fe-Cu, Fe-Ti, and vacancy-containing
 Fe.
 
-**Publication status:** unpublished. A formal citation and DOI have not yet
-been assigned. The generated metadata therefore contains:
+**Publication status:** the associated paper is published in *International
+Journal of Hydrogen Energy*, **285** (2026), article 157915:
+[10.1016/j.ijhydene.2026.157915](https://doi.org/10.1016/j.ijhydene.2026.157915).
+
+The generated scientific metadata was prepared **before publication** and
+retains the original historical fields:
 
 - `publication_status: "unpublished"`
 - `citation: null`
 - `doi: null`
 
-The current manuscript is used only as an internal methodology source. It is
-not presented as a published citation or preprint of record.
+These fields reflect the metadata-generation date, **not** the current
+publication status. They are preserved to avoid changing historical scientific
+records and their provenance. Use the published citation above and the
+repository [CITATION.cff](CITATION.cff) for current attribution.
 
 ## Scope at a glance
 
@@ -613,11 +619,16 @@ boundaries.
 
 ## Citation and DOI
 
-The associated manuscript is not yet published:
+The associated paper is published:
 
-- Citation: `null`
-- DOI: `null`
+Şen, O. C., Ghaderi, F., Benito, S., Weber, S., and Janisch, R. (2026).
+“Microstructural descriptors for solution energies of hydrogen at grain
+boundaries in ferritic steels.” *International Journal of Hydrogen Energy*,
+**285**, 157915. DOI: [10.1016/j.ijhydene.2026.157915](https://doi.org/10.1016/j.ijhydene.2026.157915).
 
-These fields can be updated after publication. No provisional journal citation,
-publication year or DOI is invented by this release. The author-approved
-licenses are CC BY 4.0 for data/documentation and MIT for code; see LICENSE.md.
+Cite the paper for its scientific findings. For dataset reuse, also identify
+this repository and its release version. See [CITATION.cff](CITATION.cff).
+Historical `null` citation/DOI fields in generated scientific metadata are
+preserved as provenance of the pre-publication export; they do not supersede
+the citation above. The author-approved licenses are CC BY 4.0 for
+data/documentation and MIT for code; see LICENSE.md.
