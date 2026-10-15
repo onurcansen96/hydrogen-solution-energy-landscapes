@@ -39,7 +39,10 @@ separate `publication_packaging` entry and refreshes hashes for edited support
 files. `generated_metadata/manifest_index.json` refreshes output hashes while
 retaining the original scientific-generation timestamp and version.
 
-The unpublished manuscript, representative INCAR, and selected-descriptor
+The pre-publication manuscript, representative INCAR, and selected-descriptor
 cross-check CSV are historical external references, not downloadable contents
 of this release. Their original hashes identify them without exposing local
-computer paths. No citation, DOI, or missing physical result has been invented.
+computer paths. The original audit predates the published article and therefore
+did not supply a citation or DOI. The article is now published at
+https://doi.org/10.1016/j.ijhydene.2026.157915; see the root README and CITATION.cff.
+No missing physical result has been invented.
