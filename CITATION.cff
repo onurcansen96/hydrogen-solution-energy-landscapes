@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: >-
-  Please cite this dataset and specify the release version used.
-  The associated paper is unpublished; its citation and DOI will be added later.
+  Please cite the associated journal article for its scientific findings.
+  When reusing this dataset, also identify this repository and the release version.
 type: dataset
 title: Hydrogen solution-energy landscapes in ferritic Fe environments
 authors:
@@ -25,3 +25,23 @@ keywords:
   - density functional theory
   - iron
   - solution energy
+
+preferred-citation:
+  type: article
+  title: Microstructural descriptors for solution energies of hydrogen at grain boundaries in ferritic steels
+  authors:
+    - family-names: Şen
+      given-names: Onur Can
+    - family-names: Ghaderi
+      given-names: Farnoosh
+    - family-names: Benito
+      given-names: Santiago
+    - family-names: Weber
+      given-names: Sebastian
+    - family-names: Janisch
+      given-names: Rebecca
+  journal: International Journal of Hydrogen Energy
+  volume: 285
+  year: 2026
+  doi: 10.1016/j.ijhydene.2026.157915
+  url: https://doi.org/10.1016/j.ijhydene.2026.157915
