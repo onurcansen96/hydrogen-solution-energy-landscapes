@@ -621,7 +621,7 @@ boundaries.
 
 The associated paper is published:
 
-Şen, O. C., Ghaderi, F., Benito, S., Weber, S., and Janisch, R. (2026).
+OC Şen, F Ghaderi, S Benito, S Weber, and R Janisch (2026).
 “Microstructural descriptors for solution energies of hydrogen at grain
 boundaries in ferritic steels.” *International Journal of Hydrogen Energy*,
 **285**, 157915. DOI: [10.1016/j.ijhydene.2026.157915](https://doi.org/10.1016/j.ijhydene.2026.157915).
