@@ -6,8 +6,14 @@ families, each with pure Fe, Cr, Cu, Ti, or a vacancy environment.
 The calculations are from **DFT/VASP**, not LAMMPS simulations. LAMMPS-style
 dump files are used only as a portable structure/site-property format.
 
-**Paper status: unpublished.** The paper citation and DOI are pending and will
-be added later. This repository is a data release, not a published-paper claim.
+**Associated paper (published):** Şen, O. C., Ghaderi, F., Benito, S., Weber, S.,
+and Janisch, R. (2026). “Microstructural descriptors for solution energies of
+hydrogen at grain boundaries in ferritic steels.” *International Journal of
+Hydrogen Energy*, **285**, 157915.
+**DOI:** [10.1016/j.ijhydene.2026.157915](https://doi.org/10.1016/j.ijhydene.2026.157915).
+
+Please cite the published paper when using its scientific findings. When using
+this dataset, also identify this repository and the release version used.
 
 ## Start Here
 
@@ -157,8 +163,10 @@ Data, JSON metadata, CHGCAR release assets, and documentation are licensed
 under **CC BY 4.0** ([LICENSE-DATA](LICENSE-DATA)). Python code is licensed
 under **MIT** ([LICENSE-CODE](LICENSE-CODE)). See [LICENSE.md](LICENSE.md).
 
-Credit the creators listed in [CITATION.cff](CITATION.cff), identify the
-repository and release version, and indicate modifications. The CFF describes
-this **dataset**, not the unpublished paper. The paper citation and DOI remain
-pending. Please report data questions through the repository's Issues page,
+For the published research, please cite the [journal article](https://doi.org/10.1016/j.ijhydene.2026.157915).
+For reuse of the dataset, also credit the creators listed in
+[CITATION.cff](CITATION.cff), identify the repository and release version,
+and indicate modifications. The citation file describes this repository as
+a dataset and provides the journal article as the preferred scientific
+citation. Please report data questions through the repository's Issues page,
 including the structure name and source atom ID.
