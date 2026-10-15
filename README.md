@@ -6,8 +6,8 @@ families, each with pure Fe, Cr, Cu, Ti, or a vacancy environment.
 The calculations are from **DFT/VASP**, not LAMMPS simulations. LAMMPS-style
 dump files are used only as a portable structure/site-property format.
 
-**Associated paper (published):** Şen, O. C., Ghaderi, F., Benito, S., Weber, S.,
-and Janisch, R. (2026). “Microstructural descriptors for solution energies of
+**Associated paper (published):** OC Şen, F Ghaderi, S Benito, S Weber,
+and R Janisch (2026). “Microstructural descriptors for solution energies of
 hydrogen at grain boundaries in ferritic steels.” *International Journal of
 Hydrogen Energy*, **285**, 157915.
 **DOI:** [10.1016/j.ijhydene.2026.157915](https://doi.org/10.1016/j.ijhydene.2026.157915).
