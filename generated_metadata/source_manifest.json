@@ -28,6 +28,17 @@
       "sha256": "1dfc346039f10159c9ac8446b1874441a71ccd6ab5ac0e94a46d0bfae25e8157"
     },
     {
+      "artifact_id": "host_structure_energies",
+      "path": "host_structure_energies.csv",
+      "filename": "host_structure_energies.csv",
+      "role": "total energy (eV) of each H-free host structure; the E_host of every released solution energy",
+      "media_type": "text/csv",
+      "included_in_package": true,
+      "location_status": "relative_to_canonical_source_root",
+      "byte_size": 559,
+      "sha256": "9cd3c2b87a6aa8301b48e4e8f67b5622543476c029b241855099068ef9e7368f"
+    },
+    {
       "artifact_id": "dump_S27_FeCr_allH",
       "path": "S27_FeCr_allH",
       "filename": "S27_FeCr_allH",
@@ -323,8 +334,8 @@
       "media_type": "text/markdown",
       "included_in_package": true,
       "location_status": "relative_to_canonical_source_root",
-      "byte_size": 8500,
-      "sha256": "beda2e38d83545be933b44dff52298f5884f2e50bcb797cc5f8aa79cf8849f45",
+      "byte_size": 9257,
+      "sha256": "9feb02fc161735571ec2854184c11eb5666b03171971c96afb1c2c4eac30c36a",
       "author_export_sha256": "d0492e06dea0e05c0997acd735ce2835a6f8887f7106468adf911020ca8c284d",
       "author_export_byte_size": 22647
     },
@@ -368,8 +379,8 @@
       "role": "Scientific data guide",
       "included_in_package": true,
       "location_status": "relative_to_canonical_source_root",
-      "byte_size": 24173,
-      "sha256": "4b1528cedd37d3871c34e9ad3a851363c3661f958504fa68472473bf9ecd8b42"
+      "byte_size": 26340,
+      "sha256": "b39e20a84c3dd95075693f8ecd820141ec34f4dc4cda6bc099a38bf3f69ba494"
     },
     {
       "artifact_id": "publication_charge_density_manifest.json",
@@ -388,8 +399,8 @@
       "role": "Dataset citation; paper citation pending",
       "included_in_package": true,
       "location_status": "relative_to_canonical_source_root",
-      "byte_size": 763,
-      "sha256": "62afbd5b1fcc9ec5120247fbfc42faaf4ebc26d685046f196e3edd757985fd5e"
+      "byte_size": 1378,
+      "sha256": "7d67709008dbfe00f6ea44c2c25f056f80b864b855d6df52c07a9bd6db65cf73"
     },
     {
       "artifact_id": "publication_LICENSE-DATA",

@@ -2091,8 +2091,8 @@
     },
     {
       "path": "source_manifest.json",
-      "byte_size": 21071,
-      "sha256": "5ae15c3218205cbb448bbdd700c82f194682f3dbd3797b4e545d99196b87e183"
+      "byte_size": 21585,
+      "sha256": "8b35a23f7549cb3551733f8cd7db93bb86c360efe69916fa8ade837e78c7960a"
     },
     {
       "path": "validation_report.json",
