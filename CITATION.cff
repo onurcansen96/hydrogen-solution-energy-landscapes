@@ -15,8 +15,8 @@ authors:
     given-names: Sebastian
   - family-names: Janisch
     given-names: Rebecca
-version: 1.1.0
-date-released: '2026-09-28'
+version: 1.2.0
+date-released: '2026-11-18'
 url: https://github.com/onurcansen96/hydrogen-solution-energy-landscapes
 license: CC-BY-4.0
 keywords:

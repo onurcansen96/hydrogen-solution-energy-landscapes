@@ -236,6 +236,37 @@ with this expression. They are not silently replaced by recomputed values.
 | `Atom_SE_ZPEC` | `SE_ZPEC_F` | eV |
 | `Atom_SE_NF_ZPEC` | `SE_ZPEC_NF` | eV |
 
+## Host structure energies
+
+`host_structure_energies.csv` gives the host structure energy of each of the 25
+structures, in eV. This is the DFT total energy of the H-free host structure in
+the corresponding `*_allH` dump, the structure on which every H calculation of
+that structure was built, and it is the `E_host` of the solution-energy
+definition above. The `structure` column matches the raw filename prefix, so
+`S5_FeTi` refers to `S5_FeTi_allH`.
+
+The value belongs to that specific host structure. Other relaxations of the same
+structure, for example other points of an excess-length or
+rigid-body-translation search, have other energies and are not the reference for
+the released solution energies.
+
+The total energy of any H-containing calculation follows from the
+solution-energy definition:
+
+```text
+E_host+H,C = E_sol,C + E_host + 0.5 E_H2
+```
+
+with `E_sol,C` the uncorrected solution energy of that site, `SE` for the frozen
+and `SE_NF` for the non-frozen branch, `E_host` taken from
+`host_structure_energies.csv`, and `0.5 E_H2 = -3.379914 eV`. Use the
+uncorrected `SE` and `SE_NF`, not the ZPE-corrected values.
+
+Every host structure energy was validated in this way against the total
+energies of the H-containing calculations: it reproduces every released
+solution energy of its structure, 1,648 sites in total, to better than
+`1e-4` eV.
+
 ## Charge density and Bader values
 
 ### Charge density (`CD`)

@@ -52,6 +52,7 @@ named solute where present. A vacancy is an absent Fe atom.
 |---|---|
 | 25 `*_allH` files | Raw aggregate candidate-site maps, host cells/positions, and site properties |
 | `Solution_Energy_Descriptors.txt` | Comma-separated source table, including corrected energies and Voronoi topology; the extension is `.txt`, not `.csv` |
+| `host_structure_energies.csv` | Total energy (eV) of each of the 25 H-free host structures, the reference of every solution energy; see the guide for recovering the energies of the H-containing calculations |
 | `generated_metadata/manifest_index.json` | Entry point: structure list, site-file paths, summaries, and output checksums |
 | `generated_metadata/dataset.conceptual.json` | All 25 H-free hosts in conceptual-dictionary form |
 | `generated_metadata/*/*.conceptual.json` | Per-host conceptual descriptions |
@@ -67,7 +68,7 @@ named solute where present. A vacancy is an absent Fe atom.
 | `tools/verify_release.py` | Read-only integrity checks; Python standard library only |
 | `provenance/` | Original author validation/source manifests and publication audit; see its README |
 
-There are **no generated CSV outputs, standalone CONTCAR files, or notebook
+Apart from `host_structure_energies.csv`, there are **no CSV outputs, standalone CONTCAR files, or notebook
 files** in this release. The manuscript, representative INCAR, and external
 descriptor-check CSV mentioned in historical provenance are **not included**.
 Third-party source checkouts, caches, and local scratch files are not published.
